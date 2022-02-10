@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+body{
+
+	background: url(Images/headerPic.png);
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position-y: -200px;*/
+	
+}
+
+@media only screen and (min-height: 600px){
+	
+	body{
+		background-position-y: -200px;
+	}
+
+}
+
+
+ /*****MENU********-----------------*/
+
+.nav-bar{
+    /* margin-right: 6vw;*/
+     margin-top: 5vh;
+     margin-left: 5vw;
+     padding-bottom: 10vh;
+    
+ }
+ 
+ .menu a{
+     /*margin-right: 1.5vw;*/
+     background-color: rgba(0,0,0,0.8);
+     border-radius: 30px;
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+     padding: 10px 20px;
+     font-size: 1.5rem;
+     text-align: center;
+     color: white;
+     text-decoration: none;
+     cursor: pointer;
+     transition: 0.4s;
+ }
+ 
+ .menu a:hover{
+     background-color: green;
+     
+ }
+ 
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     float: right;
+     margin-right: 8vw;
+   }
+ 
+   li{
+       display: inline;
+       margin-right: 1.5vh;
+   }
+
+ /*****MENU********----------------*/
+
+.wrapper{
+	
+	width: 100%;
+	padding: 0 20px;
+}
+
+.contact-form{
+	max-width: 550px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.9);
+	padding: 30px;
+	border-radius: 20px;
+	display: flex;
+	box-shadow: 0 0 20px rgba(255,255,255,0.6);
+	
+}
+
+.input-fields{
+	display: flex;
+	flex-direction: column;
+	margin-right: 4%;
+
+}
+
+.input-fields, .msg{
+	width: 48%;
+}
+
+.input-fields .input, .msg textarea{
+	margin: 10px 0;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid rgb(196, 74, 3);
+	padding: 10px;
+	color:  #c5ecfd;
+	width: 100%;
+	font-weight: bold;
+}
+
+.msg textarea{
+	height: 212px;
+	resize: none;
+}
+
+
+::-webkit-input-placeholder{
+	color: white;
+}
+
+::-moz-input-placeholder{
+	color: white;
+}
+
+::-ms-input-placeholder{
+	color: white;
+}
+
+.btn{
+	background: rgb(196, 74, 3);
+	text-align: center;
+	padding: 15px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+
+    transition: 0.4s;
+	
+}
+
+.btn:hover{
+    background-color: rgb(255, 154, 4);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 600px){
+	.contact-form{
+		flex-direction: column;
+	}
+	.msg textarea{
+		height: 80px;
+	}
+	.input-fields, .msg{
+		width: 100%;
+	}
+}
+
+#contactTitle{
+	max-width: 550px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.9);
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(255,255,255,0.6);
+	margin-bottom: 5px;
+}
+
+#contactTitle h2{
+	color: white;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 3rem;
+}
+
+
+/*----------------------------------------------------*/
+  /*footer*/
+
+  .foot{
+
+    max-width: 100%;
+    height: 48vh;
+    margin-top: 10vh;
+   /* background-image: url(Images/headerPic2.png);*/
+    background-color: rgba(0,0,0,1);
+    background-blend-mode: hue;
+    background-size: 100% 100%;
+    background-position-y: -2px;
+}
+
+#phoneNumber{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    padding-top: 12vh;
+}
+
+#email{
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  padding-top: 3vh;
+}
