@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="contact_stylesheet.css">
+	<script type = "text/javascript" src="smtp.js"></script>
+	<script type="text/javascript">
+		
+		function sendEmail(){
+		
+		var name = document.getElementById("Name").value;
+		var mailAddress = document.getElementById("Address").value;
+		var phoneNumber = document.getElementById("Phone").value;
+		var mailSubject = document.getElementById("Subject").value;
+		var mailBody = document.getElementById("MessageBody").value;
+		
+			Email.send({
+					
+					//elastic email SMTP password: ABF6056809169EDBD4189472F5356C98D522
+					
+					//Host: "smtp.gmail.com",
+					//Username: "alohabot96@gmail.com",
+					//Password: "Quigley1",
+					SecureToken: "04d517a5-d449-473c-a15b-ea3ac7e9290f",
+					From: "alohabot96@gmail.com",
+					To: "cmq2st@gmail.com",
+					Subject: mailSubject,
+					Body: "The following email was sent from your Git Hub Portfolio, Charles" + "<br>" + "---------------------------------------------------------" + "<br><br>"
+						  + "Name: " + name + "<br><br>" + "Email Address: " + mailAddress + "<br><br>" + "Phone Number: " + phoneNumber + 
+						  "<br><br><br><br>" + mailBody
+				})
+					.then(function (message) {
+						if(message == "OK")
+                        {
+                            alert("Thank you for your email. Once I see your message, I'll be sure to respond :)");
+                        }
+                        else
+                        {
+                            alert("Oops. Sorry, something went wrong. Please try to send the message again. Thank you.");
+                        }
+					});
+		}
+	</script>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Projects</a></li>
+            </ul>
+        </div>
+    </div>
+	
+	<div class="wrapper">
+		<div id="contactTitle">
+			<h2>Contact Me</h2>
+		</div>
+		<div class="contact-form">
+			<div class="input-fields">
+				<input id="Name" type="text" class="input" placeholder="Name">
+				<input id="Address" type="text" class="input" placeholder="Email Address">
+				<input id="Phone" type="text" class="input" placeholder="Phone">
+				<input id="Subject" type="text" class="input" placeholder="Subject">
+			</div>
+			<div class="msg">
+				<textarea id="MessageBody" placeholder="Message"></textarea>
+				<div class="btn" onclick="sendEmail()">Send</div>
+			</div>
+			
+		</div>
+	</div>
+
+    
+    <footer class="foot">
+        <p id="phoneNumber">Phone :&nbsp;&nbsp;361-251-7222</p>
+        <p id="email">Email :&nbsp;&nbsp;cmq2st@gmail.com</p>
+
+    </footer>
+
+</body>
+</html>
+	
