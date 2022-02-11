@@ -21,6 +21,10 @@ body{
     height: inherit;
     max-width: 100%;
     background-image: url(Images/headerPic2.png);
+
+    /*Parallax scrolling effect vvv it's supposed to keep the image in place while scrolling.*/
+    background-attachment: fixed;
+
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: hue;
     background-size: 100% 100%;
@@ -56,8 +60,9 @@ old div that was meant to be a black circle that the actual profile picture woul
     /*position: fixed;*/
     float: left;
     margin-left: 1vw;
+    margin-top: 1vh;
     border: 10px solid rgba(0,0,0,0.85);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 
  
 }
@@ -73,14 +78,14 @@ old div that was meant to be a black circle that the actual profile picture woul
     color: white;
     font-size: 4.5rem;
     font-weight: bolder;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 
 }
 
 #contact-info{
     margin-top: 8vh !important;
     font-size: 1.8rem !important;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     font-weight: bolder;
 
 }
@@ -119,6 +124,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 
 .menu a:hover{
     background-color: green;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 1);
     
 }
 
@@ -152,7 +158,7 @@ ul {
   }
 
   #education-milestones{
-      margin-top: 8vh;
+      margin-top: 4vh;
 
       display: grid;
       grid-template-columns: 33% 33% 33%;
@@ -180,9 +186,10 @@ ul {
   /*About Me*/
 
   #AboutMeSection{
-      background-image: url(Images/headerPic.png);
-      background-color: rgba(0,0,0,0.8);
-      background-blend-mode: lighten; /*luminosity;*/
+      background-image: url(Images/headerPic_1_20.png);
+      background-color: rgba(0,0,0,0.3);
+      background-blend-mode: hue;
+      background-attachment: fixed;
       background-size: 100% 100%;
       padding-top: 10vh;
       padding-bottom: 10vh;
@@ -195,9 +202,9 @@ ul {
       padding-bottom: 5vh;
       padding-left: 3vw;
       padding-right: 3vw;
-      background-color:rgba(0, 0, 0, 0.8);
+      background-color:rgba(0, 0, 0, 0.85);
       border-radius: 70px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
       color: white;
       
 
@@ -233,9 +240,9 @@ ul {
     padding-bottom: 5vh;
     padding-left: 3vw;
     padding-right: 3vw;
-    background-color:rgba(0, 0, 0, 0.8);
+    background-color:rgba(0, 0, 0, 0.85);
     border-radius: 70px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
     color: white;
 }
 
@@ -269,9 +276,9 @@ ul {
     padding-bottom: 5vh;
     padding-left: 3vw;
     padding-right: 3vw;
-    background-color:rgba(0, 0, 0, 0.8);
+    background-color:rgba(0, 0, 0, 0.85);
     border-radius: 70px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
     color: white;
 
 }
@@ -350,7 +357,8 @@ ul {
       max-width: 100%;
       height: 48vh;
       background-image: url(Images/headerPic2.png);
-      background-color: rgba(0,0,0,0.5);
+      background-attachment: fixed;
+      background-color: rgba(0,0,0,0.3);
       background-blend-mode: hue;
       background-size: 100% 100%;
       background-position-y: -2px;
@@ -361,7 +369,7 @@ ul {
       font-weight: bolder;
       text-align: center;
       color: white;
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
 
       padding-top: 12vh;
   }
@@ -371,7 +379,32 @@ ul {
     font-weight: bolder;
     text-align: center;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
 
     padding-top: 3vh;
+  }
+
+
+  /*-------------FADE-IN and SLIDE-IN STUFF-------------------*/
+
+  .fade-in{
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
+
+  /*For elements that have the 'fade-in' class AND the 'appear' class */
+  .fade-in.appear{
+    opacity: 1;
+  }
+
+  .from-left{
+      transform: translateX(-100%);
+      opacity: 0;
+      transition: 700ms ease-in;
+  }
+
+  .from-left.appear{
+      transform: translateX(0);
+      opacity: 1;
+
   }
