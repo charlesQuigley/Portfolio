@@ -12,6 +12,7 @@
 body{
 
 	background: url(Images/headerPic.png);
+    background-attachment: fixed;
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: lighten;
     background-size: cover;
@@ -55,6 +56,7 @@ body{
  
  .menu a:hover{
      background-color: green;
+     box-shadow: 0 0 50px rgba(255, 255, 255, 1);
      
  }
  
@@ -84,9 +86,9 @@ body{
 	margin: 0 auto;
 	background-color: rgba(0, 0, 0, 0.9);
 	padding: 30px;
-	border-radius: 20px;
+	border-radius: 40px;
 	display: flex;
-	box-shadow: 0 0 20px rgba(255,255,255,0.6);
+	box-shadow: 0 0 30px rgba(255,255,255,0.8);
 	
 }
 
@@ -134,7 +136,7 @@ body{
 	background: rgb(196, 74, 3);
 	text-align: center;
 	padding: 15px;
-	border-radius: 5px;
+	border-radius: 30px;
 	color: #fff;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -166,8 +168,8 @@ body{
 	margin: 0 auto;
 	background-color: rgba(0, 0, 0, 0.9);
 	padding: 30px;
-	border-radius: 15px;
-	box-shadow: 0 0 20px rgba(255,255,255,0.6);
+	border-radius: 40px;
+	box-shadow: 0 0 30px rgba(255,255,255,0.8);
 	margin-bottom: 5px;
 }
 

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles' Portfolio</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="projects_stylesheet.css">
+
+</head>
+<body>
+
+    <!--Modal. Used when clicking on any of the slideshow slides. A modal is a dialog box/popup window that is displayed on top of the current page.
+    It will show a larger version of the slide's image-->
+   <!-- https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+   <div id="myModal">
+    <span class="closeModalButton">&times;</span>
+
+    <img class="modalImage" id="image">
+</div>
+
+    <div id="header">
+        <div class="nav-bar">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>   
+        
+        <div id="page-title">
+            <h1>Completed&nbsp;&nbsp;Projects</h1>
+        </div>
+    </div>
+
+    <div id="Description">
+        <p>I've been developing web pages for about a year now, and I think I'm getting pretty good at it.</p>
+        <br>
+        <p>In fact, I built <u><b>this</b></u> website from scratch using HTML5, CSS3, and JavaScript!</p>
+        <br>
+        <p>In the sections below, you'll find descriptions of some other websites I've built as well as other projects I've worked on.</p>
+    </div>
+
+    <div id="projects-section">
+        <div class="project from-down">
+            <div class="projectBody">
+                <div class="project-name">
+                    <h2>Construction Website</h2>
+                    <hr />
+                </div>
+                <div class="project-images">
+                    <div class="slideshow-container">
+                        <div id="slideshow-slide-1" class="slideshow-slide">
+                            <img id="img1" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/HomePage.png" alt="Home Page">
+                            <img id="img2" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/About.png" alt="About Page">
+                            <img id="img3" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/ContactUs.png" alt="Contact Page">
+                            <img id="img4" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/Projects.png" alt="Page Listing Completed Construction Projects">
+                            <img id="img5" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/SpecificProjectPicture.png" alt="A Completed Construction Project (1/2)">
+                            <img id="img6" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/SpecificProjectDescription.png" alt="A Completed Construction Project (2/2)">
+                            <img id="img7" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/EmployeePortal.png" alt="A Page With An Employee Portal">
+                            <img id="img8" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/AdminLogin.png" alt="Admin Login Page">
+                            <img id="img9" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/CreateProject.png" alt="Admin Page (1/2)">
+                            <img id="img10" class="slides slides1 slideShowFade" src="Images/ConstructionWebsite/CreateProject2.png" alt="Admin Page (2/2)">
+                        </div>
+                        <button class="prevButton" onclick="prev_next_slides(-1, 0)">&#10094;</button>
+                        <button class="nextButton" onclick="prev_next_slides(1, 0)" >&#10095;</button>
+                        <div id="slideshow-dots">
+                            <span class="dot dot1"></span>
+                            <span class="dot dot1"></span>
+                            <span class="dot dot1"></span>
+                            <span class="dot dot1"></span>
+                            <span class="dot dot1"></span>
+                            <span class="dot dot1"></span>
+                            <span class="dot dot1"></span>
+                            <span class="dot dot1"></span>
+                            <span class="dot dot1"></span>
+                            <span class="dot dot1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <div id="caption1" class="captions captions1">
+                        <p>In a team of 2, my partner and I created a website for a local construction company using the
+                        MVC pattern and the ASP.NET framework. This website was built using Visual Studio, HTML, CSS, JavaScript, and
+                        C#.</p>
+                  
+                        <p class="caption-text-linebreak">The client ended up not using the website, but a temporary url of it can be found here: <a href="http://apostle2022-001-site1.itempurl.com/" target="_blank">http://apostle2022-001-site1.itempurl.com/</a></p>
+                    </div>
+                    <div id="caption2" class="captions captions1">
+                        <p>
+                            This website was our Capstone Project for college. As such, we built it free-of-charge for the company.
+                            The above image is the About Section for the company's website. Some of
+                            the services they provide include entirely new construction, exterior and interior painting, tape and float services, as well as renovations and repairs. 
+                        </p>
+                    </div>
+                    <div id="caption3" class="captions captions1">
+                        <p>
+                            A Contact Section was included in the Home Page. This section provided users with the company's phone number, email address, and Facebook page so that they could
+                            easily contact the company if they needed construction work done.
+                        </p>
+                    </div>
+                    <div id="caption4" class="captions captions1">
+                        <p>
+                            This webpage showcases some of the projects completed by the company. Clicking on one of these projects 
+                            sends the user to a page solely dedicated to describing that project. An MS SQL database was used to store 
+                            data pertaining to each project. This data was then used to populate the above web page and all other pages that
+                            showcase projects. 
+                        </p>
+                    </div>
+                    <div id="caption5" class="captions captions1">
+                        <p>
+                            Here is the first half of a project's page. It provides the name of the project, its address,
+                            and a picture of the finished product.
+                        </p>
+                    </div>
+                    <div id="caption6" class="captions captions1">
+                        <p>
+                            Here is the second half of the project's page. It provides the type of construction performed, the scope of project,
+                            and information about the cost of the project as well as it's completion date. 
+                        </p>
+
+                    </div>
+                    <div id="caption7" class="captions captions1">
+                        <p>
+                            This is an Employee Portal page. It uses an API provided by OnTheClock that lets employees of the company
+                            clock-in and clock-out of work. This page also offers helpful documents for current employees as well as aspiring employees.
+                        </p>
+                        <p class="caption-text-linebreak">For more information about OnTheClock, visit their website: <a href="https://www.ontheclock.com/time-clock/" target="_blank">https://www.ontheclock.com/time-clock/</a></p>
+
+                    </div>
+                    <div id="caption8" class="captions captions1">
+                        <p>
+                            We also created an Admin Console for the website! This is the Admin Login page. 
+                        </p>
+                    </div>
+                    <div id="caption9" class="captions captions1">
+                        <p>
+                            Once logged-in, admins can create create, edit, or delete construction projects that are visible on the website. 
+                            The above image shows the first half of a form used by admins to add a new project to the website. 
+                        </p>
+                    </div>
+                    <div id="caption10" class="captions captions1">
+                        <p>
+                            This is the second half of the form that allows admins to add new projects. Once the admin clicks
+                            the 'create' button, the new project will be stored in the MS SQL database and will be visible on the company's website. 
+                        </p>
+
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="project from-down">
+            <div class="projectBody">
+                <div class="project-name">
+                    <h2>Shopping Website</h2>
+                    <hr />
+                </div>
+                <div class="project-images">
+                    <div class="slideshow-container">
+                        <div id="slideshow-slide-2" class="slideshow-slide">
+                            <!--fullPageImage class are for images that show the entire webpage. these images still need
+                                to fit in the slideshow container, but their modal can be much larger.-->
+                            <img id="img11" class="slides slides2 slideShowFade fullPageImage" src="Images/ShoppingWebsite/HomePage.jpeg" alt="Home Page">
+                            <img id="img12" class="slides slides2 slideShowFade" src="Images/ShoppingWebsite/loginPage.png" alt="Login Page">
+                            <img id="img13" class="slides slides2 slideShowFade" src="Images/ShoppingWebsite/HomePage_SignedIn.png" alt="Home Page when the user is logged-in">
+                            <img id="img14" class="slides slides2 slideShowFade" src="Images/ShoppingWebsite/AddToCart.png" alt="Product Page where the users can add the item to their cart.">
+                            <img id="img15" class="slides slides2 slideShowFade" src="Images/ShoppingWebsite/searchProduct.png" alt="Users can use the search bar to find products they're looking for.">
+                            <img id="img16" class="slides slides2 slideShowFade fullPageImage" src="Images/ShoppingWebsite/ShoppingCart.jpeg" alt="The Shopping Cart page shows all of the items that the user is about to purchase.">
+                            <img id="img17" class="slides slides2 slideShowFade" src="Images/ShoppingWebsite/Receipt.png" alt="A page that shows the user's online recepit.">
+                        </div>
+                        <button class="prevButton" onclick="prev_next_slides(-1, 1)">&#10094;</button>
+                        <button class="nextButton" onclick="prev_next_slides(1, 1)" >&#10095;</button>
+                        <div id="slideshow-dots">
+                            <span class="dot dot2"></span>
+                            <span class="dot dot2"></span>
+                            <span class="dot dot2"></span>
+                            <span class="dot dot2"></span>
+                            <span class="dot dot2"></span>
+                            <span class="dot dot2"></span>
+                            <span class="dot dot2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <div id="caption11" class="captions captions2">
+                        <p>
+                            As a project for college, my partner and I created a website for a fake wholesale grocery store 
+                            that was meant to mimic Sam's Club's membership-based model, in which
+                            customers must be members in order to shop at the store.
+                        </p>
+                  
+                        <p class="caption-text-linebreak">This project's GitHub repository can be found here: <a href="https://github.com/charlesQuigley/GroceryStore" target="_blank">https://github.com/charlesQuigley/GroceryStore</a></p>
+                    </div>
+                    <div id="caption12" class="captions captions2">
+                        <p>This project was built in Visual Studio and used the ASP.NET framework. This website consists of HTML, CSS, JavaScript, and C#.</p>
+                  
+                        <p class="caption-text-linebreak">In order to begin shopping, users must first log into their membership accounts.</p>
+                    </div>
+                    <div id="caption13" class="captions captions2">
+                        <p>
+                            Once they have logged-in, users will be redirected to the Home Page. The icon on the top-right of the page
+                            will turn green, indicating that the user is now signed-in and can begin shopping. 
+                        </p>
+
+                        <p class="caption-text-linebreak">
+                            The user can now click on any of the products shown on the Home Page. Once the user clicks on a product, the user will be redirected 
+                            to that product's page.
+                        </p>
+
+
+                    </div>
+                    <div id="caption14" class="captions captions2">
+                        <p>
+                            For example, if the user clicks on "Paper Towels", the user will be redirected to a page that provides 
+                            a description of the product as well as it's price.
+                        </p>
+                        <p class="caption-text-linebreak">
+                            The user can now choose to add the product to their online shopping cart.
+                        </p>
+                        
+                    </div>
+                    <div id="caption15" class="captions captions2">
+                        <p>
+                            Users can also find products using the search bar at the top of the page. For example,
+                            entering "peanut" in the search bar will generate a page that displays all items with the word "peanut" in their name.
+                        </p>
+                        <p class="caption-text-linebreak">
+                            This page is populated by a database. Each row of the database is checked to see if it contains
+                            the word "peanut". If it does, that row is sent to the search page.
+                        </p>
+                        
+                    </div>
+                    <div id="caption16" class="captions captions2">
+                        <p>
+                            Users can click on the "Cart" button at the top of the page to view the items currently in their shopping carts.
+                            This page shows which products the user is about to purchase, how many of each product will be purchased, and 
+                            the total price of their purchase.
+                        </p>
+                        <p class="caption-text-linebreak">
+                            Click the above image to view the entire Shopping Cart page.
+                        </p>                        
+                    </div>
+                    <div id="caption17" class="captions captions2">
+                        <p>
+                            If the user decides to buy all the items in the shopping cart, they will then be redirected
+                            to a page that shows their online receipt. They will then pick-up their items from the store's physical location
+                            on the date specified by the receipt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project from-down">
+            <div class="projectBody">
+                <div class="project-name">
+                    <h2>3D Pong Game</h2>
+                    <hr />
+                </div>
+                <div class="project-images">
+                    <div class="slideshow-container video-container">
+                        <iframe id="video1" class="video" src="https://www.youtube.com/embed/JFANZ3sGPdQ?" title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                       
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>
+                        I created this 2-player Pong Game for a Computer Graphics class. This game was built using C++ and the OpenGL API. 
+                        This application allows users to toggle between different perspectives to show off its 3D graphics. 
+                    </p>
+                    <p class="caption-text-linebreak">
+                         <u><a href="https://drive.google.com/file/d/1jfwirOSPA8pq-pEdaL-5CouyXYqGHtKO/view?usp=sharing" target="_blank">You Can Download this 3D Pong game HERE.</a></u></p>
+                    </p>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+    <script type = "text/javascript" src="projects.js"></script>
+
+</body>
+</html>
