@@ -3,15 +3,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Charles' Portfolio</title>
 
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="stylesheet.css">
+
+    
 </head>
 <body>
+    <!--Modal. Used when clicking on the profile picture. A modal is a dialog box/popup window that is displayed on top of the current page.
+    It will show a larger version of the profile picture-->
+   <!-- https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+   <div id="myModal">
+       <span class="closeModalButton">&times;</span>
+
+       <img class="modalImage" id="image">
+   </div>
     <div id="header">
         <div id="wrapper">
             <img id="profile-picture" src="Images/someGuy.jpg" alt="Profile Picture"/>
@@ -25,7 +42,7 @@
             <div class="nav-bar">
                 <div class="menu">
                     <ul>
-                        <li><a href="">Projects</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -67,7 +84,7 @@
     </div>
 
     <div id="AboutMeSection">
-        <div id="AboutMe_1">
+        <div id="AboutMe_1" class="from-down">
             <h1>About&nbsp;&nbsp;Me</h1>
             <hr />
             <p>
@@ -80,18 +97,18 @@
             </p>
             <br>
             <p>
-                I'm a team player who isn't afraid to share my ideas, because I believe that any ideas (even the ones that won't work) facilitate conversations that bring out the best in everyone on the team, which in return helps to create the best product possible.
+                I'm a team player who isn't afraid to share my ideas, because I believe that any ideas (even the ones that won't work) facilitate conversations that bring out the best in everyone on the team, which in return helps to create the best products possible.
             </p>
             <br>
         </div>
-        <div id="AboutMe_2">
+        <div id="AboutMe_2" class="from-down">
             <h2>Fun&nbsp;&nbsp;Fact!</h2>
             <hr />
             <p>
                 In my spare time, I like to listen to 80s music, play guitar, and I absolutely love going to the beach!  
             </p>
         </div>
-        <div id="AboutMe_3">
+        <div id="AboutMe_3" class="from-down">
             <p>
                 I am currently seeking employment in the Corpus Christi and Austin, TX areas. I am also open to working remotely. If you're an employer seeking a hard-working software developer whose willing to give it his all, then please consider downloading my resume.
             </p>
@@ -106,14 +123,14 @@
     <div id="Skills-Section">
         <h1 id="skills-header">Languages</h1>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>C#</li>
-            <li>ASP.NET</li>
-            <li>SQL</li>
+            <li class="fade-in">HTML</li>
+            <li class="fade-in">CSS</li>
+            <li class="fade-in">JavaScript</li>
+            <li class="fade-in">C#</li>
+            <li class="fade-in">ASP.NET</li>
+            <li class="fade-in">SQL</li>
         </ul>
-        <h2 id="skills-footer">And More!</h1>
+        <h2 id="skills-footer" class="fade-in">And More!</h1>
     </div>
 
 
@@ -122,6 +139,10 @@
         <p id="email">Email :&nbsp;&nbsp;cmq2st@gmail.com</p>
 
     </footer>
+
+    <script type = "text/javascript" src="index.js"></script>
+
+
     
 </body>
 </html>

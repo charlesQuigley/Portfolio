@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: url(Images/headerPic.png);
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: lighten; 
+    background-size: 100% 200%;
+
+}
+
+@media only screen and (min-height: 600px){
+	
+	body{
+		background-position-y: -200px;
+	}
+
+}
+
+/*****MENU********-----------------*/
+
+.nav-bar{
+    /* margin-right: 6vw;*/
+     margin-top: 5vh;
+     margin-left: 5vw;
+     padding-bottom: 10vh;
+    
+ }
+ 
+ .menu a{
+     /*margin-right: 1.5vw;*/
+     background-color: rgba(0,0,0,0.8);
+     border-radius: 30px;
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+     padding: 10px 20px;
+     font-size: 1.5rem;
+     text-align: center;
+     color: white;
+     text-decoration: none;
+     cursor: pointer;
+     transition: 0.4s;
+ }
+ 
+ .menu a:hover{
+     background-color: green;
+     box-shadow: 0 0 50px rgba(255, 255, 255, 1);
+     
+ }
+ 
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     float: right;
+     margin-right: 8vw;
+   }
+ 
+   li{
+       display: inline;
+       margin-right: 1.5vh;
+   }
+
+ /*****MENU********----------------*/
+
+#page-title{
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 10vh;
+
+    background-color: rgba(0,0,0,0.85);
+    padding: 20px;
+	border-radius: 360px;
+	box-shadow: 0 0 30px rgba(255,255,255,0.9);
+}
+
+#page-title h1{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+
+#Description{
+    width: 80vw;
+    min-height: 40vh;
+    background-color: rgba(0,0,0,0.9);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    padding-top: 8vh;
+    padding-left: 3vw;
+    padding-right: 0vw;
+    padding-bottom: 2vh;
+	border-radius: 60px;
+	box-shadow: 0 0 30px rgba(255,255,255,0.9);
+}
+
+#Description p{
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    line-height: 5vh;
+    letter-spacing: 2px;
+}
+
+#projects-section{
+    margin-top: 10vh;
+}
+
+.project{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    min-height: 85vmin;
+    max-height: 85vmin;
+    
+    padding-top: 1.5vh;
+    padding-bottom: 5vh;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 60px;
+	box-shadow: 0 0 30px rgba(255,255,255,0.9);
+
+    overflow: auto;
+    
+}
+
+.project-name{
+
+    text-align: center;
+    color: white;
+    font-size: 4vmin;
+    font-weight: bolder;
+}
+
+.project-name hr{
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: none;
+    border-top: 2px solid rgba(255,255,255,0.5);
+}
+
+
+.projectBody{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+}
+
+.project-images{
+    min-width: 70%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.project-description{
+    margin-top: 3vh;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 2.5vmin;
+    letter-spacing: 2px;
+    line-height: 3.5vh;
+}
+
+.project-description .caption-text-linebreak{
+
+    margin-top: 1.5vh;
+}
+
+.project-description a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+
+.slideshow-container{
+    border: 3px solid white;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    
+}
+
+.slideshow-container img{
+    min-width: 100%;
+    cursor: pointer;
+    
+}
+
+.slideshow-slide{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    transition: 300ms ease-in;
+}
+
+.slideshow-slide:hover{
+    filter: brightness(1.3);
+}
+
+.slides{
+    display: none;
+}
+
+.captions{
+    display: none;
+    animation-name: fade-caption;
+    animation-duration: 0.8s;
+}
+
+.video-container{
+    border: none !important;
+}
+
+.video{
+    min-width: 96% !important;
+    height: 50vmin;
+   
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 50vh;
+    overflow: hidden;
+    z-index: 1;
+    /*border: 1px solid white;*/
+    border-radius: 20px;
+
+}
+
+@keyframes fade-caption{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+
+.prevButton, .nextButton{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(132, 0, 255, 0.7);
+}
+
+.prevButton:hover, .nextButton:hover{
+    background-color: rgba(161, 241, 255, 0.8);
+    background-color: rgba(250, 94, 4, 0.8);
+}
+
+.prevButton{
+    margin-left: 0%;
+}
+
+.nextButton {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+
+.prevButton_video, .nextButton_video{
+    top: 40%;
+}
+
+.prevButton_video{
+    margin-left: 0%;
+}
+
+.nextButton_video {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+
+  #slideshow-dots{
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(132, 0, 255);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active{
+    background-color:rgb(250, 94, 4);
+} 
+  
+
+  /* Fading animation */
+.slideShowFade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  
+
+  .fullPageImage{
+      position: absolute;
+      width: 100%;
+      height: auto;
+  }
+ /*** @-webkit-keyframes fade {
+    from {
+        filter: brightness(1.75); 
+    }
+    to {
+        filter: brightness(1);
+    }
+  }
+  
+  @keyframes fade {
+    from {
+        filter: brightness(1.75); 
+    }
+    to {
+        filter: brightness(1); 
+    }
+  }***/
+
+
+
+
+/*****Slide and Fade animation classes*************/
+.from-down{
+    transform: translateY(20%);
+    opacity: 0;
+    transition: 0.45s cubic-bezier(.18,.89,.45,1.36); 
+}
+
+.from-down.appear{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/***MODAL********************************************/
+#myModal{
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  
+}
+
+.modalImage{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+}
+
+.modalImage {
+    animation-name: zoom-in-image;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom-in-image {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  .closeModalButton {
+    position: absolute;
+    top: 1vh;
+    right: 6vw;
+    color: #f1f1f1;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .closeModalButton:hover, .closeModalButton:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modalImage {
+      width: 100%;
+    }
+  }
+
+
+
+  /*SCROLL BAR*/
+  /**********************************************************/
+
+  .project::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+.project::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+.project::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.project::-webkit-scrollbar-thumb:window-inactive {
+    /*background: rgba(255,0,0,0.4); */
+}
