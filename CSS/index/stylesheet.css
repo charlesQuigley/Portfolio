@@ -10,18 +10,9 @@ body{
 
 #header{
 
-    height: 48vh;
-
-}
-
-#wrapper{
-    height: inherit;
-    display: flex;
-    flex-direction: row;
     height: 22.5vmax;
     max-width: 100%;
-    background-image: url(Images/headerPic2.png);
-
+    background-image: url(../../Images/headerPic2.png);
     /*Parallax scrolling effect vvv it's supposed to keep the image in place while scrolling.*/
     background-attachment: fixed;
 
@@ -29,6 +20,17 @@ body{
     background-blend-mode: hue;
     background-size: 100% 100%;
     background-position-y: -2px;
+
+    
+}
+
+#wrapper{
+
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -61,7 +63,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     float: left;
     margin-left: 1vw;
     margin-top: 1vh;
-    border: 10px solid rgba(0,0,0,0.85);
+    border: 10px solid rgba(0,0,0,1);
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 
     transition: 300ms ease-in;
@@ -137,11 +139,12 @@ old div that was meant to be a black circle that the actual profile picture woul
 }
 
 #name-and-contact h1{
-    margin-top: 6vh;
+    margin-top: 8vh;
     color: white;
     font-size: 5.5vmax;
     font-weight: bolder;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    padding-right: 5px;
 
 }
 
@@ -166,8 +169,12 @@ old div that was meant to be a black circle that the actual profile picture woul
 
 .nav-bar{
    /* margin-right: 6vw;*/
-    margin-top: 5vh;
-    margin-left: 5vw;
+   position: absolute;
+   top: 0vh;
+   right: 6.4vmax;
+
+   margin-top: 5vh;
+   margin-left: 5vw;
    
 }
 
@@ -209,20 +216,25 @@ ul {
   #Education{
     margin-left: 15%;
     margin-right: 15%;
-    height: 60vh;
+    min-height: max-content; /*60vh;*/
+    max-height: max-content;
   }
 
   #education-header{
       text-align: center;
-      padding-top: 8vh;
-      font-size: 3rem;
+      padding-top: 8vmin;
+      font-size: 3.7vmax;
       font-weight: bolder;
       color: rgb(107, 107, 107);
   }
 
+  .grid-item svg{
+      width: 4.5vmax;
+  }
+
   #education-milestones{
       margin-top: 4vh;
-
+      margin-bottom: 4vh;
       display: grid;
       grid-template-columns: 33% 33% 33%;
       grid-template-rows: 50% 50%;
@@ -230,7 +242,6 @@ ul {
   }
 
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
     /*border: 1px solid rgba(0, 0, 0, 0.8);*/
     padding: 20px;
     font-size: 30px;
@@ -241,7 +252,7 @@ ul {
 
   .grid-item p{
     color: rgb(107, 107, 107);
-    font-size: 1rem;
+    font-size: 1.2vmax;
     font-weight: bold;
   }
 
@@ -249,7 +260,7 @@ ul {
   /*About Me*/
 
   #AboutMeSection{
-      background-image: url(Images/headerPic_1_20.png);
+      background-image: url(../../Images/headerPic_1_20.png);
       background-color: rgba(0,0,0,0.3);
       background-blend-mode: hue;
       background-attachment: fixed;
@@ -422,7 +433,7 @@ ul {
 
       max-width: 100%;
       height: 48vh;
-      background-image: url(Images/headerPic2.png);
+      background-image: url(../../Images/headerPic2.png);
       background-attachment: fixed;
       background-color: rgba(0,0,0,0.3);
       background-blend-mode: hue;

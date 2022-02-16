@@ -1,0 +1,87 @@
+@media screen and (max-width: 950px)
+{
+    #header{
+        height: max-content;
+    }
+
+    #wrapper{
+        flex-direction: column;
+        width: 50vmax;
+    }
+
+    #profile-picture{
+        width: 35vmax;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8vmax;
+    }
+
+    #name-and-contact
+    {
+        margin: 0;
+        text-align: center;
+    }
+
+    #name-and-contact h1{
+        margin-top: 2vh;
+        padding-right: 0px; 
+    }      
+
+    #contact-info{
+        text-align: center;
+        margin-top: 5vh !important;
+        margin-left: 0 !important;
+        padding-bottom: 3vmin;
+    
+    }
+
+    #Education{
+        margin-left: 4%;
+        margin-right: 2%;
+        min-height: 40vmax;
+        max-height: max-content;
+      }
+    
+      #education-header{
+          text-align: center;
+          padding-top: 5vmax;
+          font-size: 4vmax;
+      }
+    
+      .grid-item svg{
+          width: 7.5vmax;
+      }
+    
+      #education-milestones{
+          margin-top: 4vmax;
+          margin-bottom: 2vmax;
+          margin-left: 1vmax;
+          margin-right: 1vmax;
+      }
+
+      .grid-item{
+          padding-top: 8px;
+          padding-bottom: 8px;
+      }
+    
+      .grid-item p{
+        font-size: 1.5vmax;
+        letter-spacing: 2px;
+        line-height: 2vmax;
+        padding-top: 1vmax;
+      }
+
+      .nav-bar{
+        position: absolute;
+        top: 5vmax;
+        right: 1vmax;
+     
+        margin-top: 0;
+        margin-left: 0;
+        
+    }
+
+
+
+}
