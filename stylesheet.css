@@ -464,9 +464,9 @@ ul {
   }
 
   .from-down{
-      transform: translateY(20%);
+      transform: translateY(40%);
       opacity: 0;
-      transition: 500ms ease-in;
+      transition: 0.45s cubic-bezier(.18,.89,.45,1.36)
   }
 
   .from-down.appear{

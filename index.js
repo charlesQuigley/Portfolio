@@ -8,15 +8,15 @@ console.log(sliders);
 
 
 const slideOptions ={
-    threshold: 0,
-    rootMargin: "0px 0px -200px 0px",
+    threshold: 0.2,
+    rootMargin: "0px 0px -20px 0px",
 };
 
 const appearanceOptions ={ 
     //threshold of 1 means the entire element needs to be visible on the page before the fade-in occurs 
     //threshold 0 of 0 means the entire element does not need to be visible before the fade-in / slide-in occurs.
-    threshold: 1,
-    rootMargin: "0px 0px -150px 0px",
+    threshold: 0.5,
+    rootMargin: "0px 0px -100px 0px",
   
 };
 
@@ -55,7 +55,7 @@ const slideOnScroll = new IntersectionObserver(function(entries, slideOnScroll){
             //Add 400ms to the timer after the previous list item has faded-in.
             //The first item will begin to fade in after 0ms. The second item will begin to fade-in after 400ms.
             //etc.
-            listItem_slideIn_timer = listItem_slideIn_timer + 400;
+            listItem_slideIn_timer = listItem_slideIn_timer + 200;
         }
     })
 
