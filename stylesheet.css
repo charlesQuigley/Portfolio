@@ -18,7 +18,7 @@ body{
     height: inherit;
     display: flex;
     flex-direction: row;
-    height: inherit;
+    height: 22.5vmax;
     max-width: 100%;
     background-image: url(Images/headerPic2.png);
 
@@ -55,7 +55,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 #profile-picture{
 
     border-radius: 50%;
-    height: 50vh;
+    height: 23vmax;
     width: auto;
     /*position: fixed;*/
     float: left;
@@ -132,14 +132,14 @@ old div that was meant to be a black circle that the actual profile picture woul
 
 #name-and-contact
 {
-    margin-left: 3vw;
+    margin-left: 1.5vmax;
     overflow: hidden;
 }
 
 #name-and-contact h1{
     margin-top: 6vh;
     color: white;
-    font-size: 4.5rem;
+    font-size: 5.5vmax;
     font-weight: bolder;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 
@@ -147,7 +147,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 
 #contact-info{
     margin-top: 8vh !important;
-    font-size: 1.8rem !important;
+    font-size: 2vmax !important; /*1.8rem*/
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     font-weight: bolder;
 
@@ -156,7 +156,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 #name-and-contact p{
     margin-top: 0.5vh;
     margin-left: 0.8vw;
-    font-size: 1.3rem;
+    font-size: 1.5vmax;
     font-weight: bolder;
     color: white;
 }
@@ -177,7 +177,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     border-radius: 30px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     padding: 10px 20px;
-    font-size: 1.5rem;
+    font-size: 2vmax;
     text-align: center;
     color: white;
     text-decoration: none;
