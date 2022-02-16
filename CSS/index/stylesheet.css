@@ -265,56 +265,54 @@ ul {
       background-blend-mode: hue;
       background-attachment: fixed;
       background-size: 100% 100%;
-      padding-top: 10vh;
-      padding-bottom: 10vh;
+      padding-top: 10vmin;
+      padding-bottom: 10vmin;
   }
 
   #AboutMe_1{
-      margin-left: 15vw;
-      margin-right: 15vw;
-      padding-top: 3vh;
-      padding-bottom: 3vh;
-      padding-left: 3vw;
-      padding-right: 3vw;
+      margin-left: 15vmax;
+      margin-right: 15vmax;
+      padding-top: 3vmin;
+      padding-bottom: 3vmin;
+      padding-left: 3vmax;
+      padding-right: 3vmax;
       background-color:rgba(0, 0, 0, 0.85);
       border-radius: 70px;
       box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
       color: white;
-      
-
   }
 
   #AboutMe_1 h1{
       text-align: center;
-      margin-bottom: 3vh;
-      font-size: 3rem;
+      margin-bottom: 3vmin;
+      font-size: 3.75vmax;
   }
 
   #AboutMe_1 hr{
-      margin-bottom: 3vh;
-      margin-left: 5vw;
-      margin-right: 5vw;
+      margin-bottom: 3vmin;
+      margin-left: 5vmax;
+      margin-right: 5vmax;
 
       border: none;
       border-top: 3px solid white;
   }
 
   #AboutMe_1 p{
-      font-size: 1.3rem;
-      margin-left: 5vw;
-      margin-right: 5vw;
-      line-height: 5vh;
+      font-size: 1.6vmax;
+      margin-left: 5vmax;
+      margin-right: 5vmax;
+      line-height: 5vmin;
       letter-spacing: 2px;
   }
 
   #AboutMe_2{
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 10vh;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    margin-left: 15vmax;
+    margin-right: 15vmax;
+    margin-top: 10vmin;
+    padding-top: 3vmin;
+    padding-bottom: 3vmin;
+    padding-left: 3vmax;
+    padding-right: 3vmax;
     background-color:rgba(0, 0, 0, 0.85);
     border-radius: 70px;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
@@ -324,7 +322,7 @@ ul {
 #AboutMe_2 h2{
     text-align: center;
     margin-bottom: 2vh;
-    font-size: 2rem;
+    font-size: 2.5vmax;
 }
 
 #AboutMe_2 hr{
@@ -337,7 +335,7 @@ ul {
 }
 
 #AboutMe_2 p{
-    font-size: 1.3rem;
+    font-size: 1.6vmax;
     margin-left: 5vw;
     margin-right: 5vw;
     line-height: 5vh;
@@ -345,13 +343,13 @@ ul {
 }
 
 #AboutMe_3{
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 10vh;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    margin-left: 15vmax;
+    margin-right: 15vmax;
+    margin-top: 10vmin;
+    padding-top: 4vmin;
+    padding-bottom: 4vmin;
+    padding-left: 3vmax;
+    padding-right: 3vmax;
     background-color:rgba(0, 0, 0, 0.85);
     border-radius: 70px;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
@@ -360,7 +358,7 @@ ul {
 }
 
 #AboutMe_3 p{
-    font-size: 1.3rem;
+    font-size: 1.6vmax;
     margin-left: 5vw;
     margin-right: 5vw;
     line-height: 4vh;
@@ -374,9 +372,9 @@ ul {
     padding: 8px 15px;
     margin: auto;
     max-width: 20vw;
-    margin-top: 3vh;
-    margin-bottom: 0vh;
-    font-size: 1.5rem;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    font-size: 1.7vmax;
     text-align: center;
     color: white;
     text-decoration: none;
