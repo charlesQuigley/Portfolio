@@ -1,7 +1,76 @@
-@media screen and (max-width: 950px)
+
+/**LANDSCAPE MODE FOR TABLETS**/
+@media screen and (min-width: 1000px) and (min-height: 700px) {
+    #header{
+        height: 58vmin;
+        background-image: url(../../Images/headerPic.png);
+    }    
+
+    #profile-picture{
+        height: 30vmax;
+        margin-left: 1.8vmax;
+        margin-top: auto;
+        margin-bottom: auto;
+        border: 8px solid rgba(0,0,0,1);
+    }
+
+    #Education{
+        min-height: 42vh; /*60vh;*/
+        max-height: max-content;
+      }
+
+    
+    #name-and-contact
+    {
+        margin-left: 1.8vmax;
+    }
+
+    #name-and-contact h1{
+        margin-top: 16vmin;
+        font-size: 6vmax;
+    }
+
+    #contact-info{
+        margin-top: 8vmin !important;
+        font-size: 3.2vmin !important; /*1.8rem*/
+
+    }
+
+    #name-and-contact p{
+        margin-top: 2vmin;
+        margin-left: 0.8vmax;
+        font-size: 2.3vmin;
+    }
+
+
+    /*-----Menu-------------------------------*/
+
+    .nav-bar{
+        top: 3vmin;
+        right: 3vmax;
+    }
+    
+    .menu a{
+        font-size: 2.2vmax;
+    }
+
+    #AboutMeSection{
+        padding-bottom: 18vmin;
+    }
+
+    #AboutMeSection br{
+        line-height: 4vmin;;
+    }    
+    
+   /*-----------------------------------------------------------*/
+}
+
+
+/**PORTRAIT MODE FOR TABLETS**/
+@media screen and  (min-height: 1000px)
 {
     #header{
-        background-image: url(../../Images/headerPic_1_20.png);
+        background-image: url(../../Images/headerPic.png);
         height: max-content;
     }
 
@@ -249,3 +318,7 @@
 
 
 }
+
+
+
+
