@@ -66,7 +66,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     border: 10px solid rgba(0,0,0,1);
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 
-    transition: 300ms ease-in;
+    transition: 100ms ease-in;
 }
 
 #profile-picture:hover{
@@ -210,6 +210,84 @@ ul {
 
   .nav-bar-burger{
       display: none;
+      position: absolute;
+
+      top: 5vmax;
+      right: 10vmin;
+  }
+
+  .burger-menu-active{
+    position: fixed;
+ }
+
+  .nav-bar-burger span{
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: rgba(255,255,255,1);
+    border-radius: 3px;
+    
+    z-index: 3;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.5s ease;
+}
+
+
+  .burger-menu{
+      position: absolute;
+      visibility: hidden;
+      transform: translateX(100%);
+      transition: 800ms transform cubic-bezier(0.060, 0.975, 0.195, 0.985);
+  }
+
+  .burger-menu ul{
+    list-style-type: none;
+    margin-top: 20vmax;
+    padding: 0;
+  }
+
+  .burger-menu li{
+      display: block;
+      opacity: 0;
+      text-align: center;
+      margin-top: 4vmax;
+      transition: opacity 200ms ease-in;
+  }
+
+  .burger-menu-link_fade-in{
+      opacity: 1 !important;
+  }
+
+  .burger-menu a{
+    text-align: center;
+    font-size: 7vmax;
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .burger-menu-open{
+    position: fixed;
+    visibility: visible;
+    transform: translateX(0%);
+
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: rgba(58, 58, 58, 1);
+    z-index: 2;
+  }
+
+  .burger-menu-close{
+      transform: translateX(100%);
   }
 
 
@@ -269,7 +347,7 @@ ul {
       background-attachment: fixed;
       background-size: 100% 100%;
       padding-top: 10vmin;
-      padding-bottom: 10vmin;
+      padding-bottom: 25vmin;
   }
 
   #AboutMe_1{
