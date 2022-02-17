@@ -541,14 +541,9 @@
     #header{
         background-image: url(../../Images/headerPic_phoneHeader.png);
         height: max-content;
-
-        background-size: 62% 63%;
-        background-position-y: -2px;
-        background-position-x: -6px;
     }
     
     
-    }
 
     #wrapper{
         flex-direction: column;
@@ -679,147 +674,147 @@
   #AboutMe_1 h1{
     margin-bottom: 0;
     font-size: 5vmax;
-}
-
-#AboutMe_1 hr{
-    margin-top: 2vmax;
-    margin-bottom: 3vmax;
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-}
-
-#AboutMe_1 p{
-    font-size: 1.8vmax;
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-    line-height: 4vmax;
-}
-
-#AboutMeSection br{
-    line-height: 4vmax;
-}
-
-#AboutMe_2{
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-    margin-top: 14vmax;
-    padding-top: 3vmax;
-    padding-bottom: 3vmax;
-    padding-left: 3vmin;
-    padding-right: 3vmin;
-    
-}
-
-.from-left{
-    transform: translateX(-70%);
-}
-
-#AboutMe_2 h2{
-    margin-bottom: 0;
-    font-size: 3.8vmax;
-
-}
-
-#AboutMe_2 hr{
-    margin-top: 0;
-    margin-bottom: 1vmax;
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-}
-
-#AboutMe_2 p{
-    font-size: 1.8vmax;
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-    line-height: 4vmax;
-}
-
-
-#AboutMe_3{
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-    margin-top: 5vmax;
-    padding-top: 3vmax;
-    padding-bottom: 3vmax;
-    padding-left: 3vmin;
-    padding-right: 3vmin;
-}
-
-#AboutMe_3 p{
-    font-size: 1.8vmax;
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-    line-height: 4vmax;
-}
-
-#AboutMe_3 a{
-    max-width: 40vmin;
-    margin-top: 4vmax;
-    margin-bottom: 1vmax;
-    font-size: 2vmax;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.4s;
-
-    padding: 20px 15px;
-}
-
-/*-----------------------------------------------------------------*/
-
-/*-----------------------------------------------------------------*/
-/*Skills / Languages*/
-
-#Skills-Section{
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 60vmax;
-  }
-
-  #skills-header{
-      padding-top: 10vmax;
-      font-size: 5.5vmax;
-  }
-
-  #Skills-Section ul{
-      margin-top: 5vmax;
-      text-align: center;
-  }
-
-  #Skills-Section li{
-    display: inline-block;
-    font-size: 3.5vmax;
-    margin: 0;
-    margin-top: 2vmax;
-    padding-left: 2vmin;
-    padding-right: 2vmin;
-    font-weight: normal;
-    
-  }
-
-  #skills-footer{
-    padding-top: 8vmax;
-    font-size: 3.8vmax;
-  }
-
-  /*----------------------------------------------------*/
-  /*footer*/
-
-    .foot{
-        height: 48vmax;
-        background-image: url(../../Images/headerPic_1_20.png);
     }
 
-    #phoneNumber{
-        font-size: 3.8vmax;
-        padding-top: 12vmax;
+    #AboutMe_1 hr{
+        margin-top: 2vmax;
+        margin-bottom: 3vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
     }
 
-    #email{
-        font-size: 3.8vmax;
+    #AboutMe_1 p{
+        font-size: 1.8vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        line-height: 4vmax;
+    }
+
+    #AboutMeSection br{
+        line-height: 4vmax;
+    }
+
+    #AboutMe_2{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        margin-top: 14vmax;
         padding-top: 3vmax;
+        padding-bottom: 3vmax;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+        
     }
+
+    .from-left{
+        transform: translateX(-70%);
+    }
+
+    #AboutMe_2 h2{
+        margin-bottom: 0;
+        font-size: 3.8vmax;
+
+    }
+
+    #AboutMe_2 hr{
+        margin-top: 0;
+        margin-bottom: 1vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+    }
+
+    #AboutMe_2 p{
+        font-size: 1.8vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        line-height: 4vmax;
+    }
+
+
+    #AboutMe_3{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        margin-top: 5vmax;
+        padding-top: 3vmax;
+        padding-bottom: 3vmax;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+    }
+
+    #AboutMe_3 p{
+        font-size: 1.8vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        line-height: 4vmax;
+    }
+
+    #AboutMe_3 a{
+        max-width: 40vmin;
+        margin-top: 4vmax;
+        margin-bottom: 1vmax;
+        font-size: 2vmax;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.4s;
+
+        padding: 20px 15px;
+    }
+
+    /*-----------------------------------------------------------------*/
+
+    /*-----------------------------------------------------------------*/
+    /*Skills / Languages*/
+
+    #Skills-Section{
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 60vmax;
+    }
+
+    #skills-header{
+        padding-top: 10vmax;
+        font-size: 5.5vmax;
+    }
+
+    #Skills-Section ul{
+        margin-top: 5vmax;
+        text-align: center;
+    }
+
+    #Skills-Section li{
+        display: inline-block;
+        font-size: 3.5vmax;
+        margin: 0;
+        margin-top: 2vmax;
+        padding-left: 2vmin;
+        padding-right: 2vmin;
+        font-weight: normal;
+        
+    }
+
+    #skills-footer{
+        padding-top: 8vmax;
+        font-size: 3.8vmax;
+    }
+
+    /*----------------------------------------------------*/
+    /*footer*/
+
+        .foot{
+            height: 48vmax;
+            background-image: url(../../Images/headerPic_1_20.png);
+        }
+
+        #phoneNumber{
+            font-size: 3.8vmax;
+            padding-top: 12vmax;
+        }
+
+        #email{
+            font-size: 3.8vmax;
+            padding-top: 3vmax;
+        }
 
     
 }
