@@ -412,14 +412,14 @@ ul {
   #Skills-Section li{
     color: rgb(107, 107, 107);
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: normal;
     padding: 1.5vw;
   }
 
   #skills-footer{
     text-align: center;
     padding-top: 8vh;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: rgb(107, 107, 107);
   }
@@ -440,7 +440,7 @@ ul {
   }
 
   #phoneNumber{
-      font-size: 3rem;
+      font-size: 3vmax;
       font-weight: bolder;
       text-align: center;
       color: white;
@@ -450,7 +450,7 @@ ul {
   }
 
   #email{
-    font-size: 3rem;
+    font-size: 3vmax;
     font-weight: bolder;
     text-align: center;
     color: white;

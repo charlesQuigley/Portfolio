@@ -1,73 +1,6 @@
 
-/**LANDSCAPE MODE FOR TABLETS**/
-@media screen and (min-width: 1000px) and (min-height: 700px) {
-    #header{
-        height: 58vmin;
-        background-image: url(../../Images/headerPic.png);
-    }    
-
-    #profile-picture{
-        height: 30vmax;
-        margin-left: 1.8vmax;
-        margin-top: auto;
-        margin-bottom: auto;
-        border: 8px solid rgba(0,0,0,1);
-    }
-
-    #Education{
-        min-height: 42vh; /*60vh;*/
-        max-height: max-content;
-      }
-
-    
-    #name-and-contact
-    {
-        margin-left: 1.8vmax;
-    }
-
-    #name-and-contact h1{
-        margin-top: 16vmin;
-        font-size: 6vmax;
-    }
-
-    #contact-info{
-        margin-top: 8vmin !important;
-        font-size: 3.2vmin !important; /*1.8rem*/
-
-    }
-
-    #name-and-contact p{
-        margin-top: 2vmin;
-        margin-left: 0.8vmax;
-        font-size: 2.3vmin;
-    }
-
-
-    /*-----Menu-------------------------------*/
-
-    .nav-bar{
-        top: 3vmin;
-        right: 3vmax;
-    }
-    
-    .menu a{
-        font-size: 2.2vmax;
-    }
-
-    #AboutMeSection{
-        padding-bottom: 18vmin;
-    }
-
-    #AboutMeSection br{
-        line-height: 4vmin;;
-    }    
-    
-   /*-----------------------------------------------------------*/
-}
-
-
 /**PORTRAIT MODE FOR TABLETS**/
-@media screen and  (min-height: 1000px)
+@media screen and  (min-height: 500px) and (min-width: 500px) and (hover: none)
 {
     #header{
         background-image: url(../../Images/headerPic.png);
@@ -80,7 +13,7 @@
     }
 
     #profile-picture{
-        width: 35vmax;
+        width: 33vmax;
         height: auto;
         margin-left: auto;
         margin-right: auto;
@@ -206,7 +139,7 @@
 }
 
 .from-left{
-    transform: translateX(-80%);
+    transform: translateX(-70%);
 }
 
 #AboutMe_2 h2{
@@ -317,6 +250,295 @@
     }
 
 
+}
+
+
+
+/**LANDSCAPE MODE FOR TABLETS**/
+@media screen and (min-width: 1000px) and (min-height: 700px) {
+    
+    #wrapper{
+        flex-direction: row;
+        height: inherit;
+        margin-left: 0;
+        margin-right: 0;
+        width: max-content;
+    }
+    
+    #header{
+        height: 58vmin;
+        max-height: max-content;
+        background-image: url(../../Images/headerPic.png);
+    }    
+
+    #profile-picture{
+        height: 30vmax;
+        width: auto;
+        margin-left: 1.8vmax;
+        margin-top: auto;
+        margin-bottom: auto;
+        border: 8px solid rgba(0,0,0,1);
+    }
+
+    #Education{
+        min-height: 42vh; /*60vh;*/
+        max-height: max-content;
+      }
+
+    
+    #name-and-contact
+    {
+        margin-left: 1.8vmax;
+    }
+
+    #name-and-contact h1{
+        margin-top: 16vmin;
+        font-size: 6vmax;
+    }
+
+    #contact-info{
+        margin-top: 8vmin !important;
+        font-size: 3.2vmin !important; /*1.8rem*/
+
+    }
+
+    #name-and-contact p{
+        margin-top: 2vmin;
+        margin-left: 0.8vmax !important;
+        font-size: 2.3vmin;
+        text-align: left;
+        
+    }
+
+
+    /*-----Menu-------------------------------*/
+
+    .nav-bar{
+        top: 6vmin;
+        right: 3vmax;
+    }
+    
+    .menu a{
+        font-size: 2.2vmax;
+    }
+
+    #AboutMeSection{
+        padding-bottom: 25vmin;
+    }
+
+    #AboutMeSection br{
+        line-height: 4vmin;;
+    }    
+
+    #AboutMe_1{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        padding-top: 3vmax;
+        padding-bottom: 3vmax;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+
+    }
+
+    #AboutMe_2{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        padding-top: 3vmax;
+        padding-bottom: 3vmax;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+
+    }
+
+    #AboutMe_3{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        padding-top: 3vmax;
+        padding-bottom: 3vmax;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+
+    }
+
+    #AboutMe_3{
+        margin-top: 4vmax;
+    }
+
+    #AboutMe_3 a{
+        margin-top: 4vmin;
+    }
+
+    #Skills-Section {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 60vmin;
+    }
+
+    #skills-header {
+        text-align: center;
+        padding-top: 12vmin;
+        font-size: 6vmin;
+    }
+
+    #Skills-Section ul{
+        margin-top: 6vmin;
+    }
+  
+    #Skills-Section li{
+      font-size: 4vmin;
+      font-weight: normal;
+      padding: 1.5vmax;
+    }
+  
+    #skills-footer{
+      padding-top: 8vmin;
+      font-size: 4vmin;
+    }
+
+    .foot{
+        height: 48vmin;
+    }
+
+    #phoneNumber {
+        padding-top: 12vmin;
+    }
+  
+    
+   /*-----------------------------------------------------------*/
+}
+
+
+/**LANDSCAPE MODE FOR LARGE PHONES**/
+@media screen and (min-width: 700px) and (max-height: 600px) {
+
+    
+    #wrapper{
+        flex-direction: row;
+        height: inherit;
+        margin-left: 0;
+        margin-right: 0;
+        width: max-content;
+    }
+    
+    #header{
+        height: 58vmin;
+        max-height: max-content;
+        background-image: url(../../Images/headerPic.png);
+    }    
+
+    #profile-picture{
+        height: 30vmax;
+        width: auto;
+        margin-left: 1.8vmax;
+        margin-top: auto;
+        margin-bottom: auto;
+        border: 8px solid rgba(0,0,0,1);
+    }
+
+    #Education{
+        min-height: 42vh; /*60vh;*/
+        max-height: max-content;
+      }
+
+    
+    #name-and-contact
+    {
+        margin-left: 1.8vmax;
+    }
+
+    #name-and-contact h1{
+        margin-top: 16vmin;
+        font-size: 6vmax;
+    }
+
+    #contact-info{
+        margin-top: 8vmin !important;
+        font-size: 3.2vmin !important; /*1.8rem*/
+
+    }
+
+    #name-and-contact p{
+        margin-top: 2vmin;
+        margin-left: 0.8vmax !important;
+        font-size: 2.3vmin;
+        text-align: left;
+        
+    }
+
+
+    /*-----Menu-------------------------------*/
+
+    .nav-bar{
+        top: 6vmin;
+        right: 3vmax;
+    }
+    
+    .menu a{
+        font-size: 2.2vmax;
+    }
+
+    #AboutMeSection{
+        padding-bottom: 25vmin;
+    }
+
+    #AboutMeSection br{
+        line-height: 4vmin;;
+    }    
+
+    #AboutMe_3{
+        margin-top: 4vmax;
+    }
+
+    #AboutMe_3 a{
+        margin-top: 4vmin;
+    }
+
+    #Skills-Section {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 60vmin;
+    }
+
+    #skills-header {
+        text-align: center;
+        padding-top: 12vmin;
+        font-size: 6vmin;
+    }
+
+    #Skills-Section ul{
+        margin-top: 6vmin;
+    }
+  
+    #Skills-Section li{
+      font-size: 4vmin;
+      font-weight: normal;
+      padding: 1.5vmax;
+    }
+  
+    #skills-footer{
+      padding-top: 8vmin;
+      font-size: 4vmin;
+    }
+
+    .foot{
+        height: 48vmin;
+    }
+
+    #phoneNumber {
+        padding-top: 12vmin;
+    }
+
+}
+
+
+
+
+
+
+/**PORTRAIT MODE FOR PHONES**/
+@media screen and  (min-height: 2000px)
+{
+    
 }
 
 
