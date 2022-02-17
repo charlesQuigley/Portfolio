@@ -175,7 +175,6 @@ old div that was meant to be a black circle that the actual profile picture woul
 
    margin-top: 5vh;
    margin-left: 5vw;
-   
 }
 
 .menu a{
@@ -207,6 +206,10 @@ ul {
   li{
       display: inline;
       margin-right: 1.5vh;
+  }
+
+  .nav-bar-burger{
+      display: none;
   }
 
 
