@@ -687,6 +687,7 @@
 
     .nav-bar-burger{
         display: block;
+        z-index: 1;
 
     }
 
