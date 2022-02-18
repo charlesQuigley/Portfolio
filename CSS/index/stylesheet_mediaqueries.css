@@ -2,9 +2,19 @@
 /**PORTRAIT MODE FOR TABLETS**/
 @media screen and  (min-height: 500px) and (min-width: 500px) and (hover: none)
 {
-    #header{
+
+    #header-picture{
+        height: 65vmax;
+    }
+
+    #headerBackground{
         background-image: url(../../Images/headerPic.png);
-        height: max-content;
+
+    }
+
+    #header{
+        
+        height: 65vmax;
     }
 
     #wrapper{
@@ -264,11 +274,20 @@
         margin-right: 0;
         width: max-content;
     }
+
+    #header-picture{
+        height: 58vmin;
+        max-width: 100%;
+       
+        overflow: hidden;
+   }
+   
+   #headerBackground{
+       background-image: url(../../Images/headerPic.png);
+   }
     
     #header{
         height: 58vmin;
-        max-height: max-content;
-        background-image: url(../../Images/headerPic.png);
     }    
 
     #profile-picture{
@@ -283,8 +302,19 @@
     #Education{
         min-height: 42vh; /*60vh;*/
         max-height: max-content;
-      }
+    }
 
+    #education-header{
+        padding-top: 6vmin;
+    }
+
+    #education-milestones{
+        margin-top: 4vmin;
+    }
+
+    .grid-item svg {
+        width: 6.5vmax;
+    }
     
     #name-and-contact
     {
@@ -419,11 +449,18 @@
         margin-right: 0;
         width: max-content;
     }
+
+    #header-picture{
+        height: 58vmin;
+    }
+
+    #headerBackground{
+        background-image: url(../../Images/headerPic.png);
+
+    }
     
     #header{
         height: 58vmin;
-        max-height: max-content;
-        background-image: url(../../Images/headerPic.png);
     }    
 
     #profile-picture{
@@ -436,11 +473,27 @@
     }
 
     #Education{
-        min-height: 42vh; /*60vh;*/
+        min-height: 45vmin; /*60vh;*/
         max-height: max-content;
       }
 
-    
+    #education-header{
+        padding-top: 6vmin;
+    }
+
+    #education-milestones {
+        margin-top: 5vmin;
+    }
+
+    .grid-item svg {
+        width: 6.5vmax;
+    }
+
+    .grid-item{
+        padding-top: 0;
+        padding-bottom: 2px;
+    }
+
     #name-and-contact
     {
         margin-left: 1.8vmax;
@@ -538,9 +591,21 @@
 /**PORTRAIT MODE FOR PHONES**/
 @media screen and  (min-width: 300px) and (max-width: 499px)
 {
-    #header{
+
+    #header-picture{
+
+        height: 65vmax;
+    }
+
+
+    #headerBackground{
         background-image: url(../../Images/headerPic_phoneHeader.png);
-        height: max-content;
+
+    }
+
+    #header{
+        
+        height: 65vmax;
     }
     
     

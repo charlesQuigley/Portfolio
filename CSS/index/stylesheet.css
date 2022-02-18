@@ -33,6 +33,7 @@ body{
 
 #header{
     height: 22.5vmax;
+    width: 100%;
     max-width: 100%;
 
     top:0;
