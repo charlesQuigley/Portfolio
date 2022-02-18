@@ -1,9 +1,9 @@
 window.addEventListener('scroll', function() {
     const parallax = document.querySelector('.parallax');
     let scrollPosition = window.scrollY;
-    console.log(scrollPosition);
 
-    parallax.style.transform = 'translateY(' + scrollPosition * 0.6 +'px)';
+
+    parallax.style.transform = 'translateY(' + scrollPosition * 0.4 +'px)';
 
 
 });

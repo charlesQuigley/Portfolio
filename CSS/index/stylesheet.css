@@ -259,6 +259,8 @@ ul {
     
     background: rgba(255,255,255,1);
     border-radius: 3px;
+
+    border: 1px solid black;
     
     z-index: 3;
     
@@ -331,10 +333,13 @@ ul {
 
 
   #Education{
-    margin-left: 15%;
-    margin-right: 15%;
+    /*margin-left: 15%;
+    margin-right: 15%;*/
     min-height: max-content; /*60vh;*/
     max-height: max-content;
+
+    background-color: white;
+
   }
 
   #education-header{
@@ -377,16 +382,34 @@ ul {
   /*About Me*/
 
   #AboutMeSection{
-      background-image: url(../../Images/headerPic_1_20.png);
-      background-color: rgba(0,0,0,0.3);
-      background-blend-mode: hue;
-      background-attachment: fixed;
-      background-size: 100% 100%;
-      padding-top: 10vmin;
-      padding-bottom: 25vmin;
+      height: max-content;
+      position: relative;
+      /*padding-top: 10vmin;
+      padding-bottom: 25vmin;*/
+  }
+
+  #AboutMePicture{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(../../Images/headerPic_1_20.png);
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: hue;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+
+   /* height: -moz-available;          /* WebKit-based browsers will ignore this. */  
+   /* height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+   /* min-height: 100%;*/
   }
 
   #AboutMe_1{
+      display: inline-block;
+      margin-top: 15vmin;
       margin-left: 15vmax;
       margin-right: 15vmax;
       padding-top: 3vmin;
@@ -460,6 +483,8 @@ ul {
 }
 
 #AboutMe_3{
+    display:inline-block;
+    margin-bottom: 20vmin;
     margin-left: 15vmax;
     margin-right: 15vmax;
     margin-top: 10vmin;
@@ -508,9 +533,10 @@ ul {
 /*Skills / Languages*/
 
 #Skills-Section{
-    margin-left: 5%;
-    margin-right: 5%;
+   /* margin-left: 5%;
+    margin-right: 5%;*/
     height: 60vh;
+    background-color: white;
   }
 
   #skills-header{
@@ -548,8 +574,8 @@ ul {
 
       max-width: 100%;
       height: 48vh;
-      background-image: url(../../Images/headerPic_1_20.png);
-      background-attachment: fixed;
+     /*  background-image: url(../../Images/headerPic_1_20.png);
+      background-attachment: fixed;*/
       background-color: rgba(0,0,0,0.3);
       background-blend-mode: hue;
       background-size: 100% 100%;
