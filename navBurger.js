@@ -36,6 +36,13 @@ function burgerClick(){
 
         burgerMenu.classList.add('burger-menu-active'); //add the class to burger menu
                                                     //signifying that the burger menu should now be open.
+        
+        //get rid of border on spans 
+        for(var i = 0; i < spans.length; i++)
+        {
+            spans[i].style.border = "none";
+        }
+
         //Make an X with the burger spans
         spans[0].style.transformOrigin = "0% 0%";
         spans[2].style.transformOrigin = "0% 100%";
@@ -69,6 +76,12 @@ function burgerClick(){
 
         burgerMenu.classList.remove('burger-menu-active'); //remove the class from burger menu
         //signifying that the menu should now be closed.
+
+        //re-apply border on spans 
+        for(var i = 0; i < spans.length; i++)
+        {
+            spans[i].style.border = "1px solid black";
+        }
 
         //Make an burger with the burger spans
         spans[0].style.transformOrigin = "0% 0%";
