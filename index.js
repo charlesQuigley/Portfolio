@@ -3,7 +3,7 @@ window.addEventListener('scroll', function() {
     let scrollPosition = window.scrollY;
     console.log(scrollPosition);
 
-    parallax.style.transform = 'translateY(' + scrollPosition * 1.0 +'px)';
+    parallax.style.transform = 'translateY(' + scrollPosition * 1 +'px)';
 
 
 });

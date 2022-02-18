@@ -28,6 +28,17 @@ body{
     background-size: 100% 100%;
     background-position-y: -2px;
 
+    transition: .15s ease-in-out;
+    transition-property: background-position;
+
+    -webkit-transition: .15s ease-in-out;
+    -moz-transition: .15s ease-in-out;
+    -o-transition: .15s ease-in-out;
+
+    -webkit-transition-property: background-position;
+    -moz-transition-property: background-position;
+    -o-transition-property: background-position;
+
     height: inherit;
 
 }
