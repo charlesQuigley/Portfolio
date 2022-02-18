@@ -387,9 +387,17 @@ ul {
       /*padding-top: 10vmin;
       padding-bottom: 25vmin;*/
 
-      background-image: url(../../Images/headerPic_50.png);
+     /* background-image: url(../../Images/headerPic_50.png);*/
       background-size: 100% 100%;
       background-attachment: fixed;
+  }
+
+  #backgroundImg{
+    background-image: url(../../Images/headerPic_50.png);
+    z-index: -1;
+    position: fixed;
+    height:100%;
+    width:100%;
   }
 
   #AboutMePicture{

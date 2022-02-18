@@ -647,8 +647,8 @@
     }
 
     #Education{
-        margin-left: 4%;
-        margin-right: 2%;
+        /*margin-left: 4%;
+        margin-right: 2%;*/
         min-height: 40vmax;
         max-height: max-content;
       }
@@ -837,8 +837,8 @@
     /*Skills / Languages*/
 
     #Skills-Section{
-        margin-left: 5%;
-        margin-right: 5%;
+       /* margin-left: 5%;
+        margin-right: 5%;*/
         height: 60vmax;
     }
 

@@ -1,9 +1,13 @@
 window.addEventListener('scroll', function() {
-    const parallax = document.querySelector('.parallax');
+    const parallax = document.querySelectorAll('.parallax');
     let scrollPosition = window.scrollY;
 
+    for(var i = 0; i < parallax.length; i++)
+    {
+        parallax[i].style.transform = 'translateY(' + scrollPosition * 0.4 +'px)';
+        //parallax[i].style.backgroundPosition = '0% ' + scrollPosition * -0.4 + 'px';
 
-    parallax.style.transform = 'translateY(' + scrollPosition * 0.4 +'px)';
+    }
 
 
 });
