@@ -8,20 +8,36 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-#header{
+#header-picture{
+     height: 22.5vmax;
+     max-width: 100%;
+    
+     overflow: hidden;
+}
 
-    height: 22.5vmax;
-    max-width: 100%;
+#headerBackground{
     background-image: url(../../Images/headerPic2.png);
     /*Parallax scrolling effect vvv it's supposed to keep the image in place while scrolling.*/
-    background-attachment: fixed;
+   /* background-attachment: fixed;*/
+    object-fit: cover;
 
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: hue;
     background-size: 100% 100%;
     background-position-y: -2px;
 
-    
+    height: inherit;
+
+}
+
+
+#header{
+    height: 22.5vmax;
+    max-width: 100%;
+
+    top:0;
+    position: absolute;
+
 }
 
 #wrapper{
