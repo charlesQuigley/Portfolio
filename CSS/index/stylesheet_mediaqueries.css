@@ -724,8 +724,10 @@
   /*About Me*/
 
     #AboutMeSection{
-        padding-top: 8vmax;
-        padding-bottom: 22vmax;
+        /*padding-top: 8vmax;
+        padding-bottom: 22vmax;*/
+        background-size: cover;
+        background-attachment: scroll;
     }
 
     #AboutMe_1{
