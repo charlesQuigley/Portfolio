@@ -9,6 +9,7 @@ body{
     transition: 0s linear;
     transition-property: background-position;
     position: relative;
+    -webkit-text-size-adjust: none;
 }
 
 #header-picture{

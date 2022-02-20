@@ -934,10 +934,6 @@
 /***LANDSCAPE PHONES********/
 @media screen and (max-height: 500px){
 
-    body{
-        -webkit-text-size-adjust: none;
-    }
-
     .closeModalButton {
         top: 10vmin;
         right: 20vmax;
@@ -1084,7 +1080,7 @@
     #AboutMe_2{
         margin-left: 2vmax;
         margin-right: 2vmax;
-        padding-top: 5vmin;
+        padding-top: 3vmin;
         padding-bottom: 5vmin;
         padding-left: 1vmax;
         padding-right: 1vmax;
@@ -1126,15 +1122,16 @@
     }
 
     #AboutMe_1 p{
-        font-size: 3vmin;
+        font-size: 4.5vmin;
     }
 
     #AboutMe_2 p{
-        font-size: 3vmin;
+        font-size: 4.5vmin;
     }
 
     #AboutMe_3 p{
-        font-size: 3vmin;
+        font-size: 4.5vmin;
+        line-height: 5vmin;
     }
 
     #AboutMe_3 a{
