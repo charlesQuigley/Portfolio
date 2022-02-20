@@ -894,14 +894,18 @@
         }
 
         #phoneNumber{
-            color: red;
-            font-size: 7vmin;
+            color: yellow;
+            font-size: 6vmin;
             padding-top: 15vmax;
+            padding-left: 4vmin;
+            padding-right: 4vmin;
         }
 
         #email{
-            font-size: 7vmin;
+            font-size: 6vmin;
             padding-top: 3vmax;
+            padding-left: 4vmin;
+            padding-right: 4vmin;
         }
 
     
