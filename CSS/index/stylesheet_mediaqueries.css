@@ -934,6 +934,10 @@
 /***LANDSCAPE PHONES********/
 @media screen and (max-height: 500px){
 
+    body{
+        -webkit-text-size-adjust: none;
+    }
+
     .closeModalButton {
         top: 10vmin;
         right: 20vmax;
