@@ -117,6 +117,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     top: 0;
     width: 100%; /* Full width */
     height: 120vh; /* Full height */
+    background-size: 100% 120vh;
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   
