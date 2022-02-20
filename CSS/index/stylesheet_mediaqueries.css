@@ -860,10 +860,6 @@
         background: rgb(196, 74, 3) radial-gradient(circle, transparent 1%, rgb(196, 74, 3) 1%) center/15000%;
     }
 
-    #AboutMe_3 a:hover{
-        background-color: rgb(196, 74, 3);
-        box-shadow: none;
-    }
 
     #profile-picture:hover {
         filter: none;
@@ -935,7 +931,245 @@
     
 }
 
+/***LANDSCAPE PHONES********/
+@media screen and (max-height: 500px){
+
+    .closeModalButton {
+        top: 10vmin;
+        right: 20vmax;
+    }
+
+    .modalImage {
+        height: 60vmin;
+        width: auto;
+        margin-top: 12vmin;
+    }
+
+
+    #wrapper{
+        flex-direction: row;
+        height: inherit;
+        margin-left: 0;
+        margin-right: 0;
+        width: max-content;
+    }
+
+    #header-picture{
+        height: 55vmin;
+        max-width: 100%;
+       
+        overflow: hidden;
+   }
+   
+   #headerBackground{
+       background-image: url(../../Images/headerPic.png);
+       background-color: rgba(0,0,0,0);
+   }
+    
+    #header{
+        height: 55vmin;
+    }    
+
+    #profile-picture{
+        height: 45vmin;
+        width: auto;
+        margin-left: 1.8vmax;
+        margin-top: auto;
+        margin-bottom: auto;
+        border: 6px solid rgba(0,0,0,1);
+        box-shadow: 0 0 30px rgb(255 255 255 / 50%);
+    }
+
+    #Education{
+        min-height: 50vmin; /*60vh;*/
+        max-height: max-content;
+    }
+
+    #education-header{
+        padding-top: 5vmin;
+    }
+
+    #education-milestones{
+        margin-top: 5vmin;
+    }
+
+    .grid-item{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .grid-item svg {
+        width: 12vmin;
+    }
+
+    .grid-item p{
+        font-size: 2.8vmin;
+        padding-top: 4vmin;
+    }
+    
+    #name-and-contact
+    {
+        margin-left: 3vmax;
+    }
+
+    #name-and-contact h1{
+        margin-top: 10vmin;
+        font-size: 6vmax;
+    }
+
+    #contact-info{
+        margin-top: 8vmin !important;
+        font-size: 2vmax !important; /*1.8rem*/
+
+    }
+
+    #name-and-contact p{
+        margin-top: 2vmin;
+        margin-left: 0.8vmax !important;
+        font-size: 2vmax;
+        text-align: left;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        
+    }
+
+
+    /*-----Menu-------------------------------*/
+
+    .nav-bar{
+        display: none;
+        
+    }
+
+    .nav-bar-burger{
+        display: block;
+        z-index: 1;
+        top: 8vmin;
+        right: 8vmax;
+
+    }
+
+    .burger-menu ul {
+        margin-top: 20vmin;
+    }
+
+    .burger-menu a {
+        font-size: 12vmin;
+    }
+
+    #AboutMeSection{
+        padding-bottom: 7vmax;
+    }
+
+    #AboutMeSection br{
+        line-height: 5vmin;
+    }    
+
+    #AboutMe_1{
+        margin-left: 2vmax;
+        margin-right: 2vmax;
+        padding-top: 5vmin;
+        padding-bottom: 5vmin;
+        padding-left: 1vmax;
+        padding-right: 1vmax;
+        margin-top: 7vmax;
+        border-radius: 30px;
+        box-shadow: 0 0 20px rgb(255 255 255 / 60%);
+
+    }
+
+    #AboutMe_2{
+        margin-left: 2vmax;
+        margin-right: 2vmax;
+        padding-top: 5vmin;
+        padding-bottom: 5vmin;
+        padding-left: 1vmax;
+        padding-right: 1vmax;
+        margin-top: 8vmax;
+        border-radius: 30px;
+        box-shadow: 0 0 20px rgb(255 255 255 / 60%);
+
+    }
+
+    #AboutMe_3{
+        margin-left: 2vmax;
+        margin-right: 2vmax;
+        margin-bottom: 5vmin;
+        padding-top: 5vmin;
+        padding-bottom: 5vmin;
+        padding-left: 1vmax;
+        padding-right: 1vmax;
+        margin-top: 3vmax;
+        border-radius: 30px;
+        box-shadow: 0 0 20px rgb(255 255 255 / 60%);
+
+    }
+
+    #AboutMe_1 h1 {
+        font-size: 4vmax;
+    }
+
+    .from-left {
+        transform: translateX(-60%);
+    }
+
+
+    #AboutMe_3 a{
+        margin-top: 4vmin;
+    }
+
+    #Skills-Section {
+        margin-left: 0%;
+        margin-right: 0%;
+        height: 60vmin;
+    }
+
+    #skills-header {
+        text-align: center;
+        padding-top: 12vmin;
+        font-size: 3.5vmax;
+    }
+
+    #Skills-Section ul{
+        margin-top: 6vmin;
+    }
+  
+    #Skills-Section li{
+      font-size: 2.5vmax;
+      font-weight: normal;
+      padding: 1.5vmax;
+    }
+  
+    #skills-footer{
+      padding-top: 8vmin;
+      font-size: 2.8vmax;
+    }
+
+    .foot{
+        height: 48vmin;
+    }
+
+    #phoneNumber {
+        padding-top: 12vmin;
+    }
+}
+
 @media screen and (hover: none) {
+
+    #profile-picture:hover {
+        filter: none;
+        box-shadow: none;
+    }
+
+    #AboutMe_3 a{
+        background-position: center;
+        background: rgb(196, 74, 3) radial-gradient(circle, transparent 1%, rgb(196, 74, 3) 1%) center/15000%;
+    }
+
+    #AboutMe_3 a:hover{
+        background-color: rgb(196, 74, 3);
+        box-shadow: none;
+    }
+
     #AboutMe_3 a:active{
         background-color: white;
         background-size: 100%;
