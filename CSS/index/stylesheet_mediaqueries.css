@@ -777,7 +777,7 @@
     }
 
     #AboutMe_1 p{
-        font-size: 1.8vmax;
+        font-size: 2.4vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
         line-height: 3.5vmax;
@@ -817,7 +817,7 @@
     }
 
     #AboutMe_2 p{
-        font-size: 1.8vmax;
+        font-size: 2.4vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
         line-height: 3.5vmax;
@@ -837,17 +837,17 @@
     }
 
     #AboutMe_3 p{
-        font-size: 1.8vmax;
+        font-size: 2.4vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
         line-height: 3.5vmax;
     }
 
     #AboutMe_3 a{
-        max-width: 40vmin;
+        max-width: 60vmin;
         margin-top: 4vmax;
         margin-bottom: 1vmax;
-        font-size: 2vmax;
+        font-size: 2.5vmax;
         text-align: center;
         color: white;
         text-decoration: none;
