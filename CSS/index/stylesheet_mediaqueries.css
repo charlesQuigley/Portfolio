@@ -601,7 +601,10 @@
     #headerBackground{
         background-image: url(../../Images/headerPic_phoneHeader2.png);
 
-        background-color: rgba(255,255,0,0.1);
+        background-color: rgba(255,255,0,0.0);
+        
+
+        background-size: 100% 104%;
 
     }
 
@@ -623,6 +626,10 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 8vmax;
+
+        border: 8px solid rgba(0,0,0,1);
+
+        box-shadow: 0 0 15px rgb(255 255 255 / 70%);
 
         transition: 0s;
     }
@@ -851,12 +858,12 @@
     }
 
     #skills-header{
-        padding-top: 10vmax;
+        padding-top: 8vmax;
         font-size: 5.5vmax;
     }
 
     #Skills-Section ul{
-        margin-top: 5vmax;
+        margin-top: 7vmax;
         text-align: center;
     }
 
@@ -872,7 +879,7 @@
     }
 
     #skills-footer{
-        padding-top: 8vmax;
+        padding-top: 9vmax;
         font-size: 3.8vmax;
     }
 
@@ -887,12 +894,12 @@
         }
 
         #phoneNumber{
-            font-size: 3.8vmax;
-            padding-top: 12vmax;
+            font-size: 7vmin;
+            padding-top: 15vmax;
         }
 
         #email{
-            font-size: 3.8vmax;
+            font-size: 7vmin;
             padding-top: 3vmax;
         }
 
