@@ -640,6 +640,7 @@
         border: 8px solid rgba(0,0,0,1);
 
         box-shadow: 0 0 15px rgb(255 255 255 / 70%);
+        
 
         transition: 0s;
     }
@@ -864,6 +865,11 @@
         box-shadow: none;
     }
 
+    #profile-picture:hover {
+        filter: none;
+        box-shadow: none;
+    }
+
 
     /*-----------------------------------------------------------------*/
 
@@ -936,6 +942,7 @@
         transition: background 0s;
         
     }
+
 }
 
 
