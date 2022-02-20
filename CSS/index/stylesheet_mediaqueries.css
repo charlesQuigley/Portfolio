@@ -1108,6 +1108,10 @@
         font-size: 4vmax;
     }
 
+    #AboutMe_2 h2{
+        font-size: 3.4vmax;
+    }
+
     .from-left {
         transform: translateX(-60%);
     }
@@ -1115,6 +1119,23 @@
 
     #AboutMe_3 a{
         margin-top: 4vmin;
+    }
+
+    #AboutMe_1 p{
+        font-size: 3vmin;
+    }
+
+    #AboutMe_2 p{
+        font-size: 3vmin;
+    }
+
+    #AboutMe_3 p{
+        font-size: 3vmin;
+    }
+
+    #AboutMe_3 a{
+        font-size: 4vmin;
+        padding: 10px 30px;
     }
 
     #Skills-Section {
