@@ -660,7 +660,7 @@
       }
     
       .grid-item svg{
-          width: 7.5vmax;
+          width: 6.5vmax;
       }
     
       #education-milestones{
@@ -668,17 +668,19 @@
           margin-bottom: 2vmax;
           margin-left: 1vmax;
           margin-right: 1vmax;
+
+          grid-template-rows: auto;
       }
 
       .grid-item{
-          padding-top: 8px;
-          padding-bottom: 8px;
+          padding-top: 0px;
+          padding-bottom: 1px;
       }
     
       .grid-item p{
-        font-size: 1.5vmax;
+        font-size: 1.4vmax;
         letter-spacing: 2px;
-        line-height: 2vmax;
+        line-height: 1.7vmax;
         padding-top: 1vmax;
       }
 
