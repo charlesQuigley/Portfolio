@@ -733,12 +733,15 @@
     }
 
     #AboutMe_1{
-        margin-left: 5vmin;
-        margin-right: 5vmin;
+        margin-left: 2vmin;
+        margin-right: 2vmin;
+        margin-top: 3vmax;
         padding-top: 3vmax;
-        padding-bottom: 3vmax;
-        padding-left: 3vmin;
-        padding-right: 3vmin;
+        padding-bottom: 2vmax;
+        padding-left: 1vmin;
+        padding-right: 1vmin;
+
+        border-radius: 20px;
 
     }
 
@@ -759,7 +762,7 @@
         font-size: 1.8vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
-        line-height: 4vmax;
+        line-height: 3.5vmax;
     }
 
     #AboutMeSection br{
@@ -767,13 +770,14 @@
     }
 
     #AboutMe_2{
-        margin-left: 5vmin;
-        margin-right: 5vmin;
-        margin-top: 14vmax;
+        margin-left: 2vmin;
+        margin-right: 2vmin;
+        margin-top: 12vmax;
         padding-top: 3vmax;
-        padding-bottom: 3vmax;
-        padding-left: 3vmin;
-        padding-right: 3vmin;
+        padding-bottom: 2vmax;
+        padding-left: 1vmin;
+        padding-right: 1vmin;
+        border-radius: 20px;
         
     }
 
@@ -788,7 +792,7 @@
     }
 
     #AboutMe_2 hr{
-        margin-top: 0;
+        margin-top: 1vmax;
         margin-bottom: 1vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
@@ -798,25 +802,27 @@
         font-size: 1.8vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
-        line-height: 4vmax;
+        line-height: 3.5vmax;
     }
 
 
     #AboutMe_3{
-        margin-left: 5vmin;
-        margin-right: 5vmin;
+        margin-left: 2vmin;
+        margin-right: 2vmin;
         margin-top: 5vmax;
         padding-top: 3vmax;
-        padding-bottom: 3vmax;
-        padding-left: 3vmin;
-        padding-right: 3vmin;
+        padding-bottom: 2vmax;
+        padding-left: 1vmin;
+        padding-right: 1vmin;
+
+        border-radius: 20px;
     }
 
     #AboutMe_3 p{
         font-size: 1.8vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
-        line-height: 4vmax;
+        line-height: 3.5vmax;
     }
 
     #AboutMe_3 a{
