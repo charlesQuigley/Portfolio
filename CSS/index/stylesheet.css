@@ -393,9 +393,11 @@ ul {
   }
 
   #backgroundImg{
-    background-image: url(../../Images/headerPic_50.png);
+    background-image: url(../../Images/headerPic_1_20.png);
     z-index: -1;
     position: fixed;
+    background-position: -16vmax center;
+    background-size: cover;
     height:100%;
     width:100%;
   }
