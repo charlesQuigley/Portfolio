@@ -859,7 +859,7 @@
 
     #skills-header{
         padding-top: 8vmax;
-        font-size: 5.5vmax;
+        font-size: 8vmin;
     }
 
     #Skills-Section ul{
@@ -869,7 +869,7 @@
 
     #Skills-Section li{
         display: inline-block;
-        font-size: 3.5vmax;
+        font-size: 6vmin;
         margin: 0;
         margin-top: 2vmax;
         padding-left: 2vmin;
@@ -880,7 +880,7 @@
 
     #skills-footer{
         padding-top: 9vmax;
-        font-size: 3.8vmax;
+        font-size: 7vmin;
     }
 
     /*----------------------------------------------------*/
