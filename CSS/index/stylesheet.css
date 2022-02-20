@@ -440,7 +440,7 @@ ul {
       padding-bottom: 3vmin;
       padding-left: 3vmax;
       padding-right: 3vmax;
-      background-color:rgba(0, 0, 0, 0.85);
+      background-color:rgba(0, 0, 0, 0.95);
       border-radius: 70px;
       box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
       color: white;
@@ -477,7 +477,7 @@ ul {
     padding-bottom: 3vmin;
     padding-left: 3vmax;
     padding-right: 3vmax;
-    background-color:rgba(0, 0, 0, 0.85);
+    background-color:rgba(0, 0, 0, 0.95);
     border-radius: 70px;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
     color: white;
@@ -516,7 +516,7 @@ ul {
     padding-bottom: 4vmin;
     padding-left: 3vmax;
     padding-right: 3vmax;
-    background-color:rgba(0, 0, 0, 0.85);
+    background-color:rgba(0, 0, 0, 0.95);
     border-radius: 70px;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
     color: white;
