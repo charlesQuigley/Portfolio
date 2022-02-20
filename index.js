@@ -4,7 +4,7 @@ window.addEventListener('scroll', function() {
 
     for(var i = 0; i < parallax.length; i++)
     {
-        parallax[i].style.transform = 'translateY(' + scrollPosition * 0.3 +'px)';
+        parallax[i].style.transform = 'translateY(' + scrollPosition * 0.15 +'px)';
         //parallax[i].style.backgroundPosition = '0% ' + scrollPosition * -0.4 + 'px';
 
     }
