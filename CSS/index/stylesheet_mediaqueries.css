@@ -843,8 +843,17 @@
         cursor: pointer;
         transition: 0.4s;
 
-        padding: 20px 15px;
+        padding: 20px 30px;
+
+        background-position: center;
+        background: rgb(196, 74, 3) radial-gradient(circle, transparent 1%, rgb(196, 74, 3) 1%) center/15000%;
     }
+
+    #AboutMe_3 a:hover{
+        background-color: rgb(196, 74, 3);
+        box-shadow: none;
+    }
+
 
     /*-----------------------------------------------------------------*/
 
@@ -910,6 +919,13 @@
     
 }
 
-
+@media screen and (hover: none) {
+    #AboutMe_3 a:active{
+        background-color: white;
+        background-size: 100%;
+        transition: background 0s;
+        
+    }
+}
 
 
