@@ -407,7 +407,7 @@ ul {
     z-index: -2;
     position: fixed;
     /*background-position: -16vmax center;*/
-    background-size: 100% 100%;
+    background-size: 100% 100vh;
     height:100%;
     width:100%;
   }
