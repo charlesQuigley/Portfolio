@@ -590,16 +590,6 @@ ul {
       height: 48vh;
   }
 
-  .foot-background{
-    height: inherit;
-    width: 100%;
-    background-image: url(../../Images/headerPic_1_20.png);
-    /* background-attachment: fixed;*/
-     background-color: rgba(0,0,0,0.3);
-     background-blend-mode: hue;
-     background-size: 100% 100%;
-     background-position-y: -2px;
-  }
 
   #phoneNumber{
       font-size: 3vmax;
