@@ -111,7 +111,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 5; /* Sit on top */
     padding-top: 10vh; /* Location of the box */
     left: 0;
     top: 0;

@@ -592,6 +592,16 @@
 @media screen and  (min-width: 300px) and (max-width: 499px)
 {
 
+    .closeModalButton {
+        top: 10vh;
+    }
+
+    .modalImage {
+        width: 100%;
+        height: auto;
+        margin-top: 12vh;
+    }
+
     #header-picture{
 
         height: 65vmax;
