@@ -406,8 +406,8 @@ ul {
     background-image: url(../../Images/headerPic_1_20.png);
     z-index: -2;
     position: fixed;
-    background-position: -16vmax center;
-    background-size: cover;
+    /*background-position: -16vmax center;*/
+    background-size: 100% 100%;
     height:100%;
     width:100%;
   }
