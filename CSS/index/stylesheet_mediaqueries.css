@@ -873,7 +873,9 @@
 
         .foot{
             height: 48vmax;
-            background-image: url(../../Images/headerPic_1_20.png);
+           /* background-image: url(../../Images/headerPic_1_20.png);*/
+            background-attachment: scroll;
+
         }
 
         #phoneNumber{
