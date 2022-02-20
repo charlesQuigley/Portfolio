@@ -8,6 +8,7 @@ body{
     font-family: "Roboto", sans-serif;
     transition: 0s linear;
     transition-property: background-position;
+    position: relative;
 }
 
 #header-picture{
