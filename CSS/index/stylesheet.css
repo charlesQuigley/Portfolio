@@ -410,7 +410,7 @@ ul {
   }
 
   #backgroundImg{
-    background-image: url(../../Images/headerPic.png);
+    background-image: url(../../Images/headerPic_50.png);
     background-color: rgba(0,0,0,0.1);
     background-blend-mode: hue;
     background-position-x: -10vw;
