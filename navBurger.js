@@ -41,6 +41,7 @@ function burgerClick(){
         for(var i = 0; i < spans.length; i++)
         {
             spans[i].style.border = "none";
+            spans[i].style.background = "rgba(255,255,255,1)";
         }
 
         //Make an X with the burger spans
@@ -80,7 +81,8 @@ function burgerClick(){
         //re-apply border on spans 
         for(var i = 0; i < spans.length; i++)
         {
-            spans[i].style.border = "1px solid black";
+            spans[i].style.border = "1px solid white";
+            spans[i].style.background = "rgba(0,0,0,1)";
         }
 
         //Make an burger with the burger spans

@@ -315,7 +315,7 @@
     }
 
     .nav-bar-burger span {
-        width: 60px;
+        width: 56px;
         height: 10px;
     }
 
@@ -858,6 +858,11 @@
 
     }
 
+    .nav-bar-burger span {
+        width: 50px;
+        height: 8px;
+    }
+
 
 
 
@@ -962,7 +967,7 @@
     }
 
     #AboutMe_2 p{
-        font-size: 2.4vmax;
+        font-size: 2vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
         line-height: 3.5vmax;
@@ -982,7 +987,7 @@
     }
 
     #AboutMe_3 p{
-        font-size: 2.4vmax;
+        font-size: 2vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
         line-height: 3.5vmax;
@@ -1108,7 +1113,7 @@
    
    #headerBackground{
        background-image: url(../../Images/headerPic_50.png);
-       background-color: rgba(0,0,0,0);
+       background-color: rgba(0,0,0,0.1);
        background-attachment: scroll;
        background-size: 112%;
    }
@@ -1162,11 +1167,13 @@
     #name-and-contact h1{
         margin-top: 10vmin;
         font-size: 6vmax;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
     #contact-info{
         margin-top: 8vmin !important;
         font-size: 2vmax !important; /*1.8rem*/
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
     }
 
@@ -1175,7 +1182,7 @@
         margin-left: 0.8vmax !important;
         font-size: 2vmax;
         text-align: left;
-        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         
     }
 
@@ -1320,6 +1327,362 @@
     #phoneNumber {
         padding-top: 12vmin;
     }
+}
+
+/*Galaxy Fold*/
+@media screen and (max-width: 300px)
+{
+
+    .closeModalButton {
+        top: 10vh;
+    }
+
+    .modalImage {
+        width: 100%;
+        height: auto;
+        margin-top: 12vh;
+    }
+
+    #header-picture{
+
+        height: 65vmax;
+    }
+
+
+    #headerBackground{
+        background-image: url(../../Images/headerPic_phoneHeader2.png);
+
+        background-color: rgba(255,255,0,0.0);
+        
+
+        background-attachment: scroll;
+
+        background-size: 120% 120%;
+
+    }
+
+    #header{
+        
+        height: 65vmax;
+    }
+    
+    
+
+    #wrapper{
+        flex-direction: column;
+        width: max-content;
+    }
+
+    #profile-picture{
+        width: 30vmax;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8vmax;
+
+        border: 8px solid rgba(0,0,0,1);
+
+        box-shadow: 0 0 15px rgb(255 255 255 / 70%);
+        
+
+        transition: 0s;
+    }
+
+    #name-and-contact
+    {
+        margin: 0;
+        text-align: center;
+    }
+
+    #name-and-contact h1{
+        margin-top: 2vh;
+        padding-right: 0px; 
+    }      
+
+    #contact-info{
+        text-align: center;
+        margin-top: 4vmax !important;
+        margin-left: 0 !important;
+        padding-bottom: 3vmax;
+    
+    }
+
+    #Education{
+        /*margin-left: 4%;
+        margin-right: 2%;*/
+        min-height: 40vmax;
+        max-height: max-content;
+      }
+    
+      #education-header{
+          text-align: center;
+          padding-top: 5vmax;
+          font-size: 3.4vmax;
+      }
+    
+      .grid-item svg{
+          width: 6.5vmax;
+      }
+    
+      #education-milestones{
+          margin-top: 4vmax;
+          margin-bottom: 2vmax;
+          margin-left: 1vmax;
+          margin-right: 1vmax;
+          padding-left: 0;
+          padding-right: 0;
+
+          grid-template-rows: auto;
+      }
+
+      .grid-item{
+          padding-top: 0px;
+          padding-bottom: 1px;
+      }
+    
+      .grid-item p{
+        font-size: 1.3vmax;
+        letter-spacing: 2px;
+        line-height: 1.5vmax;
+        padding-top: 1vmax;
+        text-align: left;
+      }
+
+      .nav-bar{
+        display: none;
+        
+    }
+
+    .nav-bar-burger{
+        display: block;
+        z-index: 1;
+        top: 3vmax;
+        right: 5vmin;
+
+    }
+
+    .nav-bar-burger span {
+        width: 46px;
+        height: 7px;
+    }
+
+
+
+
+
+   /* .nav-bar-burger span:first-child
+    {
+         transform-origin: 0% 0%;
+    }
+
+    .nav-bar-burger span:nth-last-child(2)
+    {
+        transform-origin: 0% 100%;
+    } */
+
+
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+   /* .nav-bar-burger span:active
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }*/
+
+
+    /*----------------------------------------------------*/
+  /*About Me*/
+
+    #AboutMeSection{
+        /*padding-top: 8vmax;
+        padding-bottom: 22vmax;*/
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    #AboutMe_1{
+        margin-left: 2vmin;
+        margin-right: 2vmin;
+        margin-top: 3vmax;
+        padding-top: 3vmax;
+        padding-bottom: 2vmax;
+        padding-left: 1vmin;
+        padding-right: 1vmin;
+
+        border-radius: 20px;
+
+    }
+
+    
+  #AboutMe_1 h1{
+    margin-bottom: 0;
+    font-size: 5vmax;
+    }
+
+    #AboutMe_1 hr{
+        margin-top: 2vmax;
+        margin-bottom: 3vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+    }
+
+    #AboutMe_1 p{
+        font-size: 2vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        line-height: 3.5vmax;
+    }
+
+    #AboutMeSection br{
+        line-height: 4vmax;
+    }
+
+    #AboutMe_2{
+        margin-left: 2vmin;
+        margin-right: 2vmin;
+        margin-top: 12vmax;
+        padding-top: 3vmax;
+        padding-bottom: 2vmax;
+        padding-left: 1vmin;
+        padding-right: 1vmin;
+        border-radius: 20px;
+        
+    }
+
+    .from-left{
+        transform: translateX(-70%);
+    }
+
+    #AboutMe_2 h2{
+        margin-bottom: 0;
+        font-size: 3.8vmax;
+
+    }
+
+    #AboutMe_2 hr{
+        margin-top: 1vmax;
+        margin-bottom: 1vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+    }
+
+    #AboutMe_2 p{
+        font-size: 2vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        line-height: 3.5vmax;
+    }
+
+
+    #AboutMe_3{
+        margin-left: 2vmin;
+        margin-right: 2vmin;
+        margin-top: 5vmax;
+        margin-bottom: 8vmin;
+        padding-top: 4vmin;
+        padding-bottom: 2vmax;
+        padding-left: 1vmin;
+        padding-right: 1vmin;
+
+        border-radius: 20px;
+    }
+
+    #AboutMe_3 p{
+        font-size: 2vmax;
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        line-height: 3.5vmax;
+    }
+
+    #AboutMe_3 a{
+        max-width: 60vmin;
+        margin-top: 4vmax;
+        margin-bottom: 1vmax;
+        font-size: 2.5vmax;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.4s;
+
+        padding: 15px 20px;
+
+        background-position: center;
+        background: rgb(196, 74, 3) radial-gradient(circle, transparent 1%, rgb(196, 74, 3) 1%) center/15000%;
+    }
+
+
+    #profile-picture:hover {
+        filter: none;
+        box-shadow: none;
+    }
+
+
+    /*-----------------------------------------------------------------*/
+
+    /*-----------------------------------------------------------------*/
+    /*Skills / Languages*/
+
+    #Skills-Section{
+       /* margin-left: 5%;
+        margin-right: 5%;*/
+        height: 55vmax;
+    }
+
+    #skills-header{
+        padding-top: 8vmax;
+        font-size: 8vmin;
+    }
+
+    #Skills-Section ul{
+        margin-top: 7vmax;
+        text-align: center;
+    }
+
+    #Skills-Section li{
+        display: inline-block;
+        font-size: 6vmin;
+        margin: 0;
+        margin-top: 2vmax;
+        padding-left: 2vmin;
+        padding-right: 2vmin;
+        font-weight: normal;
+        
+    }
+
+    #skills-footer{
+        padding-top: 9vmax;
+        font-size: 7vmin;
+    }
+
+    /*----------------------------------------------------*/
+    /*footer*/
+
+        .foot{
+            height: 48vmax;
+           /* background-image: url(../../Images/headerPic_1_20.png);*/
+      
+
+        }
+
+        #phoneNumber{
+            font-size: 6vmin;
+            padding-top: 15vmax;
+            padding-left: 4vmin;
+            padding-right: 4vmin;
+        }
+
+        #email{
+            font-size: 6vmin;
+            padding-top: 3vmax;
+            padding-left: 4vmin;
+            padding-right: 4vmin;
+        }
+
+    
 }
 
 @media screen and (hover: none) {
