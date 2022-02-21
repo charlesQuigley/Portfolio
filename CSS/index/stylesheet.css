@@ -25,7 +25,7 @@ body{
     background-attachment: fixed;
     object-fit: cover;
 
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.3);
     background-blend-mode: hue;
     background-size: 112%;
     background-position-x: -10vw;
@@ -411,7 +411,7 @@ ul {
 
   #backgroundImg{
     background-image: url(../../Images/headerPic_50.png);
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.3);
     background-blend-mode: hue;
     background-position-x: -10vw;
     z-index: -2;
