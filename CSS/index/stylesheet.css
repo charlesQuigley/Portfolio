@@ -20,15 +20,16 @@ body{
 }
 
 #headerBackground{
-    background-image: url(../../Images/headerPic2.png);
+    background-image: url(../../Images/headerPic_50.png);
     /*Parallax scrolling effect vvv it's supposed to keep the image in place while scrolling.*/
-   /* background-attachment: fixed;*/
+    background-attachment: fixed;
     object-fit: cover;
 
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.1);
     background-blend-mode: hue;
-    background-size: 100% 100%;
-    background-position-y: -2px;
+    background-size: 112%;
+    background-position-x: -10vw;
+    /*background-position-y: -36px;*/
 
     transition: .15s ease-in-out;
     transition-property: background-position;
@@ -184,7 +185,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 #contact-info{
     margin-top: 8vh !important;
     font-size: 2vmax !important; /*1.8rem*/
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-weight: bolder;
 
 }
@@ -196,6 +197,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     font-weight: bolder;
     color: white;
     text-decoration: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 
@@ -226,7 +228,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 }
 
 .menu a:hover{
-    background-color: green;
+    background-color: rgb(255, 154, 4);
     box-shadow: 0 0 50px rgba(255, 255, 255, 1);
     
 }
@@ -341,6 +343,7 @@ ul {
     margin-right: 15%;*/
     min-height: max-content; /*60vh;*/
     max-height: max-content;
+    height: 26vmax;
 
     background-color: white;
 
@@ -361,6 +364,8 @@ ul {
   #education-milestones{
       margin-top: 4vh;
       margin-bottom: 4vh;
+      padding-right: 8vmin;
+      padding-left: 8vmin;
       display: grid;
       grid-template-columns: 33% 33% 33%;
       grid-template-rows: 50% 50%;
@@ -405,39 +410,25 @@ ul {
   }
 
   #backgroundImg{
-    background-image: url(../../Images/headerPic_1_20.png);
+    background-image: url(../../Images/headerPic.png);
+    background-color: rgba(0,0,0,0.1);
+    background-blend-mode: hue;
+    background-position-x: -10vw;
     z-index: -2;
     position: fixed;
     /*background-position: -16vmax center;*/
-    background-size: 100% 100vh;
+    background-size: 112% 100vh;
     height:100%;
     width:100%;
   }
 
-  #AboutMePicture{
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-image: url(../../Images/headerPic_1_20.png);
-    background-color: rgba(0,0,0,0.3);
-    background-blend-mode: hue;
-    background-attachment: fixed;
-    background-size: 100% 100%;
 
-
-   /* height: -moz-available;          /* WebKit-based browsers will ignore this. */  
-   /* height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-   /* min-height: 100%;*/
-  }
 
   #AboutMe_1{
       display: inline-block;
       margin-top: 15vmin;
-      margin-left: 15vmax;
-      margin-right: 15vmax;
+      margin-left: 8vmax;
+      margin-right: 8vmax;
       padding-top: 3vmin;
       padding-bottom: 3vmin;
       padding-left: 3vmax;
@@ -472,9 +463,9 @@ ul {
   }
 
   #AboutMe_2{
-    margin-left: 15vmax;
-    margin-right: 15vmax;
-    margin-top: 10vmin;
+    margin-left: 8vmax;
+    margin-right: 8vmax;
+    margin-top: 15vmin;
     padding-top: 3vmin;
     padding-bottom: 3vmin;
     padding-left: 3vmax;
@@ -511,8 +502,8 @@ ul {
 #AboutMe_3{
     display:inline-block;
     margin-bottom: 20vmin;
-    margin-left: 15vmax;
-    margin-right: 15vmax;
+    margin-left: 8vmax;
+    margin-right: 8vmax;
     margin-top: 10vmin;
     padding-top: 4vmin;
     padding-bottom: 4vmin;
@@ -563,6 +554,11 @@ ul {
     margin-right: 5%;*/
     height: 60vh;
     background-color: white;
+  }
+
+  #skills-block{
+      margin-left: 8vmin;
+      margin-right: 8vmin;
   }
 
   #skills-header{
@@ -649,7 +645,7 @@ ul {
 
 
   .from-left{
-      transform: translateX(-100%);
+      transform: translateX(-60%);
       opacity: 0;
       transition: 700ms ease-in;
   }

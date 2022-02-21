@@ -456,7 +456,7 @@
 
     #headerBackground{
         background-image: url(../../Images/headerPic.png);
-
+       
     }
     
     #header{
@@ -464,7 +464,7 @@
     }    
 
     #profile-picture{
-        height: 30vmax;
+        height: 23vmax;
         width: auto;
         margin-left: 1.8vmax;
         margin-top: auto;
@@ -492,6 +492,10 @@
     .grid-item{
         padding-top: 0;
         padding-bottom: 2px;
+    }
+
+    .grid-item p{
+        padding-top: 2vmax;
     }
 
     #name-and-contact
@@ -614,7 +618,9 @@
         background-color: rgba(255,255,0,0.0);
         
 
-        background-size: 100% 104%;
+        background-attachment: scroll;
+
+        background-size: 120% 120%;
 
     }
 
@@ -686,6 +692,8 @@
           margin-bottom: 2vmax;
           margin-left: 1vmax;
           margin-right: 1vmax;
+          padding-left: 0;
+          padding-right: 0;
 
           grid-template-rows: auto;
       }
@@ -777,7 +785,7 @@
     }
 
     #AboutMe_1 p{
-        font-size: 2.4vmax;
+        font-size: 2vmax;
         margin-left: 5vmin;
         margin-right: 5vmin;
         line-height: 3.5vmax;
@@ -875,7 +883,7 @@
     #Skills-Section{
        /* margin-left: 5%;
         margin-right: 5%;*/
-        height: 60vmax;
+        height: 55vmax;
     }
 
     #skills-header{
@@ -964,6 +972,8 @@
    #headerBackground{
        background-image: url(../../Images/headerPic_50.png);
        background-color: rgba(0,0,0,0);
+       background-attachment: scroll;
+       background-size: 112%;
    }
     
     #header{
