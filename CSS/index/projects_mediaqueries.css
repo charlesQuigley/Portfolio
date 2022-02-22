@@ -538,9 +538,144 @@
         min-height: 60vh;
     }
 
+}
 
 
 
+/*Galaxy Fold Portrait*/
+@media screen and (max-width: 300px)
+{
+    #page-title {
+        border-radius: 10px;
+        margin-top: 15vh;
+        width: 95%;
+    }
+
+    #Description, .project{
+        border-radius: 10px;
+        width: 95%;
+        margin-top: 3vh;
+    }
+    
+    #Description{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    #Description p {
+        font-size: 2vh;
+        line-height: 3.5vh;
+    }
+
+    .project{
+        min-height: 85vmax;
+    }
+
+    .project-name h2{
+        font-size: 8vmin;
+    }
+
+    .project-name hr{
+        width: 95%;
+    }
+
+    .project-description{
+        width: 90%;
+        font-size: 2vh;
+    }
+
+    .project-description .caption-text-linebreak {
+        margin-top: 4vh;
+    }
+
+    .project-images {
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+
+    .slideshow-slide{
+        max-height: 18vh;
+    }
+
+    .prevButton, .nextButton {
+        top: 15%;
+        padding: 2vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        font-size: 4vh;
+        transition: 0s;
+    }
+
+    #slideshow-dots {
+        bottom: 1%;
+    }
+
+    .dot{
+        height: 8px;
+        width: 8px;
+    }
+
+    .video{
+        width: inherit;
+        border-radius: 0px;
+    }
+}
+
+/*Galaxy Fold LANDSCAPE*/
+@media screen and (max-height: 299px)
+{
+
+    #page-title {
+        border-radius: 10px;
+        margin-top: 24vmin;
+    }
+
+    #Description, .project {
+        border-radius: 10px;
+    }
+
+    #Description {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .project {
+        padding-bottom: 4vh;
+    }
+    .project-name hr {
+        margin-bottom: 4vh;
+    }
+
+    .project-name h2{
+        font-size: 8vmin;
+    }
+
+    .project-description {
+        font-size: 4vmin;
+        line-height: 4.8vmin;
+        margin-top: 3vh;
+    }
+
+    .project-description .caption-text-linebreak {
+        margin-top: 5vh;
+    }
+
+    .slideshow-container {
+        border: 1px solid white;
+    }
+
+    .prevButton, .nextButton {
+        top: 23%;
+        padding: 1.8vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .dot {
+        height: 8px;
+        width: 8px;
+    }
 
 }
 
