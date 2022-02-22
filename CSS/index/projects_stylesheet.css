@@ -215,6 +215,7 @@ body{
     overflow: hidden;
     /*border: 1px solid white;*/
     border-radius: 20px;
+    z-index: 1;
 
 }
 
