@@ -1177,7 +1177,7 @@
     #skills-header {
         text-align: center;
         padding-top: 12vmin;
-        font-size: 3.5vmax;
+        font-size: 3.7vmax;
     }
 
     #Skills-Section ul{
@@ -1185,14 +1185,14 @@
     }
   
     #Skills-Section li{
-      font-size: 2.5vmax;
+      font-size: 3vmax;
       font-weight: normal;
       padding: 1.5vmax;
     }
   
     #skills-footer{
       padding-top: 8vmin;
-      font-size: 2.8vmax;
+      font-size: 3vmax;
     }
 
     .foot{

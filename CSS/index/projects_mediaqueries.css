@@ -429,6 +429,19 @@
 /***LANDSCAPE PHONES********/
 @media screen and (max-height: 500px){
 
+    #myModal{
+        padding-top: 18vh;
+    }
+
+    .modalImage {
+        width: 156vh;
+    }
+
+    .fullPageModalImg{
+        width: 80vh;
+        margin-top: -12vh;
+    }
+
     #page-title{
         border-radius: 20px;
         margin-top: 22vmin;
