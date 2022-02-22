@@ -304,6 +304,17 @@
 /**PORTRAIT MODE FOR PHONES**/
 @media screen and  (min-width: 300px) and (max-width: 499px)
 {
+
+    .closeModalButton {
+        top: 10vh;
+    }
+
+    .modalImage {
+        width: 100%;
+        height: auto;
+        margin-top: 12vh;
+    }
+
     #page-title {
         border-radius: 20px;
         margin-top: 18vmax;
@@ -406,12 +417,119 @@
     .video{
         min-width: 100% !important;
         height: 30vh;
+        border-radius: 0px;
     }
 
 
 
 }
 
+
+
+/***LANDSCAPE PHONES********/
+@media screen and (max-height: 500px){
+
+    #page-title{
+        border-radius: 20px;
+        margin-top: 22vmin;
+        width: 98%;
+
+    }
+
+    #page-title h1 {
+        font-size: 8vmin;
+    }
+
+    #Description, .project{
+        border-radius: 20px;
+        width: 98%;
+    }
+
+    #Description{
+        padding-top: 7vmin;
+    }
+
+    #Description p{
+        font-size: 4vmin;
+    }
+
+    .project{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+
+        min-height: 114vh;
+    }
+
+    .project-name {
+        font-size: 6vmin;
+    }
+
+    .project-name hr{
+        width: 95%;
+        margin-top: 2vh;
+        margin-bottom: 7vh;
+    }
+
+    .project-images{
+        min-width: 134vh;
+        max-width: none;
+
+    }
+
+    .slideshow-container {
+        border: 2px solid white;
+    }
+
+    .slideshow-slide{
+        height: 62vmin;
+    }
+
+    .project-description{
+        width: 95%;
+        font-size: 3.2vmin;
+        line-height: 4.2vmin;
+        margin-top: 4vh;
+    }
+
+    .project-description .caption-text-linebreak {
+        margin-top: 2.8vh;
+    }
+
+    .prevButton, .nextButton{
+        top: 30%;
+        font-size: 3.5vw;
+        padding: 2.5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+
+    #slideshow-dots{
+        bottom: 3%;
+    }
+
+    .dot{
+        height: 12px;
+        width: 12px;
+        margin: 0px 4px;
+    }
+
+    .video-container {
+        border: none !important;
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .video{
+        border-radius: 0px;
+        min-height: 60vh;
+    }
+
+
+
+
+
+}
 
 
 
