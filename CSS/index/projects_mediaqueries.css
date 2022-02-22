@@ -431,6 +431,7 @@
 
     .prevButton, .nextButton{
         cursor: none;
+        transition: 0s;
     }
 
     .prevButton:hover, .nextButton:hover{
