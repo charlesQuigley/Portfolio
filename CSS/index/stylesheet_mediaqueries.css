@@ -922,7 +922,8 @@
     #Skills-Section{
        /* margin-left: 5%;
         margin-right: 5%;*/
-        height: 55vmax;
+        /*height: 55vmax;*/
+        min-height: 55vmax;
     }
 
     #skills-header{
@@ -947,7 +948,8 @@
     }
 
     #skills-footer{
-        padding-top: 9vmax;
+        padding-top: 7vmax;
+        padding-botto: 8vmax;
         font-size: 7vmin;
     }
 

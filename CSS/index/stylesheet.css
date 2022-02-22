@@ -205,9 +205,9 @@ old div that was meant to be a black circle that the actual profile picture woul
   #Education{
     /*margin-left: 15%;
     margin-right: 15%;*/
-    min-height: max-content; /*60vh;*/
+    min-height: 26vmax; /*60vh;*/
     max-height: max-content;
-    height: 26vmax;
+    /*height: 26vmax;*/
 
     background-color: white;
 
@@ -416,7 +416,8 @@ old div that was meant to be a black circle that the actual profile picture woul
 #Skills-Section{
    /* margin-left: 5%;
     margin-right: 5%;*/
-    height: 60vh;
+    min-height: 60vh;
+    max-height: max-content;
     background-color: white;
   }
 
@@ -428,7 +429,7 @@ old div that was meant to be a black circle that the actual profile picture woul
   #skills-header{
       text-align: center;
       padding-top: 12vh;
-      font-size: 3rem;
+      font-size: 4vmax;
       font-weight: bolder;
       color: rgb(107, 107, 107);
   }
@@ -440,15 +441,16 @@ old div that was meant to be a black circle that the actual profile picture woul
 
   #Skills-Section li{
     color: rgb(107, 107, 107);
-    font-size: 2rem;
+    font-size: 2.6vmax;
     font-weight: normal;
     padding: 1.5vw;
   }
 
   #skills-footer{
     text-align: center;
-    padding-top: 8vh;
-    font-size: 2rem;
+    padding-top: 10vh;
+    padding-bottom: 12vh;
+    font-size: 3vmax;
     font-weight: bold;
     color: rgb(107, 107, 107);
   }
