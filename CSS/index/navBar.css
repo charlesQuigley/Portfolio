@@ -1,0 +1,333 @@
+/*-----Menu-------------------------------*/
+
+  .nav-bar{
+    /* margin-right: 6vw;*/
+    position: absolute;
+    top: 0vh;
+    right: 6.4vmax;
+ 
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
+ 
+ .menu a{
+     /*margin-right: 1.5vw;*/
+     background-color: rgba(0,0,0,0.8);
+     border-radius: 30px;
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+     padding: 10px 20px;
+     font-size: 2vmax;
+     text-align: center;
+     color: white;
+     text-decoration: none;
+     cursor: pointer;
+     transition: 0.4s;
+  }
+ 
+ .menu a:hover{
+     background-color: rgb(255, 154, 4);
+     box-shadow: 0 0 50px rgba(255, 255, 255, 1);
+     
+  }
+ 
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+    }
+ 
+   li{
+       display: inline;
+       margin-right: 1.5vh;
+    }
+ 
+   .nav-bar-burger{
+       display: none;
+       position: absolute;
+ 
+       top: 5vmax;
+       right: 10vmin;
+    }
+ 
+   .burger-menu-active{
+     position: fixed;
+    }
+ 
+   .nav-bar-burger span{
+     display: block;
+     width: 40px;
+     height: 5px;
+     margin-bottom: 5px;
+     position: relative;
+     
+     background: rgba(0,0,0,1);
+     border-radius: 3px;
+ 
+     border: 1px solid white;
+     
+     z-index: 3;
+     
+     transform-origin: 4px 0px;
+     
+     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                 opacity 0.3s ease;
+    }
+ 
+ 
+   .burger-menu{
+      /* visibility: hidden;*/
+       position: fixed;
+       height: 100vmax;
+       width: 0px;
+       right: 0;
+       top: 0;
+ 
+       background-color: rgba(58, 58, 58, 1);
+ 
+       -webkit-font-smoothing: antialiased;
+ 
+       /*transform: translateX(100%);*/
+ 
+ 
+       /*transform: translateX(100%);*/
+       transition: 500ms cubic-bezier(0.060, 0.975, 0.195, 0.985);
+                 
+      
+       
+      }
+ 
+    .burger-menu ul{
+      list-style-type: none;
+      margin-top: 20vmax;
+       padding: 0;
+    }
+ 
+    .burger-menu li{
+       display: block;
+       opacity: 1;
+       text-align: center;
+       margin-top: 4vmax;
+    }
+ 
+ 
+   .burger-menu a{
+     text-align: center;
+     font-size: 7vmax;
+     color: white;
+     text-decoration: none;
+   }
+ 
+ 
+   .burger-menu-open{
+     /*visibility: visible;*/
+     width: 100vw;
+     height: 100vh;
+     /*transform: translateX(0%);*/
+     top: 0;
+     right: 0;
+     z-index: 2;
+   }
+ 
+ 
+ 
+   /*-----------------------------------------------------------*/
+
+   
+/**PORTRAIT MODE FOR TABLETS**/
+@media screen and  (min-height: 500px) and (min-width: 500px) and (hover: none)
+{
+  .nav-bar{
+    display: none;
+    
+  }
+
+    .nav-bar-burger{
+      display: block;
+      z-index: 1;
+
+      top: 6vmax;
+      right: 8vmin;
+     }
+
+  .nav-bar-burger span{
+      width: 90px;
+      height: 20px;
+  }
+
+  .burger-menu ul {
+      margin-top: 20vmin;
+  }
+
+  .burger-menu a {
+      font-size: 12vmin;
+  }
+
+
+}
+
+
+
+/**Surface Duo Portrait**/
+@media screen and (min-height: 500px) and (min-width: 500px) and (max-width: 800px)
+{
+
+    .nav-bar{
+      display: none;
+     }
+
+  .nav-bar-burger {
+      display: block;
+      z-index: 1;
+      top: 6vmax;
+      right: 8vmin;
+  }
+
+  .nav-bar-burger span {
+      width: 56px;
+      height: 10px;
+  }
+
+  .burger-menu ul {
+      margin-top: 20vmin;
+  }
+}
+
+
+
+
+/**LANDSCAPE MODE FOR TABLETS**/
+@media screen and (min-width: 1000px) and (min-height: 700px) {
+
+    .nav-bar{
+      display: none;
+  }
+
+
+  .nav-bar-burger{
+      display: block;
+      z-index: 1;
+
+      top: 8vmin;
+      right: 10vmax;
+  }
+
+  .nav-bar-burger span{
+      width: 78px;
+      height: 16px;
+  }
+
+  .burger-menu ul {
+      margin-top: 20vmin;
+  }
+
+  .burger-menu a {
+      font-size: 10vmin;
+  }
+}
+
+
+/**LANDSCAPE MODE FOR LARGE PHONES**/
+@media screen and (min-width: 700px) and (max-height: 600px) {
+
+     /*-----Menu-------------------------------*/
+
+      .nav-bar{
+        display: block !important;
+        top: 3vmin;
+        right: 2vmax;
+      }
+
+      .nav-bar-burger{
+        display: none !important;
+      }
+
+    
+    .menu a{
+        font-size: 2.2vmax;
+     }
+
+
+}
+
+
+
+/**PORTRAIT MODE FOR PHONES**/
+@media screen and  (min-width: 300px) and (max-width: 499px)
+{
+
+  
+    .nav-bar{
+      display: none;
+      
+    }
+
+  .nav-bar-burger{
+      display: block;
+      z-index: 1;
+
+   }
+
+  .nav-bar-burger span {
+      width: 50px;
+      height: 8px;
+    }
+}
+
+
+/***LANDSCAPE PHONES********/
+@media screen and (max-height: 500px){
+
+  /*-----Menu-------------------------------*/
+
+     .nav-bar{
+      display: none;
+      
+  }
+
+  .nav-bar-burger{
+      display: block;
+      z-index: 1;
+      top: 8vmin;
+      right: 8vmax;
+
+  }
+
+  .burger-menu ul {
+      margin-top: 20vmin;
+  }
+
+  .burger-menu a {
+      font-size: 12vmin;
+  }
+}
+
+
+/*Galaxy Fold*/
+@media screen and (max-width: 300px)
+{
+
+    .nav-bar{
+      display: none;
+      
+  }
+
+  .nav-bar-burger{
+      display: block;
+      z-index: 1;
+      top: 3vmax;
+      right: 5vmin;
+
+  }
+
+  .nav-bar-burger span {
+      width: 46px;
+      height: 7px;
+  }
+}
+
+@media screen and (hover: none){
+  .menu a{
+    cursor: none;
+ }
+}

@@ -1,0 +1,448 @@
+/**PORTRAIT MODE FOR TABLETS**/
+@media screen and  (min-height: 500px) and (min-width: 500px) and (hover: none)
+{
+
+   /* body {
+        background-image: url(../../Images/headerPic_50.png);
+        background-attachment: fixed;
+        background-color: rgba(0,0,0,0.3);
+        background-blend-mode: luminosity;
+        background-size: 110% 134vh;
+    }*/
+
+    #backgroundImg{
+        background-image: url('../../Images/headerPic_50.png');
+		background-position-y: -200px;
+        background-position-x: center;
+	}
+
+
+    #myModal{
+        padding-top: 40%;
+
+    }
+
+    .modalImage {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .fullPageModalImg{
+        width: 80%;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .closeModalButton {
+        top: 14vh;
+        right: 6vw;
+        font-size: 10vh;
+    }
+
+    #page-title{
+        width: 90vw;
+        margin-top: 16vmax;
+
+        padding-top: 3vmax;
+        padding-bottom: 3vmax;
+        border-radius: 30px;
+    }
+
+    #Description {
+        width: 90vw;
+        margin-top: 5vmax;
+        padding-top: 5vmax;
+        padding-bottom: 5vmax;
+        border-radius: 30px;
+    }
+
+    #Description p{
+        font-size: 4vmin;
+    }
+
+    .Description-break{
+        height: 3vmax;
+    }
+
+    .project{
+        width: 90vw;
+        border-radius: 30px;
+        min-height: 85vmax;
+        margin-bottom: 12vmax;
+    }
+
+    .project-name hr {
+        width: 90%;
+    }
+
+    .project-images{
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    .slideshow-slide {
+        height: 32vmax;
+    }
+
+    .prevButton, .nextButton{
+        top: 25%;
+        padding: 2.5vmin;
+        padding-top:  5vmax;
+        padding-bottom: 5vmax;
+        font-size: 4vmax;
+    }
+
+    .dot{
+        height: 20px;
+        width: 20px;
+        margin: 0px 8px;
+    }
+
+    .project-description {
+        width: 88%;
+        font-size: 3.2vmin;
+        line-height: 4vh;
+    }
+
+    .project-description .caption-text-linebreak {
+        margin-top: 4vh;
+    }
+
+    .video{
+        height: 32vmax;
+    }
+
+    .foot {
+        margin-top: 16vh;
+    }
+
+    #phoneNumber, #email{
+        font-size: 6vmin;
+    }
+
+}
+
+
+
+/**Surface Duo Portrait**/
+@media screen and (min-height: 500px) and (min-width: 500px) and (max-width: 800px)
+{
+    /*Nothing Yet*/
+}
+
+
+
+/**LANDSCAPE MODE FOR TABLETS**/
+@media screen and (min-width: 1000px) and (min-height: 700px) {
+
+    #myModal {
+        padding-top: 14%;
+    }
+
+    .closeModalButton {
+        top: 3vh;
+        font-size: 12vh;
+    }
+
+    .fullPageModalImg {
+        width: 58%;
+        max-width: 58%;
+        height: auto;
+        margin-top: -10%;
+    }
+
+    #page-title{
+        margin-top: 20vmin;
+    }
+
+    #page-title h1 {
+        font-size: 7.5vmin;
+    }
+
+    #Description {
+        margin-top: 5vmin;
+        padding-top: 5vmin;
+        padding-bottom: 5vmin;
+    }
+
+    #Description p {
+        font-size: 3.5vmin;
+    }
+
+    .Description-break {
+        height: 3vmin;
+    }
+
+    #projects-section {
+        margin-top: 10vw;
+    }
+
+    .project {
+        min-height: 86vmin;
+        max-height: max-content;
+        margin-bottom: 16vmin;
+        padding-bottom: 4vh;
+    }
+
+    .project-images {
+        min-width: 84%;
+        max-width: 84%;
+    }
+
+    .slideshow-slide {
+        height: 42vmin;
+    }
+
+    .project-description {
+        width: 84%;
+        font-size: 2.8vmin;
+        line-height: 4vh;
+    }
+
+    .project-description .caption-text-linebreak {
+        margin-top: 2.8vh;
+    }
+
+    .prevButton, .nextButton {
+        padding: 2vmax;
+        padding-top: 8vmin;
+        padding-bottom: 8vmin;
+        font-size: 3vmax;
+    }
+
+    .dot {
+        margin: 0px 12px;
+    }
+
+    .video {
+        height: 40vmin;
+    }
+}
+
+
+
+/**LANDSCAPE MODE FOR LARGE PHONES  (Nest Hub, Surface Duo in Ladnscape Mode, etc.)**/
+@media screen and (min-width: 700px) and (max-height: 600px) {
+
+    #myModal {
+        padding-top: 16%;
+    }
+
+    .closeModalButton {
+        top: 6vh;
+        font-size: 12vh;
+    }
+
+    .fullPageModalImg {
+        width: 58%;
+        max-width: 58%;
+        height: auto;
+        margin-top: -10%;
+    }
+
+    #page-title h1 {
+        font-size: 7.5vmin;
+    }
+
+    #Description {
+        margin-top: 4vmin;
+        padding-top: 5vmin;
+        padding-bottom: 5vmin;
+    }
+
+    #Description p {
+        font-size: 3.2vmin;
+    }
+
+    #projects-section {
+        margin-top: 12vh;
+    }
+
+    .project{
+        min-height: 86vmin;
+    }
+
+    .project-description {
+        font-size: 2.6vmin;
+    }
+
+    .project-description .caption-text-linebreak {
+        margin-top: 2.8vh;
+    }
+
+    .prevButton, .nextButton {
+        padding: 1.8vmax;
+        padding-top: 7vmin;
+        padding-bottom: 7vmin;
+        font-size: 4vmax;
+    }
+
+    .dot {
+        height: 14px;
+        width: 14px;
+        margin: 0px 6px;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px){
+    #page-title{
+        border-radius: 20px;
+    }
+
+    #Description{
+        border-radius: 20px;
+    }
+
+    .project{
+        border-radius: 20px;
+    }
+
+}
+
+/**PORTRAIT MODE FOR PHONES**/
+@media screen and  (min-width: 300px) and (max-width: 499px)
+{
+    #page-title {
+        border-radius: 20px;
+        margin-top: 18vmax;
+        width: 96%;
+
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    #page-title h1{
+        font-size: 9vmin;
+    }
+
+    #Description, .project {
+        border-radius: 20px;
+        width: 96%;
+    }
+
+    #Description{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+
+    #Description p {
+        font-size: 2.6vmax;
+        line-height: 3.5vh;
+    }
+
+    .Description-break {
+        height: 3.5vh;
+    }
+
+    #projects-section {
+        margin-top: 14vh;
+    }
+
+    .project{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        min-height: 90vh;
+    }
+
+    .project-name hr {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 90%;
+    }
+
+    .project-images {
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    .slideshow-container {
+        border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .slideshow-slide {
+        height: 28vh;
+    }
+
+    .project-name {
+        font-size: 5.5vmin;
+    }
+
+    .project-description {
+        margin-top: 3vh;
+        width: 90%;
+        font-size: 2.6vh;
+        line-height: 3.5vh;
+        margin-right: 5%;
+        margin-left: 5%;
+        text-align: left;
+    }
+
+    .project-description .caption-text-linebreak {
+        margin-top: 3vh;
+    }
+        
+
+    .prevButton, .nextButton {
+        top: 25%;
+        padding: 3vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        font-size: 2vh;
+    }
+
+    #slideshow-dots{
+        bottom: 3%;
+    }
+
+    .dot{
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+    }
+
+    .video{
+        min-width: 100% !important;
+        height: 30vh;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (hover: none){
+
+    body{
+        -webkit-text-size-adjust: none;
+    }
+
+    .slideshow-slide:hover{
+        filter: none;
+    }
+
+    .slideshow-container img{
+        cursor: none;
+    }
+
+    .prevButton, .nextButton{
+        cursor: none;
+    }
+
+    .prevButton:hover, .nextButton:hover{
+        background-color: rgba(132, 0, 255, 0.7);
+    }
+
+    .prevButton:active, .nextButton:active{
+        background-color: rgba(250, 94, 4, 0.8);
+        transition: background-color 10ms ease-in;
+    }
+
+    .project-description a{
+        cursor: none;
+    }
+}

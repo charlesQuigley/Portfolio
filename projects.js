@@ -196,8 +196,31 @@ var modalImg = document.getElementById("image");
 
 for(var i = 0; i < slidesOnClick.length; i++)
 {
+
     slidesOnClick[i].onclick = function(){
+        var isFullScreenImg = false;
+
         modal.style.display = "block";
+
+        modalImg.classList.remove('fullPageModalImg');
+        
+        //If image is a full-screen image (an image of an ENTIRE web page), 
+        //then it will have the class 'fullPageImage'.
+        //If it has this class, then resize the image so that it fits nicely within the screen. 
+        for(var j = 0; j < this.classList.length; j++)
+        {
+            if(this.classList[j] == 'fullPageImage')
+            {
+                isFullScreenImg = true;
+                break;
+            }
+        }
+
+        if(isFullScreenImg == true)
+        {
+            modalImg.classList.add('fullPageModalImg');
+        }
+
         modalImg.src = this.src;
     }
 }

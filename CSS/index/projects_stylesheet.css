@@ -6,78 +6,40 @@
 }
 
 body{
-	background: url(Images/headerPic.png);
+	/*background-image: url(../../Images/headerPic.png);
     background-attachment: fixed;
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: lighten; 
-    background-size: 100% 200%;
+    background-size: 100% 140vh;*/
 
 }
 
-@media only screen and (min-height: 600px){
-	
-	body{
-		background-position-y: -200px;
-	}
-
+#backgroundImg{
+    position: fixed;
+    top: 0;
+    background-image: url(../../Images/headerPic.png);
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: exclusion; 
+    background-size: cover;
+    background-position: center -35vh;
+    height: 140vh;
+    width: 100%;
+    z-index: -1;
 }
 
-/*****MENU********-----------------*/
 
-.nav-bar{
-    /* margin-right: 6vw;*/
-     margin-top: 5vh;
-     margin-left: 5vw;
-     padding-bottom: 10vh;
-    
- }
- 
- .menu a{
-     /*margin-right: 1.5vw;*/
-     background-color: rgba(0,0,0,0.8);
-     border-radius: 30px;
-     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-     padding: 10px 20px;
-     font-size: 4.2vmin;
-     text-align: center;
-     color: white;
-     text-decoration: none;
-     cursor: pointer;
-     transition: 0.4s;
- }
- 
- .menu a:hover{
-     background-color: green;
-     box-shadow: 0 0 50px rgba(255, 255, 255, 1);
-     
- }
- 
- ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     float: right;
-     margin-right: 8vw;
-   }
- 
-   li{
-       display: inline;
-       margin-right: 1.5vh;
-   }
 
- /*****MENU********----------------*/
 
 #page-title{
-    margin-top: 4vh;
+    margin-top: 18vmin;
     margin-left: auto;
     margin-right: auto;
     width: 80vw;
-    height: 10vh;
 
-    background-color: rgba(0,0,0,0.85);
-    padding-top: 20px;
-    padding-bottom: 20px;
-	border-radius: 360px;
+    background-color: rgba(0,0,0,0.95);
+    padding-top: 4vmin;
+    padding-bottom: 4vmin;
+	border-radius: 70px;
 	box-shadow: 0 0 30px rgba(255,255,255,0.9);
 }
 
@@ -97,10 +59,10 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vh;
-    padding-top: 8vh;
+    padding-top: 6vh;
     padding-right: 0vw;
-    padding-bottom: 2vh;
-	border-radius: 60px;
+    padding-bottom: 6vh;
+	border-radius: 70px;
 	box-shadow: 0 0 30px rgba(255,255,255,0.9);
 
     overflow: auto;
@@ -113,6 +75,10 @@ body{
     margin-right: 5vw;
     line-height: 5vh;
     letter-spacing: 2px;
+}
+
+.Description-break{
+    height: 5vh;
 }
 
 #projects-section{
@@ -131,10 +97,10 @@ body{
     padding-top: 1.5vh;
     padding-bottom: 5vh;
     background-color: rgba(0,0,0,0.9);
-    border-radius: 60px;
+    border-radius: 70px;
 	box-shadow: 0 0 30px rgba(255,255,255,0.9);
 
-    overflow: auto;
+    /*overflow: auto;*/
     
 }
 
@@ -183,6 +149,7 @@ body{
     font-size: 2.5vmin;
     letter-spacing: 2px;
     line-height: 3.5vh;
+    overflow-wrap: break-word;
 }
 
 .project-description .caption-text-linebreak{
@@ -246,7 +213,6 @@ body{
     display: block;
     max-height: 50vh;
     overflow: hidden;
-    z-index: 1;
     /*border: 1px solid white;*/
     border-radius: 20px;
 
@@ -382,14 +348,14 @@ body{
 
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     padding-top: 10vh; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.95); /* Black w/ opacity */
   
 }
 
@@ -445,8 +411,8 @@ body{
 
 /* Track */
 .project::-webkit-scrollbar-track, #Description::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(132, 0, 255, 0.7); 
+    box-shadow: inset 0 0 6px rgba(132, 0, 255, 0.7);
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
@@ -455,7 +421,7 @@ body{
 .project::-webkit-scrollbar-thumb, #Description::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.8); 
+    background: rgba(132, 0, 255, 0.7);
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
     box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
@@ -481,21 +447,19 @@ body{
 }
 
 #phoneNumber{
-    font-size: 8vmin;
+    font-size: 6vmin;
     font-weight: bolder;
     text-align: center;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
     padding-top: 12vh;
 }
 
 #email{
-  font-size: 8vmin;
+  font-size: 6vmin;
   font-weight: bolder;
   text-align: center;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
   padding-top: 3vh;
 }

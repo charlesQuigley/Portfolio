@@ -15,10 +15,23 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-	<link rel="stylesheet" href="contact_stylesheet.css">
+	<link rel="stylesheet" href="CSS/index/contact_stylesheet.css">
+	<link rel="stylesheet" href="CSS/index/navBar.css">
 </head>
 <body>
 
+	<div class="nav-bar-burger" onclick="burgerClick()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="burger-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#AboutMeSection">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="nav-bar">
         <div class="menu">
             <ul>
@@ -93,6 +106,7 @@
 					});
 		}
 	</script>
+	<script type = "text/javascript" src="navBurger.js"></script>  
 
 </body>
 </html>

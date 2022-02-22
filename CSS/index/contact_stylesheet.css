@@ -30,50 +30,6 @@ body{
 }
 
 
- /*****MENU********-----------------*/
-
-.nav-bar{
-    /* margin-right: 6vw;*/
-     margin-top: 5vh;
-     margin-left: 5vw;
-     padding-bottom: 10vh;
-    
- }
- 
- .menu a{
-     /*margin-right: 1.5vw;*/
-     background-color: rgba(0,0,0,0.8);
-     border-radius: 30px;
-     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-     padding: 10px 20px;
-     font-size: 4.2vmin;
-     text-align: center;
-     color: white;
-     text-decoration: none;
-     cursor: pointer;
-     transition: 0.4s;
- }
- 
- .menu a:hover{
-     background-color: green;
-     box-shadow: 0 0 50px rgba(255, 255, 255, 1);
-     
- }
- 
- ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     float: right;
-     margin-right: 8vw;
-   }
- 
-   li{
-       display: inline;
-       margin-right: 1.5vh;
-   }
-
- /*****MENU********----------------*/
 
 .wrapper{
 	
