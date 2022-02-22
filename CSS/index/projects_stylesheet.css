@@ -55,7 +55,7 @@ body{
     width: 80vw;
     min-height: 40vh;
    /* max-height: 40vh; */
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.95);
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vh;
@@ -96,7 +96,7 @@ body{
     
     padding-top: 1.5vh;
     padding-bottom: 5vh;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.95);
     border-radius: 70px;
 	box-shadow: 0 0 30px rgba(255,255,255,0.9);
 
