@@ -16,9 +16,12 @@
     <link rel="manifest" href="/site.webmanifest">
 
 	<link rel="stylesheet" href="CSS/contact/contact_stylesheet.css">
+	<link rel="stylesheet" href="CSS/contact/contact_mediaqueries.css">
 	<link rel="stylesheet" href="CSS/navBar.css">
 </head>
-<body>
+<body ontouchstart>
+
+	<div id="backgroundImg"></div>
 
 	<div class="nav-bar-burger" onclick="burgerClick()">
         <span></span>
@@ -43,7 +46,7 @@
 	
 	<div class="wrapper">
 		<div id="contactTitle">
-			<h2>Contact Me</h2>
+			<h2>Contact&nbsp;&nbsp;Me</h2>
 		</div>
 		<div class="contact-form">
 			<div class="input-fields">
@@ -61,6 +64,13 @@
 	</div>
 
 
+	<form action="https://formsubmit.co/cmq3st@gmail.com" method="POST">
+		<input type="text" name="name" required>
+		<input type="email" name="email" required>
+		<button type="submit">Send</button>
+   </form>
+
+
     <footer class="foot">
         <p id="phoneNumber">Phone :&nbsp;&nbsp;361-251-7222</p>
         <p id="email">Email :&nbsp;&nbsp;cmq2st@gmail.com</p>
@@ -69,7 +79,7 @@
 
 
     <script type = "text/javascript" src="JS/contact/smtp.js"></script>
-	<script type="text/javascript">
+	<!--<script type="text/javascript">
 		
 		function sendEmail(){
 		
@@ -81,11 +91,6 @@
 		
 			Email.send({
 					
-					//elastic email SMTP password: ABF6056809169EDBD4189472F5356C98D522
-					
-					//Host: "smtp.gmail.com",
-					//Username: "alohabot96@gmail.com",
-					//Password: "Quigley1",
 					SecureToken: "04d517a5-d449-473c-a15b-ea3ac7e9290f",
 					From: "alohabot96@gmail.com",
 					To: "cmq2st@gmail.com",
@@ -101,7 +106,7 @@
                         }
                         else
                         {
-                            alert("Oops. Sorry, something went wrong. Please try to send the message again. Thank you.");
+                            alert("Oops. Sorry, something went wrong. Please try to send the message again. Or, directly email me at cmq2st@gmail.com. Thank you.");
                         }
 					});
 		}
