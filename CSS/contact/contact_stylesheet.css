@@ -98,17 +98,18 @@ body{
 }
 
 .btn{
-	background: rgb(196, 74, 3);
-	text-align: center;
-	padding: 15px;
-	border-radius: 30px;
-	color: #fff;
-	cursor: pointer;
-	text-transform: uppercase;
-	font-weight: bold;
+    background: rgb(196, 74, 3);
+    text-align: center;
+    padding: 2vh 10px;
+    width: 100%;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
     font-size: 3vmin;
-
     transition: 0.4s;
+    border: none;
 	
 }
 
