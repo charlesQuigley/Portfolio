@@ -1,3 +1,7 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+
 *{
     padding: 0;
     margin: 0;
@@ -137,7 +141,23 @@ body{
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    grid-auto-columns: 90%;
+    /*gap: var(--size-3);*/
     
+}
+
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+}
+
+/*All the children of parent with class snaps-inline*/
+.snaps-inline > *{
+    scroll-snap-align: start;
 }
 
 .project-description{

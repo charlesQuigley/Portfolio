@@ -169,8 +169,8 @@ function showSlides(n, slideShowNumber) {
   if (n > slides.length) {slideIndex[slideShowNumber] = 1}
   if (n < 1) {slideIndex[slideShowNumber] = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-      captions[i].style.display = "none";
+     // slides[i].style.display = "none";
+     // captions[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
