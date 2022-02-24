@@ -1,12 +1,15 @@
-@import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
-
-
 *{
     padding: 0;
     margin: 0;
 
     font-family: 'Roboto', sans-serif;
+}
+
+html{
+    
+    overflow: auto;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
 }
 
 body{
@@ -15,6 +18,8 @@ body{
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: lighten; 
     background-size: 100% 140vh;*/
+
+ 
 
 }
 
@@ -45,6 +50,7 @@ body{
     padding-bottom: 4vmin;
 	border-radius: 70px;
 	box-shadow: 0 0 30px rgba(255,255,255,0.9);
+
 }
 
 #page-title h1{
@@ -87,9 +93,12 @@ body{
 
 #projects-section{
     margin-top: 10vh;
+
 }
 
 .project{
+
+    
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
@@ -141,23 +150,7 @@ body{
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
-
-    display: grid;
-    grid-auto-flow: column;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-    grid-auto-columns: 90%;
-    /*gap: var(--size-3);*/
     
-}
-
-.snaps-inline{
-    scroll-snap-type: inline mandatory;
-}
-
-/*All the children of parent with class snaps-inline*/
-.snaps-inline > *{
-    scroll-snap-align: start;
 }
 
 .project-description{
@@ -196,6 +189,8 @@ body{
 .slideshow-container img{
     min-width: 100%;
     cursor: pointer;
+    display: block;
+    transition: 300ms ease-in;
     
 }
 
@@ -328,9 +323,8 @@ body{
   
 
   .fullPageImage{
-      position: absolute;
       width: 100%;
-      height: auto;
+      height: max-content;
   }
  /*** @-webkit-keyframes fade {
     from {

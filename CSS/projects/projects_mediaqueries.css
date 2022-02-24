@@ -378,7 +378,7 @@
     }
 
     .slideshow-slide {
-        height: 28vh;
+        height: 45vw;
     }
 
     .project-name {
@@ -489,7 +489,6 @@
 
     .project-images{
         min-width: 134vh;
-        max-width: none;
 
     }
 
@@ -533,7 +532,7 @@
 
     .video-container {
         border: none !important;
-        width: 90vw;
+        width: 100%;
         height: 60vh;
     }
 
