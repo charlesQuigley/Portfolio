@@ -242,6 +242,7 @@
     .contact-form{
         flex-direction: column;
         padding: 5vh;
+        margin-top: 5vh;
     }
     
 

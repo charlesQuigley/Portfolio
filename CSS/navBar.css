@@ -293,6 +293,11 @@
 
   }
 
+  .nav-bar-burger span {
+    width: 50px;
+    height: 8px;
+  }
+
   .burger-menu ul {
       margin-top: 20vmin;
   }
