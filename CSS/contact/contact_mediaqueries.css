@@ -178,6 +178,7 @@
 
     #contactTitle, .contact-form{
         max-width: 90%;
+        box-shadow: 0 0 10px rgb(255 255 255 / 80%);
     }
 
     #contactTitle{
@@ -186,7 +187,7 @@
 
     .contact-form{
         margin-top: 4vw;
-        padding: 6vw;
+        padding: 4vw 6vw;
     }
 
     .input-fields .input, .msg textarea {
@@ -249,9 +250,14 @@
     }
     
 
-    .input-fields, .msg {
+    .input-fields{
         width: 95%;
     }
+
+    .msg{
+        width: 100%;
+    }
+
 
     .input-fields .input, .msg textarea {
         font-size: 4vmin;
@@ -370,12 +376,12 @@
     }
     
     .wrapper{
-        padding-top: 22vh;
+        padding-top: 28vh;
     }
 
     #contactTitle, .contact-form{
         max-width: 90%;
-        border-radius: 20px;
+        border-radius: 10px;
         box-shadow: 0 0 5px rgb(255 255 255 / 80%);
     }
 
@@ -389,8 +395,12 @@
     }
     
 
-    .input-fields, .msg {
+    .input-fields{
         width: 95%;
+    }
+
+    .msg{
+        width: 100%;
     }
 
     .input-fields .input, .msg textarea {
