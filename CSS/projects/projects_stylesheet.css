@@ -207,6 +207,8 @@ body{
 
 .slides{
     display: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
 }
 
 .captions{
