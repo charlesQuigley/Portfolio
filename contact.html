@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
 	<title>Charles' Portfolio</title>
 
     <!--Google Fonts-->
@@ -70,46 +73,15 @@
 
     <footer class="foot">
         <p id="phoneNumber">Phone :&nbsp;&nbsp;361-251-7222</p>
-        <p id="email">Email :&nbsp;&nbsp;cmq2st@gmail.com</p>
+        <p id="email">Email :&nbsp;&nbsp;cmq3st@gmail.com</p>
 
     </footer>
 
 	<script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript" src="JS/navBurger.js"></script>  
 
     <script type = "text/javascript" src="JS/contact/smtp.js"></script>
-	<!--<script type="text/javascript">
-		
-		function sendEmail(){
-		
-		var name = document.getElementById("Name").value;
-		var mailAddress = document.getElementById("Address").value;
-		var phoneNumber = document.getElementById("Phone").value;
-		var mailSubject = document.getElementById("Subject").value;
-		var mailBody = document.getElementById("MessageBody").value;
-		
-			Email.send({
-					
-					SecureToken: "04d517a5-d449-473c-a15b-ea3ac7e9290f",
-					From: "alohabot96@gmail.com",
-					To: "cmq2st@gmail.com",
-					Subject: mailSubject,
-					Body: "The following email was sent from your Git Hub Portfolio, Charles" + "<br>" + "---------------------------------------------------------" + "<br><br>"
-						  + "Name: " + name + "<br><br>" + "Email Address: " + mailAddress + "<br><br>" + "Phone Number: " + phoneNumber + 
-						  "<br><br><br><br>" + mailBody
-				})
-					.then(function (message) {
-						if(message == "OK")
-                        {
-                            alert("Thank you for your email. Once I see your message, I'll be sure to respond :)");
-                        }
-                        else
-                        {
-                            alert("Oops. Sorry, something went wrong. Please try to send the message again. Or, directly email me at cmq2st@gmail.com. Thank you.");
-                        }
-					});
-		}
-	</script>
-	<script type = "text/javascript" src="JS/navBurger.js"></script>  
+
 
 </body>
 </html>

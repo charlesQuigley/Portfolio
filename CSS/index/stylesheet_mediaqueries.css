@@ -644,6 +644,11 @@
 /**PORTRAIT MODE FOR PHONES**/
 @media screen and  (min-width: 300px) and (max-width: 499px)
 {
+    #backgroundImg{
+        background-image: url(../../Images/headerPic_50.png);
+        background-position: -90vmin center;
+        background-size: cover;
+      }
 
     .closeModalButton {
         top: 10vh;
@@ -1516,6 +1521,7 @@
 }
 
 @media screen and (hover: none) {
+    
 
     #profile-picture:hover {
         filter: none;
