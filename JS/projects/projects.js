@@ -140,9 +140,11 @@ function prev_next_slides(n, slideShowNumber) {
   showSlides(slideIndex[slideShowNumber] += n, slideShowNumber);
 }
 
-$(window).on('touchmove', function(e) {
-       e.preventDefault();
-});
+function BlockMove(event) {
+    // Tell Safari not to move the window.
+      event.preventDefault();
+}
+
 
 $(".slides1").on("swipeleft", function(){
     showSlides(slideIndex[0] += 1, 0);
