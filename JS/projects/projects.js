@@ -140,6 +140,9 @@ function prev_next_slides(n, slideShowNumber) {
   showSlides(slideIndex[slideShowNumber] += n, slideShowNumber);
 }
 
+$(window).on('touchmove', function(e) {
+       e.preventDefault();
+});
 
 $(".slides1").on("swipeleft", function(){
     showSlides(slideIndex[0] += 1, 0);
