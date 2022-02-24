@@ -45,8 +45,13 @@ body{
     padding-top: 8vw;
 }
 
+#contactTitle, .contact-form{
+	box-sizing: border-box;
+	width: 70vw;
+	max-width: 70vw;
+}
+
 .contact-form{
-	max-width: 80vw;
 	margin: 0 auto;
 	background-color: rgba(0, 0, 0, 0.95);
 	padding: 30px;
@@ -131,7 +136,7 @@ body{
 }
 
 #contactTitle{
-	max-width: 80vw;
+
 	margin: 0 auto;
 	background-color: rgba(0, 0, 0, 0.95);
 	padding: 3vh;
@@ -164,7 +169,7 @@ body{
 }
 
 #phoneNumber{
-    font-size: 8vmin;
+    font-size: 6vmin;
     font-weight: bolder;
     text-align: center;
     color: white;
@@ -174,7 +179,7 @@ body{
 }
 
 #email{
-  font-size: 8vmin;
+  font-size: 6vmin;
   font-weight: bolder;
   text-align: center;
   color: white;

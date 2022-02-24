@@ -65,6 +65,7 @@
 
     #contactTitle, .contact-form{
         border-radius: 20px;
+        width:90%;
     }
 
     #backgroundImg {
@@ -155,6 +156,8 @@
 @media screen and (max-width: 1000px){
     #contactTitle, .contact-form{
         border-radius: 20px;
+        width: 90%;
+
     }
 }
 
