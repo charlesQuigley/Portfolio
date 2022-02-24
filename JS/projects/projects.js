@@ -141,9 +141,15 @@ function prev_next_slides(n, slideShowNumber) {
 }
 
 
-document.addEventListener('touchmove', function(e) {
+//document.addEventListener('touchmove', function(e) {
+//    e.preventDefault();
+//}, { passive: false });
+
+
+
+$(".slides1").on("touchstart", function(e){
     e.preventDefault();
-}, { passive: false });
+});
 
 $(".slides1").on("swipeleft", function(){
     showSlides(slideIndex[0] += 1, 0);
