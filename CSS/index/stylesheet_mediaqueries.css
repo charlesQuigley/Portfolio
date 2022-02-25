@@ -3,6 +3,18 @@
 @media screen and  (min-height: 500px) and (min-width: 500px) and (hover: none)
 {
 
+    #backgroundImg {
+        background-position-x: -48vw;
+        /* background-position-y: 0vw; */
+        z-index: -2;
+        position: fixed;
+        /* background-position: -16vmax center; */
+        background-size: 150% 118vh;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+    }
+
     .closeModalButton {
         font-size: 100px;
     }
@@ -17,11 +29,11 @@
         height: 65vmax;
     }
 
-    #headerBackground{
-        background-image: url(../../Images/headerPic.png);
+    #headerBackground {
+        background-image: none;
         background-attachment: scroll;
-        background-size: cover;
-
+        background-color: rgba(0,0,0,0);
+        background-blend-mode: normal;
     }
 
     #header{
@@ -298,7 +310,7 @@
    }
    
    #headerBackground{
-       background-image: url(../../Images/headerPic.png);
+       background-image: none;
        background-size: 120% 120%;
    }
     
@@ -307,7 +319,7 @@
     }    
 
     #profile-picture{
-        height: 30vmax;
+        height: 26vmax;
         width: auto;
         margin-left: 1.8vmax;
         margin-top: auto;
@@ -486,7 +498,7 @@
     }
 
     #headerBackground{
-        background-image: url(../../Images/headerPic.png);
+        background-image: none;
         background-size: 120%;
        
     }
@@ -667,14 +679,17 @@
 
 
     #headerBackground{
-        background-image: url(../../Images/headerPic_phoneHeader2.png);
-
+        /*background-image: url(../../Images/headerPic_phoneHeader2.png);
         background-color: rgba(255,255,0,0.0);
-        
-
         background-attachment: scroll;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: -1;*/
 
-        background-size: 120% 120%;
+        background-image: none;
+        background-color: transparent;
+        background-blend-mode: normal;
 
     }
 
@@ -988,6 +1003,11 @@
 /***LANDSCAPE PHONES********/
 @media screen and (max-height: 500px){
 
+
+    #backgroundImg{
+        background-size: 110%  105vh;
+    }
+
     .closeModalButton {
         top: 10vmin;
         right: 20vmax;
@@ -1016,10 +1036,16 @@
    }
    
    #headerBackground{
-       background-image: url(../../Images/headerPic_50.png);
-       background-color: rgba(0,0,0,0.1);
+       position: fixed;
+       /*background-image: url(../../Images/headerPic_50.png);*/
+       background-image: none;
+       background-color: rgba(0,0,0,0);
        background-attachment: scroll;
-       background-size: 112%;
+       background-size: 110% 58vw;
+       height: 30vw;
+       width: 100%;
+       z-index: -1;
+
    }
     
     #header{
@@ -1213,6 +1239,10 @@
 @media screen and (max-width: 300px)
 {
 
+    #backgroundImg{
+        background-size: 180% 100vh;
+    }
+
     .closeModalButton {
         top: 10vh;
     }
@@ -1260,7 +1290,7 @@
         margin-right: auto;
         margin-top: 8vmax;
 
-        border: 8px solid rgba(0,0,0,1);
+        border: 6px solid rgba(0,0,0,1);
 
         box-shadow: 0 0 15px rgb(255 255 255 / 70%);
         

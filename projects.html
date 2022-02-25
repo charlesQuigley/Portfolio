@@ -26,7 +26,15 @@
 </head>
 <body ontouchstart class="Finished">
 
-    <div id="loadScreen"><h1>Loading...</h1></div>
+    <div id="loadScreen">
+        <h1>Loading...</h1>
+        <div class='progress' id="progress_div">
+            <div class='bar' id='bar1'></div>
+            <div class='percent' id='percent1'></div>
+        </div>
+        <input type="hidden" id="progress_width" value="0">
+    </div>
+
     <div id="backgroundImg"></div>
 
     <!--Modal. Used when clicking on any of the slideshow slides. A modal is a dialog box/popup window that is displayed on top of the current page.
@@ -43,9 +51,9 @@
         <span></span>
         <div class="burger-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#AboutMeSection">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" rel="external">Home</a></li>
+                <li><a href="index.html#AboutMeSection" rel="external">About</a></li>
+                <li><a href="contact.html" rel="external">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -57,8 +65,8 @@
     <div class="nav-bar">
         <div class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" rel="external">Home</a></li>
+                <li><a href="contact.html" rel="external">Contact</a></li>
             </ul>
         </div>
     </div>   

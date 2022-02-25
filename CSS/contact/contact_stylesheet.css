@@ -84,6 +84,14 @@ body{
     font-size: 3vmin;
 }
 
+.input-fields .input{
+	width: 90%;
+}
+
+.msg textarea{
+	width: 95%;
+}
+
 .msg textarea{
 	height: 212px;
 	resize: none;
@@ -106,7 +114,7 @@ body{
     background: rgb(196, 74, 3);
     text-align: center;
     padding: 2vh 10px;
-    width: 100%;
+    width: 98%;
     border-radius: 30px;
     color: #fff;
     cursor: pointer;
@@ -115,6 +123,10 @@ body{
     font-size: 3vmin;
     transition: 0.4s;
     border: none;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	
 }
 

@@ -266,6 +266,9 @@
       display: block;
       z-index: 1;
 
+      top: 4vmax;
+      right: 8vmin;
+
    }
 
   .nav-bar-burger span {

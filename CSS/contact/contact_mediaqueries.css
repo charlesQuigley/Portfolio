@@ -95,6 +95,7 @@
         margin-top: 1vh;
         padding: 2vh 5vh;
         font-size: 4vmin;
+        width: 70%;
     }
 
     #phoneNumber, #email {
@@ -145,6 +146,7 @@
         margin-top: 1vh;
         padding: 2vh 5vh;
         font-size: 4vmin;
+        width: 60%;
     }
 
     #phoneNumber, #email {
@@ -251,6 +253,10 @@
 
     .input-fields, .msg {
         width: 95%;
+    }
+
+    .msg{
+        width: 100%;
     }
 
     .input-fields .input, .msg textarea {
@@ -370,7 +376,7 @@
     }
     
     .wrapper{
-        padding-top: 22vh;
+        padding-top: 28vh;
     }
 
     #contactTitle, .contact-form{
