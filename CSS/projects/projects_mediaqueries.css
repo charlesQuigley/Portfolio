@@ -23,8 +23,8 @@
     }
 
     .modalImage {
-        width: 100%;
-        max-width: 100%;
+        width: 80%;
+        max-width: 80%;
     }
 
     .fullPageModalImg{
@@ -234,8 +234,8 @@
     }
 
     .fullPageModalImg {
-        width: 58%;
-        max-width: 58%;
+        width: 46%;
+        max-width: 46%;
         height: auto;
         margin-top: -10%;
     }
@@ -317,6 +317,11 @@
         width: 100%;
         height: auto;
         margin-top: 12vh;
+    }
+
+    .fullPageImage{
+        width: 100%;
+        height: 50vh;
     }
 
     #page-title {
@@ -401,12 +406,20 @@
         
 
     .prevButton, .nextButton {
-        top: 26%;
-        padding: 4vw;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-        font-size: 2.5vh;
+        top: 18%;
+        padding: 3vw;
+        padding-top: 8vw;
+        padding-bottom: 8vw;
+        font-size: 5vh;
+        border: none;
+        color:rgba(132, 0, 255, 1);
+        background-color: transparent;
     }
+
+    .prevButton:hover, .nextButton:hover{
+        background-color: transparent !important;
+    }
+
 
     #slideshow-dots{
         bottom: 3%;
@@ -444,6 +457,11 @@
     .fullPageModalImg{
         width: 80vh;
         margin-top: -12vh;
+    }
+
+    .fullPageImage{
+        width: 100%;
+        height: 150vh;
     }
 
     #page-title{
@@ -512,11 +530,19 @@
     }
 
     .prevButton, .nextButton{
-        top: 30%;
-        font-size: 3.5vw;
+        top: 20%;
+        font-size: 16vh;
         padding: 2.5vw;
         padding-top: 5vw;
         padding-bottom: 5vw;
+        border: none;
+        color:rgba(132, 0, 255, 1);
+        background-color: transparent;
+    }
+
+
+    .prevButton:hover, .nextButton:hover{
+        background-color: transparent !important;
     }
 
 
@@ -608,7 +634,15 @@
         padding-bottom: 3vh;
         font-size: 4vh;
         transition: 0s;
+        border: none;
+        color:rgba(132, 0, 255, 1);
+        background-color: transparent;
     }
+
+
+.prevButton:hover, .nextButton:hover{
+    background-color: transparent !important;
+}
 
     #slideshow-dots {
         bottom: 1%;
@@ -631,7 +665,7 @@
 
     #page-title {
         border-radius: 10px;
-        margin-top: 24vmin;
+        margin-top: 26vmin;
     }
 
     #Description, .project {
@@ -669,7 +703,7 @@
     }
 
     .prevButton, .nextButton {
-        top: 23%;
+        top: 20%;
         padding: 1.8vw;
         padding-top: 5vw;
         padding-bottom: 5vw;
@@ -708,7 +742,7 @@
     }
 
     .prevButton:active, .nextButton:active{
-        background-color: rgba(250, 94, 4, 0.8);
+        background-color: rgba(250, 94, 4, 0.8) !important;
         /*transition: background-color 5ms ease-in;*/
         transition: 0s;
     }
