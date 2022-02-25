@@ -1,6 +1,14 @@
+
+$(window).load(function(){
+
+    $('#backgroundImg').css('background-image', "url(Images/headerPic-min.png)");
+
+});
+
+
 //Loading Page is black. Need loading page because jQuery Mobile will shoot user back to the top of the page 
 //Once the page fully loads...which looks ugly.
-$(window).load(function(){
+/*$(window).load(function(){
 
     //when the page has fully loaded
     $("#loadScreen").css("display", "none");
@@ -17,11 +25,13 @@ document.onreadystatechange = function(e)
       set_ele(all[i]);
     }
   }
-}
+} */
 
 
 /*Source: http://talkerscode.com/webtricks/display-progress-bar-while-page-loads-using-jquery.php*/
 /*Page Load Progress Bar*/ 
+
+/*
 function check_element(ele)
 {
   var all = document.getElementsByTagName("*");
@@ -50,6 +60,9 @@ function set_ele(set_element)
 {
   check_element(set_element);
 }
+
+*/
+
 /*********************************************************************/
 
 //Observers

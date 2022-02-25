@@ -28,6 +28,7 @@ body{
     font-size: 1rem;
     text-align: center;
     padding-top: 20vh;
+    display: none;
 }
 
 
@@ -71,7 +72,7 @@ body{
 #backgroundImg{
     position: fixed;
     top: 0;
-    background-image: url(../../Images/headerPic-min.png);
+    background-image: url(../../Images/headerPic_1_20.png);
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: exclusion; 
     background-size: cover;
