@@ -1,6 +1,6 @@
 //Loading Page is black. Need loading page because jQuery Mobile will shoot user back to the top of the page 
 //Once the page fully loads...which looks ugly.
-$(window).ready(function(){
+$(window).load(function(){
 
     //when the page has fully loaded
     $("#loadScreen").css("display", "none");

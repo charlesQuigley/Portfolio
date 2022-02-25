@@ -71,7 +71,7 @@ body{
 #backgroundImg{
     position: fixed;
     top: 0;
-    background-image: url(../../Images/headerPic.png);
+    background-image: url(../../Images/headerPic-min.png);
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: exclusion; 
     background-size: cover;
