@@ -28,7 +28,7 @@ function check_element(ele)
   var totalele=all.length;
   var per_inc=100/all.length;
 
-  if($(ele).on())
+  if($(ele).on("load"))
   {
     var prog_width=per_inc+Number(document.getElementById("progress_width").value);
     document.getElementById("progress_width").value=prog_width;
