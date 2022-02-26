@@ -1,6 +1,6 @@
 
 /**PORTRAIT MODE FOR TABLETS**/
-@media screen and  (min-height: 500px) and (min-width: 500px)
+@media screen and  (min-height: 900px) and (min-width: 500px)
 {
 
     #backgroundImg {
@@ -305,7 +305,7 @@
 
 
 /**LANDSCAPE MODE FOR TABLETS**/
-@media screen and (min-width: 1049px) and (min-height: 700px) {
+@media screen and (min-width: 1024px) and (min-height: 700px) {
     
     #wrapper{
         flex-direction: row;
