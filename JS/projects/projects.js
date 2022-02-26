@@ -30,6 +30,7 @@ $(window).load(function(){
 });
 
 
+
 $(document).ready(function(){
     $('#backgroundImg').addClass('asyncImage');
    // $('#backgroundImg').css('background-image', "url(Images/headerPic-min.png)");
