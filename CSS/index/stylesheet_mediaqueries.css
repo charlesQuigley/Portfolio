@@ -500,6 +500,8 @@
     #headerBackground{
         background-image: none;
         background-size: 120%;
+        background-color: rgba(0,0,0,0);
+
        
     }
     
@@ -636,6 +638,7 @@
     #skills-footer{
       padding-top: 8vmin;
       font-size: 4vmin;
+      
     }
 
     .foot{
@@ -690,6 +693,8 @@
         background-image: none;
         background-color: transparent;
         background-blend-mode: normal;
+        height: 0px;
+        width: 100%;
 
     }
 
