@@ -814,6 +814,7 @@
           margin-right: 1vmax;
           padding-left: 0;
           padding-right: 0;
+          padding-bottom: 4vh;
 
           grid-template-rows: auto;
       }
