@@ -287,7 +287,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     position: fixed;
     /*background-position: -16vmax center;*/
     background-size: 112% 100vh;
-    height:100%;
+    height:100vh;
     width:100%;
   }
 
