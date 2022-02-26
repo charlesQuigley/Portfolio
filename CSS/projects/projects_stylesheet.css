@@ -72,18 +72,32 @@ body{
 #backgroundImg{
     position: fixed;
     top: 0;
-    background-image: url(../../Images/headerPic_1_20.png);
+    background-image: url(../../Images/headerPic-min.png);
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: exclusion; 
     background-size: cover;
     background-position: center -35vh;
     height: 140vh;
     width: 100%;
+    opacity: 0;
     z-index: -1;
 }
 
+#tempBackgroundImg{
+    background-image: url(../../Images/headerPic2.png);
+    z-index: -2;
+    position: fixed;
+    top: 0;
+    background-blend-mode: exclusion; 
+    background-size: cover;
+    background-position: center -35vh;
+    height: 140vh;
+    width: 100%;
+}
+
 .asyncImage{
-    transition: 300ms ease-in;
+    transition: 1000ms ease-in;
+    opacity: 1 !important;
 }
 
 

@@ -22,7 +22,7 @@ $.mobile.silentScroll = function( ypos ) {
 $(window).load(function(){
 
     $('#backgroundImg').addClass('asyncImage');
-    $('#backgroundImg').css('background-image', "url(Images/headerPic-min.png)");
+   // $('#backgroundImg').css('background-image', "url(Images/headerPic-min.png)");
 
     $.mobile.silentScroll();
 
