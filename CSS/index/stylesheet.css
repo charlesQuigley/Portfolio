@@ -300,7 +300,7 @@ old div that was meant to be a black circle that the actual profile picture woul
   }
 
   #backgroundImg{
-    background-image: url(../../Images/headerPic_50.png);
+    background-image: url(../../Images/headerPic_50-min.png);
     background-color: rgba(0,0,0,0.1);
     background-blend-mode: hue;
     background-position-x: -10vw;
