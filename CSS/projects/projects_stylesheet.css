@@ -84,7 +84,7 @@ body{
 }
 
 #tempBackgroundImg{
-    background-image: url(../../Images/headerPic2.png);
+    background-image: url(../../Images/projectsbackground-temp.png);
     z-index: -2;
     position: fixed;
     top: 0;
