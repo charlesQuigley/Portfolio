@@ -19,7 +19,7 @@ $.mobile.silentScroll = function( ypos ) {
 } 
 
 
-$(window).load(function(){
+$(window).ready(function(){
 
     $('#backgroundImg').addClass('asyncImage');
    // $('#backgroundImg').css('background-image', "url(Images/headerPic-min.png)");
