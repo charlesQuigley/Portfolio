@@ -96,7 +96,7 @@ body{
 }
 
 .asyncImage{
-    transition: 1000ms ease-in;
+    transition: opacity 1000ms ease-in;
     opacity: 1 !important;
 }
 
