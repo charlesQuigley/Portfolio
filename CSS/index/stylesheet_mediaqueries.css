@@ -12,7 +12,6 @@
         background-size: 150% 118vh;
         height: 100vh;
         width: 100%;
-        background-color: rgba(0,0,0,0.2);
     }
 
     .closeModalButton {
@@ -38,7 +37,9 @@
 
     #header{
         
-        height: 65vmax;
+        min-height: 65vmax;
+        height: max-content;
+        background-color: transparent;
     }
 
     #wrapper{
@@ -47,22 +48,33 @@
     }
 
     #profile-picture{
-        width: 33vmax;
+        width: 30vmax;
         height: auto;
         margin-left: auto;
         margin-right: auto;
         margin-top: 8vmax;
+        margin-bottom: 4vh;
     }
 
     #name-and-contact
     {
         margin: 0;
         text-align: center;
+        background-color: rgba(0,0,0,1);
+        border-radius: 20px;
+        padding: 1vh 5vw;
+    }
+
+    #name-and-contact p{
+        margin-top: 1vh;
+        font-size: 2vh;
+        margin-bottom: 1vh;
     }
 
     #name-and-contact h1{
-        margin-top: 2vh;
+        margin-top: 0;
         padding-right: 0px; 
+        font-size: 8vw;
     }      
 
     #contact-info{
@@ -70,6 +82,7 @@
         margin-top: 4vmax !important;
         margin-left: 0 !important;
         padding-bottom: 3vmax;
+        display: none;
     
     }
 
@@ -296,7 +309,8 @@
     
     #wrapper{
         flex-direction: row;
-        height: inherit;
+        min-height: 56vmin;
+        height: max-content;
         margin-left: 0;
         margin-right: 0;
         width: max-content;
@@ -315,7 +329,9 @@
    }
     
     #header{
-        height: 58vmin;
+        min-height: 56vmin;
+        height: max-content;
+        background-color: rgba(0,0,0,0.2);
     }    
 
     #profile-picture{
@@ -347,6 +363,9 @@
     #name-and-contact
     {
         margin-left: 1.8vmax;
+        border-radius: 0px;
+        background-color: transparent;
+        padding: 0;
     }
 
     #name-and-contact h1{
@@ -355,8 +374,9 @@
     }
 
     #contact-info{
-        margin-top: 8vmin !important;
+        margin-top: 5vmin !important;
         font-size: 3.2vmin !important; /*1.8rem*/
+        display: block;
 
     }
 
@@ -486,11 +506,11 @@
     
     #wrapper{
         flex-direction: row;
-        height: inherit;
+        height: 56vmin;
         margin-left: 0;
         margin-right: 0;
-        width: max-content;
-        margin-top: 2vh;
+        width: 100%;
+        margin-top: 0vh;
     }
 
     #header-picture{
@@ -506,7 +526,8 @@
     }
     
     #header{
-        height: 58vmin;
+        min-height: 56vmin;
+        height: max-content;
     }    
 
     #profile-picture{
@@ -516,6 +537,16 @@
         margin-top: auto;
         margin-bottom: auto;
         border: 8px solid rgba(0,0,0,1);
+    }
+
+    #contact-info{
+        display: block;
+        font-size: 2.3vmax !important;
+    }
+
+
+    .nav-bar{
+        left: 0;
     }
 
     #Education{
@@ -547,6 +578,9 @@
     #name-and-contact
     {
         margin-left: 1.8vmax;
+        border-radius: 0px;
+        background-color: transparent;
+        padding: 0;
     }
 
     #name-and-contact h1{
@@ -554,11 +588,6 @@
         font-size: 6vmax;
     }
 
-    #contact-info{
-        margin-top: 8vmin !important;
-        font-size: 3.2vmin !important; /*1.8rem*/
-
-    }
 
     #name-and-contact p{
         margin-top: 2vmin;
@@ -701,6 +730,7 @@
     #header{
         
         height: 65vmax;
+        background-color: transparent;
     }
     
     
@@ -711,11 +741,12 @@
     }
 
     #profile-picture{
-        width: 33vmax;
+        width: 30vmax;
         height: auto;
         margin-left: auto;
         margin-right: auto;
         margin-top: 8vmax;
+        margin-bottom: 2vmax;
 
         border: 8px solid rgba(0,0,0,1);
 
@@ -729,18 +760,27 @@
     {
         margin: 0;
         text-align: center;
+        background-color: rgba(0,0,0,1);
+        border-radius: 10px;
+        padding: 1vh 5vw;
     }
 
     #name-and-contact h1{
-        margin-top: 2vh;
+        margin-top: 0vh;
         padding-right: 0px; 
     }      
+
+    #name-and-contact p{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
 
     #contact-info{
         text-align: center;
         margin-top: 4vmax !important;
         margin-left: 0 !important;
         padding-bottom: 3vmax;
+        display: none;
     
     }
 
@@ -1030,7 +1070,7 @@
         height: inherit;
         margin-left: 0;
         margin-right: 0;
-        width: max-content;
+        width: 100%;
     }
 
     #header-picture{
@@ -1055,7 +1095,13 @@
     
     #header{
         height: 55vmin;
-    }    
+        background-color: rgba(0,0,0,0.1);
+    }   
+    
+    #wrapper{
+        margin-top: 0;
+        width: 100%;
+    }
 
     #profile-picture{
         height: 45vmin;
@@ -1065,6 +1111,10 @@
         margin-bottom: auto;
         border: 6px solid rgba(0,0,0,1);
         box-shadow: 0 0 30px rgb(255 255 255 / 50%);
+    }
+
+    .nav-bar{
+        left: 1vw;
     }
 
     #Education{
@@ -1279,6 +1329,7 @@
     #header{
         
         height: 65vmax;
+        background-color: transparent;
     }
     
     
@@ -1294,6 +1345,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 8vmax;
+        margin-bottom: 4vmax;
 
         border: 6px solid rgba(0,0,0,1);
 
@@ -1307,11 +1359,16 @@
     {
         margin: 0;
         text-align: center;
+        background-color: rgba(0,0,0,1);
+        border-radius: 10px;
+        padding: 1vh 5vw;
+        
     }
 
     #name-and-contact h1{
-        margin-top: 2vh;
+        margin-top: 0;
         padding-right: 0px; 
+        
     }      
 
     #contact-info{
@@ -1319,7 +1376,13 @@
         margin-top: 4vmax !important;
         margin-left: 0 !important;
         padding-bottom: 3vmax;
+        display: none;
     
+    }
+
+    #name-and-contact p{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
 
     #Education{
