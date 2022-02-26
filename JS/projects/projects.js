@@ -19,13 +19,19 @@ $.mobile.silentScroll = function( ypos ) {
 } 
 
 
-$(window).ready(function(){
+$(window).load(function(){
 
     $('#backgroundImg').addClass('asyncImage');
    // $('#backgroundImg').css('background-image', "url(Images/headerPic-min.png)");
 
     $.mobile.silentScroll();
 
+
+});
+
+$(document).ready(function(){
+    $('#backgroundImg').addClass('asyncImage');
+   // $('#backgroundImg').css('background-image', "url(Images/headerPic-min.png)");
 
 });
 
