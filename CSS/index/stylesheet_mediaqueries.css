@@ -303,6 +303,14 @@
     /*Nothing Yet*/
 }
 
+/*Ipad Pro*/
+@media screen and (width: 1024px) and (height: 1366){
+
+    #wrapper{
+        flex-direction: column;
+
+    }
+}
 
 /**LANDSCAPE MODE FOR TABLETS**/
 @media screen and (min-width: 1024px) and (min-height: 700px) {
