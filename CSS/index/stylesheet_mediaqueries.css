@@ -819,6 +819,214 @@
 }
 
 
+/**Huge Desktop Displays***/
+@media screen and (min-width: 1400px) and (min-height: 900px){
+    
+    .nav-bar{
+        display: block;
+        left: 0;
+    }
+
+    .nav-bar-burger{
+        display: none;
+    }
+
+
+
+    #wrapper{
+        flex-direction: row;
+        min-height: 56vmin;
+        height: max-content;
+        margin-left: 0;
+        margin-right: 0;
+        width: max-content;
+    }
+
+    #header-picture{
+        height: 58vmin;
+        max-width: 100%;
+       
+        overflow: hidden;
+   }
+   
+   #name-and-contact h1 {
+        font-size: 5.5vmax;
+    }
+
+    .menu a {
+        font-size: 2.5vmax;
+        border-radius: 360px;
+        margin-right: 2vh;
+    }
+
+   #headerBackground{
+       background-image: none;
+       background-size: 120% 120%;
+   }
+    
+    #header{
+        min-height: 56vmin;
+        height: max-content;
+        background-color: rgba(0,0,0,0.2);
+    }    
+
+    #profile-picture{
+        height: 26vmax;
+        width: auto;
+        margin-left: 1.8vmax;
+        margin-top: auto;
+        margin-bottom: auto;
+        border: 8px solid rgba(0,0,0,1);
+    }
+
+    #Education{
+        min-height: 50vh; /*60vh;*/
+        max-height: max-content;
+    }
+
+    #education-header{
+        padding-top: 6vmin;
+    }
+
+    #education-milestones{
+        margin-top: 4vmin;
+    }
+
+    .grid-item svg {
+        width: 6.5vmax;
+    }
+    
+    #name-and-contact
+    {
+        margin-left: 1.8vmax;
+        border-radius: 0px;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    #name-and-contact h1{
+        margin-top: 16vmin;
+        font-size: 6vmax;
+    }
+
+    #contact-info{
+        margin-top: 5vmin !important;
+        font-size: 3.2vmin !important; /*1.8rem*/
+        display: block;
+
+    }
+
+    #name-and-contact p{
+        margin-top: 2vmin;
+        margin-left: 0.8vmax !important;
+        font-size: 2.8vmin;
+        text-align: left;
+        
+    }
+
+    #AboutMeSection{
+        padding-bottom: 0;
+    }
+
+    #AboutMeSection br{
+        line-height: 4vmin;;
+    }    
+
+    #AboutMe_1{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        padding-top: 2vmax;
+        padding-bottom: 2vmax;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+
+    }
+
+    #AboutMe_2{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        padding-top: 2vmax;
+        padding-bottom: 2vmax;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+
+    }
+
+    #AboutMe_3{
+        margin-left: 5vmin;
+        margin-right: 5vmin;
+        padding-top: 2vmax;
+        padding-bottom: 2vmax;
+        padding-left: 3vmin;
+        padding-right: 3vmin;
+
+    }
+
+    #AboutMe_3{
+        margin-top: 4vmax;
+    }
+
+    #AboutMe_1 p{
+        font-size: 2vmax;
+    }
+
+    #AboutMe_2 p{
+        font-size: 2vmax;
+    }
+
+    #AboutMe_3 p{
+        font-size: 2vmax;
+    }
+
+    #AboutMe_3 a{
+        margin-top: 4vmin;
+        border-radius: 360px;
+        min-width: 40%;
+    }
+
+    #Skills-Section {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: inherit;
+        min-height: max-content;
+        max-height: 60vmax;
+    }
+
+    #skills-header {
+        text-align: center;
+        padding-top: 8vmin;
+        font-size: 7vmin;
+    }
+
+    #Skills-Section ul{
+        margin-top: 6vmin;
+    }
+  
+    #Skills-Section li{
+      font-size: 5vmin;
+      font-weight: normal;
+      padding: 1.5vmax;
+    }
+  
+    #skills-footer{
+      padding-top: 8vmin;
+      padding-bottom: 8vmin;
+      font-size: 5vmin;
+    }
+
+    .foot{
+        height: 48vmin;
+    }
+
+    #phoneNumber {
+        padding-top: 12vmin;
+    }
+  
+    
+   /*-----------------------------------------------------------*/
+}
 
 
 
