@@ -305,7 +305,7 @@
 
 
 /**LANDSCAPE MODE FOR TABLETS**/
-@media screen and (min-width: 1024px) and (min-height: 700px) {
+@media screen and (min-width: 1024px) and (min-height: 700px) and (max-height: 799px) {
     
     #wrapper{
         flex-direction: row;
@@ -490,7 +490,7 @@
    /*-----------------------------------------------------------*/
 }
 
-
+/**Ipad Pro **/
 @media screen and (min-height: 1200px) and (max-height: 1400px){
 
     #backgroundImg {
@@ -795,6 +795,9 @@
 
 
 }
+
+
+
 
 
 /**LANDSCAPE MODE FOR LARGE PHONES**/
