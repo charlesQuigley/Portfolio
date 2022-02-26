@@ -759,6 +759,8 @@
     #name-and-contact
     {
         margin: 0;
+        margin-left: auto;
+        margin-right: auto;
         width: 90%;
         max-width: 90%;
         text-align: center;
