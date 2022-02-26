@@ -304,7 +304,7 @@
 }
 
 /*Ipad Pro*/
-@media screen and (width: 1024px) and (height: 1366){
+@media screen and (min-width: 1024px) and (min-height: 1366){
 
     #wrapper{
         flex-direction: column;
