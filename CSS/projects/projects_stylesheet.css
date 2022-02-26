@@ -82,6 +82,10 @@ body{
     z-index: -1;
 }
 
+.asyncImage{
+    transition: 300ms ease-in;
+}
+
 
 
 

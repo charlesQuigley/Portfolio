@@ -1,9 +1,34 @@
 
+//JQuery Mobile forces a scroll to the top of the page upon window.load.
+//To prevent this, overload the function.
+//The initial scroll-up seems unavoidable at the moment....
+//But, I load-in a low-res background before the high-res one. So, onload occurs twice,
+//meaning that mobile JQuery tries to scroll to the top of the page twice.
+//The following code prevents the second scroll.
+//SOURCE: https://stackoverflow.com/questions/41852084/jquery-mobile-jumps-to-top-after-window-load
+var silentScroll = $.mobile.silentScroll;
+$.mobile.silentScroll = function( ypos ) {
+    if ( $.type( ypos ) !== "number" ) {
+        // FIX : prevent auto scroll to top after page load
+        ypos = null;
+            
+         return;
+        } else {
+            silentScroll.apply(this, arguments);
+        }
+} 
+
+
 $(window).load(function(){
 
+    $('#backgroundImg').addClass('asyncImage');
     $('#backgroundImg').css('background-image', "url(Images/headerPic-min.png)");
 
+    $.mobile.silentScroll();
+
+
 });
+
 
 
 //Loading Page is black. Need loading page because jQuery Mobile will shoot user back to the top of the page 
