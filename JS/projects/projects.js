@@ -29,6 +29,16 @@ $(window).load(function(){
 
 });
 
+window.addEventListener('pageshow', myFunction);
+
+function myFunction(event) { 
+  if (event.persisted) {
+    alert("The page was cached by the browser");
+  } else {
+    alert("The page was NOT cached by the browser");
+  }
+}
+
 $(document).ready(function(){
     $('#backgroundImg').addClass('asyncImage');
    // $('#backgroundImg').css('background-image', "url(Images/headerPic-min.png)");
