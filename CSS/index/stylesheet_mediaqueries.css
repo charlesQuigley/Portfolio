@@ -305,7 +305,7 @@
 
 
 /**LANDSCAPE MODE FOR TABLETS**/
-@media screen and (min-width: 1000px) and (min-height: 700px) {
+@media screen and (min-width: 1049px) and (min-height: 700px) {
     
     #wrapper{
         flex-direction: row;
