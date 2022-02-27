@@ -1,4 +1,3 @@
-
 /**PORTRAIT MODE FOR TABLETS**/
 @media screen and  (min-height: 900px) and (min-width: 500px)
 {
@@ -297,15 +296,314 @@
 }
 
 
+/**Landscape Surface Pro 7 ***/ 
+@media screen and  (min-height: 900px) and (min-width: 500px) and (orientation: landscape){
+    #name-and-contact h1 {
+        font-size: 5vw;
+    }
+}
+
+
 /**Surface Duo Portrait**/
 @media screen and (min-height: 500px) and (min-width: 500px) and (max-width: 800px)
 {
-    /*Nothing Yet*/
+
+    #backgroundImg {
+        background-position-x: -48vw;
+        /* background-position-y: 0vw; */
+        z-index: -2;
+        position: fixed;
+        /* background-position: -16vmax center; */
+        background-size: 150% 118vh;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .closeModalButton {
+        font-size: 100px;
+    }
+
+    .modalImage {
+        margin-top: 10vh;
+        width: 60%;
+        height: auto;
+    }
+
+    #header-picture{
+        height: 65vmax;
+    }
+
+    #headerBackground {
+        background-image: none;
+        background-attachment: scroll;
+        background-color: rgba(0,0,0,0);
+        background-blend-mode: normal;
+    }
+
+    #header{
+        
+        min-height: 65vmax;
+        height: max-content;
+        background-color: transparent;
+    }
+
+    #wrapper{
+        flex-direction: column;
+        width: 50vmax;
+    }
+
+    #profile-picture{
+        width: 30vmax;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8vmax;
+        margin-bottom: 4vh;
+    }
+
+    #name-and-contact
+    {
+        margin: 0;
+        text-align: center;
+        background-color: rgba(0,0,0,1);
+        border-radius: 20px;
+        padding: 1vh 5vw;
+    }
+
+    #name-and-contact p{
+        margin-top: 1vh;
+        font-size: 2vh;
+        margin-bottom: 1vh;
+    }
+
+    #name-and-contact h1{
+        margin-top: 0;
+        padding-right: 0px; 
+        font-size: 8vw;
+    }      
+
+    #contact-info{
+        text-align: center;
+        margin-top: 4vmax !important;
+        margin-left: 0 !important;
+        padding-bottom: 3vmax;
+        display: none;
+    
+    }
+
+    #Education{
+        margin-left: 0;
+        margin-right: 0;
+        min-height: 40vmax;
+        max-height: max-content;
+      }
+    
+      #education-header{
+          text-align: center;
+          padding-top: 5vmax;
+          font-size: 4vmax;
+      }
+    
+      .grid-item svg{
+          width: 7.5vmax;
+      }
+    
+      #education-milestones{
+          margin-top: 4vmax;
+          margin-bottom: 2vmax;
+          margin-left: 1vmax;
+          margin-right: 1vmax;
+          padding-left: 4vmin;
+          padding-right: 4vmin;
+      }
+
+      .grid-item{
+          padding-top: 8px;
+          padding-bottom: 8px;
+      }
+    
+      .grid-item p{
+        font-size: 1.5vmax;
+        letter-spacing: 2px;
+        line-height: 2vmax;
+        padding-top: 1vmax;
+      }
+
+  /*About Me*/
+
+    #AboutMeSection{
+        padding-top: 8vmax;
+        padding-bottom: 0;
+    }
+
+    #AboutMe_1{
+        margin-left: 2vmin;
+        margin-right: 2vmin;
+        padding-top: 2vmax;
+        padding-bottom: 2vmax;
+        padding-left: 2vmin;
+        padding-right: 2vmin;
+        margin-top: 0;
+        border-radius: 20px;
+
+    }
+
+    
+  #AboutMe_1 h1{
+    margin-bottom: 0;
+    font-size: 5vmax;
+}
+
+#AboutMe_1 hr{
+    margin-top: 2vmax;
+    margin-bottom: 3vmax;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+}
+
+#AboutMe_1 p{
+    font-size: 2.8vmax;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+    line-height: 4vmax;
+}
+
+#AboutMeSection br{
+    line-height: 4vmax;
+}
+
+#AboutMe_2{
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    margin-top: 12vmax;
+    padding-top: 2vmax;
+    padding-bottom: 2vmax;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    border-radius: 20px;
+    
+}
+
+.from-left{
+    transform: translateX(-70%);
+}
+
+#AboutMe_2 h2{
+    margin-bottom: 0;
+    font-size: 3.8vmax;
+
+}
+
+#AboutMe_2 hr{
+    margin-top: 0;
+    margin-bottom: 1vmax;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+}
+
+#AboutMe_2 p{
+    font-size: 2.8vmax;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+    line-height: 4vmax;
+}
+
+
+#AboutMe_3{
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    margin-top: 5vmax;
+    padding-top: 2vmax;
+    padding-bottom: 2vmax;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    border-radius: 20px;
+}
+
+#AboutMe_3 p{
+    font-size: 2.8vmax;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+    line-height: 4vmax;
+}
+
+#AboutMe_3 a{
+    max-width: 40vmin;
+    margin-top: 4vmax;
+    margin-bottom: 1vmax;
+    font-size: 3vmax;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.4s;
+
+    padding: 20px 30px;
+}
+
+/*-----------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+/*Skills / Languages*/
+
+#Skills-Section{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 60vmax;
+  }
+
+  #skills-header{
+      padding-top: 10vmax;
+      font-size: 5.5vmax;
+  }
+
+  #Skills-Section ul{
+      margin-top: 5vmax;
+      text-align: center;
+  }
+
+  #Skills-Section li{
+    display: inline-block;
+    font-size: 3.5vmax;
+    margin: 0;
+    margin-top: 2vmax;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    font-weight: normal;
+    
+  }
+
+  #skills-footer{
+    padding-top: 8vmax;
+    font-size: 3.8vmax;
+  }
+
+  /*----------------------------------------------------*/
+  /*footer*/
+
+    .foot{
+        height: 48vmax;
+        /*background-image: url(../../Images/headerPic_1_20.png);*/
+    }
+
+    #phoneNumber{
+        font-size: 3.8vmax;
+        padding-top: 12vmax;
+    }
+
+    #email{
+        font-size: 3.8vmax;
+        padding-top: 3vmax;
+    }
+
+
 }
 
 
 /**LANDSCAPE MODE FOR TABLETS**/
-@media screen and (min-width: 1024px) and (min-height: 700px) and (max-height: 799px) {
+@media screen and (min-width: 1024px) and (min-height: 700px) and (max-height: 850px) {
     
     #wrapper{
         flex-direction: row;
@@ -1088,6 +1386,14 @@
         left: 0;
     }
 
+    .menu{
+        margin-left: 1vw;
+    }
+
+    .menu a{
+        margin-left: 1vw;
+    }
+
     #Education{
         min-height: 45vmin; /*60vh;*/
         max-height: max-content;
@@ -1124,7 +1430,9 @@
 
     #name-and-contact h1{
         margin-top: 16vmin;
-        font-size: 6vmax;
+        font-size: 5vmax;
+        text-align: left;
+
     }
 
 
