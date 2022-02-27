@@ -1,5 +1,5 @@
 /**PORTRAIT MODE FOR TABLETS**/
-@media screen and  (min-height: 500px) and (min-width: 500px)
+@media screen and  (min-height: 500px) and (min-width: 500px) and (pointer: coarse)
 {
 
    /* body {
@@ -441,6 +441,7 @@
 
 }
 
+/*Large Desktop Displays*/
 @media screen and (min-width: 1280px) and (min-height: 760px){
 
     .nav-bar{
@@ -458,10 +459,27 @@
         margin-right: 1vh !important;
     }
 
+    #page-title{
+        margin-top: 16vmin;
+        border-radius: 70px;
+    }
+
+    #Description, .project{
+        border-radius: 70px;
+    }
+
+    #page-title h1{
+        font-size: 6vmin;
+    }
+
     .slideshow-container{
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #phoneNumber, #email {
+        font-size: 2.8vmax;
     }
 }
 

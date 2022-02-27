@@ -1,5 +1,5 @@
 /**PORTRAIT MODE FOR TABLETS**/
-@media screen and  (min-height: 500px) and (min-width: 500px)
+@media screen and  (min-height: 500px) and (min-width: 500px) and (pointer: coarse)
 {
 
     #backgroundImg{
@@ -300,6 +300,93 @@
 
 }
 
+/**Large Desktop Displays**/
+@media screen and (min-width: 1280px) and (min-height: 760px){
+
+    .nav-bar{
+        display: block !important;
+    }
+
+    .nav-bar-burger{
+        display: none !important;
+    }
+
+    
+    .menu a {
+        font-size: 2.5vmax !important;
+        border-radius: 360px !important;
+        margin-right: 1vh !important;
+    }
+
+    #backgroundImg{
+        background: url(../../Images/headerPic-min.png);
+        position: fixed;
+        top: 0;
+        background-size: cover;
+        background-color: rgba(0,0,0,0.3);
+        background-blend-mode: lighten;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .wrapper{
+        padding-top: 16vh;
+    }
+
+    .contact-form{
+        flex-direction: row;
+        padding: 30px;
+        border-radius: 70px;
+    }
+
+    #contactTitle, .contact-form{
+        box-sizing: border-box;
+        width: 70vw;
+        max-width: 70vw;
+    }
+
+    #contactTitle{
+        padding: 3vh;
+        border-radius: 70px;
+    }
+
+    #contactTitle h2{
+        font-size: 6vmin;
+    }
+
+    .input-fields, .msg {
+        width: 95%;
+        margin: 0;
+    }
+
+    .input-fields .input{
+        width: 78%;
+        margin: 2vmin 0;
+    }
+
+    .input-fields .input, .msg textarea{
+        font-size: 3vmin;
+    }
+
+    .msg textarea{
+        margin-top: 0;
+        height: 33vh;
+    }
+
+    .btn{
+        font-size: 3vmin;
+        width: 96%;
+    }
+
+    #phoneNumber, #email {
+        font-size: 2.8vmax;
+    }
+
+
+    
+}
 
 
 /*Galaxy Fold Portrait*/
