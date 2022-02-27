@@ -86,6 +86,13 @@
        top: 0;
  
        background-color: rgba(58, 58, 58, 1);
+
+       background: repeating-linear-gradient( 
+         45deg, black, 
+         black 16px, 
+         #115204 18px, 
+         #115204 20px
+        );
  
        -webkit-font-smoothing: antialiased;
  
