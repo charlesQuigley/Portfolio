@@ -41,8 +41,6 @@ window.addEventListener('scroll', function() {
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".from-left, .from-down");
 
-console.log(faders);
-console.log(sliders);
 
 
 const slideOptions ={

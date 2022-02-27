@@ -2,12 +2,13 @@
 
   .nav-bar{
     /* margin-right: 6vw;*/
-    position: absolute;
-    top: 0vh;
-    right: 6.4vmax;
- 
-    margin-top: 5vh;
-    margin-left: 5vw;
+    position: relative;
+
+    height: 6vh;
+    margin-left: auto;
+    margin-top: 4vh;
+    margin-right: 5vw;
+
   }
  
  .menu a{
@@ -43,10 +44,11 @@
  
    .nav-bar-burger{
        display: none;
-       position: absolute;
+       /*position: relative;*/
  
        top: 5vmax;
        right: 10vmin;
+       position: absolute;
     }
  
    .burger-menu-active{
@@ -91,7 +93,7 @@
  
  
        /*transform: translateX(100%);*/
-       transition: 500ms cubic-bezier(0.060, 0.975, 0.195, 0.985);
+       transition: 400ms cubic-bezier(0.060, 0.975, 0.195, 0.985);
                  
       
        
@@ -264,10 +266,11 @@
 
   .nav-bar-burger{
       display: block;
+      margin-left: auto;
       z-index: 1;
 
-      top: 4vmax;
-      right: 8vmin;
+      top: 6vmax;
+      right: 12vmin;
 
    }
 

@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 body{
     font-family: "Roboto", sans-serif;
     transition: 0s linear;
@@ -32,8 +33,6 @@ body{
     /*background-color: rgba(0,0,0,0.2);
     background-blend-mode: hue;*/
 
-    background-color: rgb(255 126 4 / 38%);
-    background-blend-mode: color;
     background-color: transparent;
 
     background-size: 112%;
@@ -58,15 +57,17 @@ body{
 
 
 #header{
-    min-height: 22.5vmax;
+    /*min-height: 22.5vmax;*/
+    min-height: 90vh;
     height: max-content;
     width: 100%;
     max-width: 100%;
 
+    display: flex;
+    flex-direction: column;
+
     /*top:0;
     position: absolute;*/
-
-    background-color: rgba(0,0,0,0.2);
 
 }
 
@@ -74,9 +75,11 @@ body{
 
     height: inherit;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+
+    position: relative;
 
 }
 
@@ -100,26 +103,108 @@ old div that was meant to be a black circle that the actual profile picture woul
     position: absolute;*/
 }
 
+#profile{
+    position: relative;
+}
+
 #profile-picture{
+    display: block;
 
     border-radius: 50%;
-    height: 20vmax;
-    width: auto;
+    /*height: 20vmax;*/
+    width: 20vw;
+    height: 20vw;
     /*position: fixed;*/
-    float: left;
-    margin-left: 2vw;
-    margin-top: 1vh;
+    /*float: left;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 10vh;*/
+    margin-top: 2vh;
     border: 8px solid rgba(0,0,0,1);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /*box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);*/
 
     transition: 100ms ease-in;
+    z-index: 1;
 }
 
 #profile-picture:hover{
-    filter: brightness(1.2);
-    box-shadow: 0 0 80px rgba(255, 255, 255, 1);
-    cursor:pointer;
+    cursor: pointer;
 }
+
+#profile-picture:hover + #profile-blob{
+   /* filter: brightness(1.2);*/
+   /* box-shadow: 0 0 80px rgba(255, 255, 255, 1);*/
+   animation:  blob-animate 2s linear infinite;
+
+   background: repeating-linear-gradient(
+        45deg,
+        black,
+        black 10px,
+        #0ac27b 10px,
+        #0ac27b 20px
+    );
+
+    transition: background 300ms ease-in;
+
+}
+
+#textBubble{
+
+    height: 20vh;
+    max-height: 20vh; 
+    width: 20vw;
+    max-width: 20vw;
+    background-color: white;
+}
+
+.blob{
+    position: absolute;
+    height: 22vw;
+    width: 22vw;
+    background: repeating-linear-gradient(
+    45deg,
+    black,
+    black 10px,
+    #115204  10px,
+    #115204 20px
+    );
+    left: 0;
+    right: 0;
+    top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+
+    animation: blob-animate 6s linear infinite;
+}
+
+
+@keyframes blob-animate
+{
+    0%, 100%
+    {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
+    }
+
+    20%{ 
+        border-radius: 57% 43% 60% 40% / 32% 35% 65% 68% 
+       
+    }
+
+    40%{
+        border-radius: 59% 41% 23% 77% / 56% 49% 51% 44% 
+    }
+
+    60%{
+        border-radius: 62% 38% 68% 32% / 38% 68% 32% 62% 
+
+    }
+
+    80%{
+        border-radius: 59% 41% 75% 25% / 42% 33% 67% 58% 
+    }
+}
+
 
 
 #myModal{
@@ -181,50 +266,49 @@ old div that was meant to be a black circle that the actual profile picture woul
 
 #name-and-contact
 {
-    margin-left: 1.5vmax;
+    /*margin-left: 1.5vmax;*/
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
+    z-index: 1;
+
 }
 
 #name-and-contact h1{
-    margin-top: 8vh;
+    margin-top: 2vh;
     color: white;
-    font-size: 12vmin;
+    font-size: 10vmin;
     font-weight: bolder;
     text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
-    padding-right: 5px;
-
+    text-align: center;
 }
 
 #contact-info{
-    margin-top: 4vh !important;
-    font-size: 3.5vmin !important; /*1.8rem*/
+    margin-top: 2.5vh !important;
+    font-size: 3vmin !important; /*1.8rem*/
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-weight: bolder;
+    text-align: center;
 
 }
 
 #name-and-contact p{
-    margin-top: 0.5vh;
-    margin-left: 0.8vw;
-    font-size: 3.5vmin;
+    margin-top: 1vh;
+   /* margin-left: 0.8vw;*/
+    font-size: 3vmin;
     font-weight: bolder;
     color: white;
     text-decoration: none;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
 }
 
-.menu ul{
-    display: flex;
-    flex-direction: row;
-}
+
 
 .nav-bar{
-    position: relative !important;
-    margin-right: 0;
-    margin-left: 0 !important;
-    left: 6vw;
-    margin-top: 5vh;
+
 }
+
 
 
 
@@ -236,15 +320,76 @@ old div that was meant to be a black circle that the actual profile picture woul
     /*height: 26vmax;*/
 
     background-color: white;
+    posiion: relative;
 
+
+  }
+
+  .cool-border{
+      height: 2vh;
+      width:100%;
+
+      background: repeating-linear-gradient(
+        45deg,
+        black,
+        black 10px,
+        #115204  10px,
+        #115204 20px
+        );
+      
+  }
+
+  .coolTriangles{
+      position: relative;
+  }
+
+  .cool-border-triangle{
+      height: 0;
+      width: 0;
+      background-color: transparent;
+      border-top: 1vw solid black;
+      border-left: 1vw solid transparent;
+      border-right: 1vw solid transparent;
+      border-bottom: 1vw solid transparent;
+
+      top: 0;
+
+      position: absolute;
+      
+  }
+
+  #triangle1{
+      left: 0;
+  }
+
+  #triangle2{
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+
+      border-top: 1vw solid #115204;
+  }
+
+  #triangle3{
+      right: 0;
   }
 
   #education-header{
       text-align: center;
       padding-top: 8vmin;
-      font-size: 3.7vmax;
-      font-weight: bolder;
-      color: rgb(107, 107, 107);
+    
+  }
+
+  #education-header h1{
+    font-weight: bolder;
+    font-size: 3.7vmax;
+    color: rgb(80, 80, 80);
+    background: -webkit-linear-gradient(green 30%, black 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
   }
 
   .grid-item svg{
@@ -252,8 +397,9 @@ old div that was meant to be a black circle that the actual profile picture woul
   }
 
   #education-milestones{
-      margin-top: 4vh;
+      margin-top: 6vh;
       /*margin-bottom: 4vh;*/
+      padding-bottom: 6vh;
       padding-right: 8vmin;
       padding-left: 8vmin;
       display: grid;
@@ -272,7 +418,7 @@ old div that was meant to be a black circle that the actual profile picture woul
   }
 
   .grid-item p{
-    color: rgb(107, 107, 107);
+    color: #333;
     font-size: 1.2vmax;
     font-weight: bold;
   }
@@ -289,6 +435,7 @@ old div that was meant to be a black circle that the actual profile picture woul
      /* background-image: url(../../Images/headerPic_50.png);*/
       background-size: 100% 100%;
       background-attachment: fixed;
+
   }
 
   #whitespace{
@@ -305,16 +452,22 @@ old div that was meant to be a black circle that the actual profile picture woul
 
   #backgroundImg{
     background-image: url(../../Images/headerPic_50-min.png);
-    background-color: rgba(0,0,0,0.1);
-    background-blend-mode: hue;
-    background-position-x: -10vw;
+   /* background-color: rgba(0,0,0,0.1);
+    background-blend-mode: hue;*/
+    /*background-position-x: -10vw;*/
+    
+    background-color: rgba(0,0,0,0.2);
+
+    background-blend-mode: color;
+
     z-index: -2;
     position: fixed;
     /*background-position: -16vmax center;*/
-    background-size: 112% 100vh;
+    background-size: 100% 100vh;
     height:100vh;
     width:100%;
   }
+
 
 
 
@@ -331,7 +484,7 @@ old div that was meant to be a black circle that the actual profile picture woul
       padding-right: 3vmax;
       background-color:rgba(0, 0, 0, 0.95);
       border-radius: 70px;
-      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
       color: white;
   }
 
@@ -348,6 +501,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 
       border: none;
       border-top: 3px solid white;
+      border-top: 3px solid #0ac27b;
   }
 
   #AboutMe_1 p{
@@ -368,7 +522,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     padding-right: 3vmax;
     background-color:rgba(0, 0, 0, 0.95);
     border-radius: 70px;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     color: white;
 }
 
@@ -385,6 +539,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 
     border: none;
     border-top: 3px solid white;
+    border-top: 3px solid #0ac27b;
 }
 
 #AboutMe_2 p{
@@ -407,7 +562,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     padding-right: 3vmax;
     background-color:rgba(0, 0, 0, 0.95);
     border-radius: 70px;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     color: white;
 
 }
@@ -423,6 +578,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 #AboutMe_3 a{
     display: block;
     background-color: rgb(196, 74, 3);
+    background-color: #115204;
     border-radius: 30px;
     padding: 12px 15px;
     margin: auto;
@@ -438,7 +594,7 @@ old div that was meant to be a black circle that the actual profile picture woul
 }
 
 #AboutMe_3 a:hover{
-    background-color: rgb(255, 154, 4);
+    background-color: #0ac27b;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
@@ -456,15 +612,21 @@ old div that was meant to be a black circle that the actual profile picture woul
   #skills-block{
       margin-left: 4vmin;
       margin-right: 4vmin;
+      padding-top: 12vh;
   }
 
   #skills-header{
       text-align: center;
-      padding-top: 12vh;
-      font-size: 4vmax;
+      font-size: 3.7vmax;
       font-weight: bolder;
-      color: rgb(107, 107, 107);
+      color: #333;
+      background: -webkit-linear-gradient(green 30%, black 80%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
+
+  
 
   #Skills-Section ul{
       margin-top: 8vh;
@@ -472,8 +634,8 @@ old div that was meant to be a black circle that the actual profile picture woul
   }
 
   #Skills-Section li{
-    color: rgb(107, 107, 107);
-    font-size: 2.6vmax;
+    color: #333;
+    font-size: 2.4vmax;
     font-weight: normal;
     padding: 1.5vw;
   }
@@ -482,9 +644,13 @@ old div that was meant to be a black circle that the actual profile picture woul
     text-align: center;
     padding-top: 10vh;
     padding-bottom: 12vh;
-    font-size: 3vmax;
+    font-size: 2.7vmax;
     font-weight: bold;
-    color: rgb(107, 107, 107);
+    color: #333;
+  }
+
+  #skills-footer{
+      
   }
 
   /*----------------------------------------------------*/
