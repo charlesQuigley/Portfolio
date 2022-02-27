@@ -1586,15 +1586,14 @@
         flex-direction: column;
         width: max-content;
         width: 100%;
-        margin-top: 8vh;
+        margin-top: 12vh;
     }
 
     #profile-picture{
-        width: 28vmax;
+        width: 30vmax;
         height: auto !important;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 8vmax;
         margin-bottom: 4vmax;
 
         border: 6px solid rgba(0,0,0,1);
@@ -1606,9 +1605,21 @@
     }
 
     .blob {
-        height: 32vmax;
-        width: 32vmax;
-        top: 18%;
+        height: 33vmax;
+        width: 33vmax;
+
+    }
+
+    #triangle1, #triangle2, #triangle3{
+        border-top: 4vw solid black;
+        border-bottom: 4vw solid transparent;
+        border-left: 4vw solid transparent;
+        border-right: 4vw solid transparent;
+
+    }
+
+    #triangle2{
+        border-top: 4vw solid #115204;
     }
 
     #name-and-contact
@@ -1739,6 +1750,7 @@
         padding-right: 1vmin;
 
         border-radius: 20px;
+        box-shadow: 0 0 10px rgb(255 255 255 / 80%);
 
     }
 
@@ -1775,6 +1787,8 @@
         padding-left: 1vmin;
         padding-right: 1vmin;
         border-radius: 20px;
+
+        box-shadow: 0 0 10px rgb(255 255 255 / 80%);
         
     }
 
@@ -1813,6 +1827,8 @@
         padding-right: 1vmin;
 
         border-radius: 20px;
+
+        box-shadow: 0 0 10px rgb(255 255 255 / 80%);
     }
 
     #AboutMe_3 p{
