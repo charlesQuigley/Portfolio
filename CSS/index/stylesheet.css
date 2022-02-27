@@ -180,12 +180,12 @@ old div that was meant to be a black circle that the actual profile picture woul
     margin-right: auto;
     z-index: -1;
 
-    animation: blob-animate 6s linear infinite;
+    animation-name: blob-animate;
 
-    -webkit-animation: blob-animate-webkit 6s;
-    -moz-animation: blob-animate-moz 6s;
-    -ms-animation: blob-animate-ms 6s;
-    -o-animation: blob-animate-o 6s;
+    -webkit-animation-name: blob-animate-webkit;
+    -moz-animation-name: blob-animate-moz;
+    -ms-animation-name: blob-animate-ms;
+    -o-animation-name: blob-animate-o;
 
     animation-duration: 6s;
     animation-iteration-count: infinite;
