@@ -49,6 +49,7 @@
        top: 5vmax;
        right: 10vmin;
        position: absolute;
+       z-index: 2;
     }
  
    .burger-menu-active{
@@ -67,7 +68,7 @@
  
      border: 1px solid white;
      
-     z-index: 3;
+     z-index: 4;
      
      transform-origin: 4px 0px;
      
@@ -135,7 +136,7 @@
      /*transform: translateX(0%);*/
      top: 0;
      right: 0;
-     z-index: 2;
+     z-index: 3;
    }
  
  
@@ -162,6 +163,7 @@
   .nav-bar-burger span{
       width: 90px;
       height: 20px;
+
   }
 
   .burger-menu ul {
