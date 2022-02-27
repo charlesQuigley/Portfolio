@@ -135,10 +135,10 @@ old div that was meant to be a black circle that the actual profile picture woul
    /* filter: brightness(1.2);*/
    /* box-shadow: 0 0 80px rgba(255, 255, 255, 1);*/
    animation:  blob-animate 2s linear infinite;
-   -webkit-animation: blob-animate 2s linear infinite;
-   -moz-animation: blob-animate 2s linear infinite;
-   -ms-animation: blob-animate 2s linear infinite;
-   -o-animation: blob-animate 2s linear infinite;
+   -webkit-animation: blob-animate-webkit 2s linear infinite;
+   -moz-animation: blob-animate-moz 2s linear infinite;
+   -ms-animation: blob-animate-ms 2s linear infinite;
+   -o-animation: blob-animate-o 2s linear infinite;
 
 
    background: repeating-linear-gradient(
@@ -182,10 +182,10 @@ old div that was meant to be a black circle that the actual profile picture woul
 
     animation: blob-animate 6s linear infinite;
 
-    -webkit-animation: blob-animate 2s linear infinite;
-    -moz-animation: blob-animate 2s linear infinite;
-    -ms-animation: blob-animate 2s linear infinite;
-    -o-animation: blob-animate 2s linear infinite;
+    -webkit-animation: blob-animate-webkit 6s linear infinite;
+    -moz-animation: blob-animate-moz 6s linear infinite;
+    -ms-animation: blob-animate-ms 6s linear infinite;
+    -o-animation: blob-animate-o 6s linear infinite;
 }
 
 
@@ -215,7 +215,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     }
 }
 
-@-webkit-keyframes blob-animate
+@-webkit-keyframes blob-animate-webkit
 {
     0%, 100%
     {
@@ -241,7 +241,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     }
 }
 
-@-moz-keyframes blob-animate{
+@-moz-keyframes blob-animate-moz{
     0%, 100%
     {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
@@ -266,7 +266,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     }
 }
 
-@-ms-keyframes blob-animate{
+@-ms-keyframes blob-animate-ms{
     0%, 100%
     {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
@@ -291,7 +291,7 @@ old div that was meant to be a black circle that the actual profile picture woul
     }
 }
 
-@-o-keyframes blob-animate{
+@-o-keyframes blob-animate-o{
     0%, 100%
     {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
