@@ -2001,6 +2001,7 @@
         margin-right: 2%;*/
         min-height: 40vmax;
         max-height: max-content;
+        background-color: white;
       }
     
       #education-header{
