@@ -1607,12 +1607,16 @@
     .blob {
         height: 33vmax;
         width: 33vmax;
+        top: -1%;
 
     }
 
+
+    
     .coolTriangles{
         display: none;
     }
+
 
     #name-and-contact
     {
