@@ -135,6 +135,11 @@ old div that was meant to be a black circle that the actual profile picture woul
    /* filter: brightness(1.2);*/
    /* box-shadow: 0 0 80px rgba(255, 255, 255, 1);*/
    animation:  blob-animate 2s linear infinite;
+   -webkit-animation: blob-animate 2s linear infinite;
+   -moz-animation: blob-animate 2s linear infinite;
+   -ms-animation: blob-animate 2s linear infinite;
+   -o-animation: blob-animate 2s linear infinite;
+
 
    background: repeating-linear-gradient(
         45deg,
@@ -176,6 +181,11 @@ old div that was meant to be a black circle that the actual profile picture woul
     z-index: -1;
 
     animation: blob-animate 6s linear infinite;
+
+    -webkit-animation: blob-animate 2s linear infinite;
+    -moz-animation: blob-animate 2s linear infinite;
+    -ms-animation: blob-animate 2s linear infinite;
+    -o-animation: blob-animate 2s linear infinite;
 }
 
 
@@ -204,6 +214,108 @@ old div that was meant to be a black circle that the actual profile picture woul
         border-radius: 59% 41% 75% 25% / 42% 33% 67% 58% 
     }
 }
+
+@-webkit-keyframes blob-animate
+{
+    0%, 100%
+    {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
+    }
+
+    20%{ 
+        border-radius: 57% 43% 60% 40% / 32% 35% 65% 68% 
+       
+    }
+
+    40%{
+        border-radius: 59% 41% 23% 77% / 56% 49% 51% 44% 
+    }
+
+    60%{
+        border-radius: 62% 38% 68% 32% / 38% 68% 32% 62% 
+
+    }
+
+    80%{
+        border-radius: 59% 41% 75% 25% / 42% 33% 67% 58% 
+    }
+}
+
+@-moz-keyframes blob-animate{
+    0%, 100%
+    {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
+    }
+
+    20%{ 
+        border-radius: 57% 43% 60% 40% / 32% 35% 65% 68% 
+       
+    }
+
+    40%{
+        border-radius: 59% 41% 23% 77% / 56% 49% 51% 44% 
+    }
+
+    60%{
+        border-radius: 62% 38% 68% 32% / 38% 68% 32% 62% 
+
+    }
+
+    80%{
+        border-radius: 59% 41% 75% 25% / 42% 33% 67% 58% 
+    }
+}
+
+@-ms-keyframes blob-animate{
+    0%, 100%
+    {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
+    }
+
+    20%{ 
+        border-radius: 57% 43% 60% 40% / 32% 35% 65% 68% 
+       
+    }
+
+    40%{
+        border-radius: 59% 41% 23% 77% / 56% 49% 51% 44% 
+    }
+
+    60%{
+        border-radius: 62% 38% 68% 32% / 38% 68% 32% 62% 
+
+    }
+
+    80%{
+        border-radius: 59% 41% 75% 25% / 42% 33% 67% 58% 
+    }
+}
+
+@-o-keyframes blob-animate{
+    0%, 100%
+    {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
+    }
+
+    20%{ 
+        border-radius: 57% 43% 60% 40% / 32% 35% 65% 68% 
+       
+    }
+
+    40%{
+        border-radius: 59% 41% 23% 77% / 56% 49% 51% 44% 
+    }
+
+    60%{
+        border-radius: 62% 38% 68% 32% / 38% 68% 32% 62% 
+
+    }
+
+    80%{
+        border-radius: 59% 41% 75% 25% / 42% 33% 67% 58% 
+    }
+}
+
 
 
 

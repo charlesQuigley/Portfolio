@@ -1611,15 +1611,15 @@
     }
 
     #triangle1, #triangle2, #triangle3{
-        border-top: 4vw solid black;
-        border-bottom: 4vw solid transparent;
-        border-left: 4vw solid transparent;
-        border-right: 4vw solid transparent;
+        border-top: 2.5vw solid black;
+        border-bottom: 2.5vw solid transparent;
+        border-left: 2.5vw solid transparent;
+        border-right: 2.5vw solid transparent;
 
     }
 
     #triangle2{
-        border-top: 4vw solid #115204;
+        border-top: 2.5vw solid #115204;
     }
 
     #name-and-contact
