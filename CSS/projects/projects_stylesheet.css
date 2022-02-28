@@ -102,6 +102,12 @@ body{
 
 
 
+.nav-bar{
+    position: absolute !important;
+    top: 2vh;
+    right: 3vw;
+}
+
 
 
 #page-title{
@@ -198,7 +204,7 @@ body{
     margin-right: auto;
 
     border: none;
-    border-top: 2px solid rgba(255,255,255,0.5);
+    border-top: 2px solid #0ac27b;
 }
 
 
@@ -236,7 +242,7 @@ body{
 }
 
 .project-description a{
-    color: white;
+    color: #0ac27b;
     font-weight: bolder;
     text-decoration: none;
 }

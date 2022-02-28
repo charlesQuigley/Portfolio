@@ -114,7 +114,6 @@
     
       #education-milestones{
           margin-top: 4vmax;
-          margin-bottom: 2vmax;
           margin-left: 1vmax;
           margin-right: 1vmax;
           padding-left: 4vmin;
@@ -432,7 +431,6 @@
     
       #education-milestones{
           margin-top: 4vmax;
-          margin-bottom: 2vmax;
           margin-left: 1vmax;
           margin-right: 1vmax;
           padding-left: 4vmin;
@@ -636,12 +634,13 @@
 @media screen and (min-width: 1024px) and (min-height: 700px) and (max-height: 850px) {
     
     #wrapper{
-        flex-direction: row;
+        flex-direction: column;
         min-height: 56vmin;
         height: max-content;
         margin-left: 0;
         margin-right: 0;
-        width: max-content;
+        width: 100%;
+        margin-top: 12vh;
     }
 
     #header-picture{
@@ -665,10 +664,18 @@
     #profile-picture{
         height: 26vmax;
         width: auto;
-        margin-left: 1.8vmax;
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
         border: 8px solid rgba(0,0,0,1);
+    }
+
+    .blob{
+        height: 28vmax;
+        width: 28vmax;
+    }
+
+    .coolTriangles{
+        display: none;
     }
 
     #Education{
@@ -680,6 +687,10 @@
         padding-top: 6vmin;
     }
 
+    #education-header h1{
+        font-size: 4.5vmax;
+    }
+
     #education-milestones{
         margin-top: 4vmin;
     }
@@ -687,32 +698,36 @@
     .grid-item svg {
         width: 6.5vmax;
     }
+
+    .grid-item p{
+        font-size: 1.8vmax;
+    }
     
     #name-and-contact
     {
-        margin-left: 1.8vmax;
         border-radius: 0px;
         background-color: transparent;
         padding: 0;
     }
 
     #name-and-contact h1{
-        margin-top: 16vmin;
+        margin-top: 2vmin;
         font-size: 6vmax;
+        text-align: center;
     }
 
     #contact-info{
         margin-top: 5vmin !important;
         font-size: 3.2vmin !important; /*1.8rem*/
-        display: block;
+        display: none;
 
     }
 
     #name-and-contact p{
         margin-top: 2vmin;
-        margin-left: 0.8vmax !important;
         font-size: 2.8vmin;
-        text-align: left;
+        text-align: center;
+        padding-bottom: 8vh;
         
     }
 
@@ -762,6 +777,10 @@
         font-size: 2.4vmax;
     }
 
+    #AboutMe_2 h2{
+        font-size: 3.4vmax;
+    }
+
     #AboutMe_2 p{
         font-size: 2.4vmax;
     }
@@ -772,21 +791,24 @@
 
     #AboutMe_3 a{
         margin-top: 4vmin;
+        font-size: 4vmin;
+        min-width: 40%;
     }
 
     #Skills-Section {
         margin-left: 0;
         margin-right: 0;
-        padding-left: 5%;
-        padding-right: 5%;
         height: inherit;
         min-height: max-content;
         max-height: 60vmax;
     }
 
+    #skills-block{
+        padding-top: 8vmin;
+    }
+
     #skills-header {
         text-align: center;
-        padding-top: 8vmin;
         font-size: 7vmin;
     }
 
@@ -932,7 +954,6 @@
     
       #education-milestones{
           margin-top: 4vmax;
-          margin-bottom: 2vmax;
           margin-left: 1vmax;
           margin-right: 1vmax;
           padding-left: 4vmin;
@@ -1134,48 +1155,60 @@
 
 /**13'' Notebook***/
 @media screen and (min-width: 1270px) and (min-height: 799px) and (max-height: 900px) and (max-width: 1282px){
+
+
+    #wrapper{
+        margin-top: 0vh;
+    }
+
     #profile-picture{
-        height: 25vmax;
-        margin-bottom: 4vh;
-        margin-top: 4vh;
+        height: 24vmax;
+    }
+
+    .blob{
+        height: 26vmax;
+        width: 26vmax;
     }
 
     #name-and-contact h1{
-        margin-top: 12vh;
-        font-size: 10vmin;
+        margin-top: 4vh;
+        font-size: 8vmin;
     }
 
     #contact-info{
         margin-top: 2vh;
+        display: block;
+        padding-bottom: 6vh !important;
+        font-size: 2.5vmin !important;
+    }
+
+    #name-and-contact p{
+        padding-bottom: 0;
+        font-size: 2.5vmin;
     }
 
     #Education{
         min-height: 32vmax;
     }
+
+    .grid-item p{
+        font-size: 1.5vmax;
+    }
 }
 
 
 /**Huge Desktop Displays***/
-@media screen and (min-width: 1400px) and (min-height: 900px){
+@media screen and (min-width: 1350px) and (min-height: 700px){
     
-    .nav-bar{
-        display: block;
-        left: 0;
-    }
-
-    .nav-bar-burger{
-        display: none;
-    }
-
-
-
     #wrapper{
-        flex-direction: row;
-        min-height: 56vmin;
+        flex-direction: column;
+        min-height: 80vmin;
         height: max-content;
         margin-left: 0;
         margin-right: 0;
-        width: max-content;
+        min-width: max-content;
+        width: 100%;
+        margin-top: 0;
     }
 
     #header-picture{
@@ -1183,10 +1216,31 @@
         max-width: 100%;
        
         overflow: hidden;
+        display: none;
+   }
+
+   .coolTriangles{
+       display: block;
+   }
+
+   #profile{
+       margin-top: 2vh;
+   }
+
+   #name-and-contact{
+        margin-top: 3vmin;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: transparent;
+        border: none;
+        padding: 0;
    }
    
    #name-and-contact h1 {
-        font-size: 5.5vmax;
+        font-size: 6vmax;
+        margin-top: 0;
+        text-align: center;
+        margin-left: 0;
     }
 
     .menu a {
@@ -1207,12 +1261,18 @@
     }    
 
     #profile-picture{
-        height: 26vmax;
+        height: 24vmax;
         width: auto;
-        margin-left: 1.8vmax;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: auto;
         margin-bottom: auto;
         border: 8px solid rgba(0,0,0,1);
+    }
+
+    .blob{
+        height: 26vmax;
+        width: 26vmax;
     }
 
     #Education{
@@ -1232,31 +1292,21 @@
         width: 6.5vmax;
     }
     
-    #name-and-contact
-    {
-        margin-left: 1.8vmax;
-        border-radius: 0px;
-        background-color: transparent;
-        padding: 0;
-    }
-
-    #name-and-contact h1{
-        margin-top: 16vmin;
-        font-size: 6vmax;
-    }
 
     #contact-info{
-        margin-top: 5vmin !important;
+        margin-top: 4vmin !important;
+        margin-bottom: 4vmin;
         font-size: 3.2vmin !important; /*1.8rem*/
         display: block;
 
     }
 
     #name-and-contact p{
-        margin-top: 2vmin;
-        margin-left: 0.8vmax !important;
+        margin-top: 1vmin;
+        margin-left: 0;
         font-size: 2.8vmin;
-        text-align: left;
+        text-align: center;
+        padding: 0;
         
     }
 
@@ -1298,41 +1348,51 @@
 
     }
 
+    #AboutMe_1, #AboutMe_2, #AboutMe_3{
+        border-radius: 70px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+
     #AboutMe_3{
         margin-top: 4vmax;
     }
 
     #AboutMe_1 p{
         font-size: 2vmax;
+        line-height: 3.5vmax;
     }
 
     #AboutMe_2 p{
         font-size: 2vmax;
+        line-height: 3.5vmax;
     }
 
     #AboutMe_3 p{
         font-size: 2vmax;
+        line-height: 3.5vmax;
     }
 
     #AboutMe_3 a{
         margin-top: 4vmin;
         border-radius: 360px;
         min-width: 40%;
+        font-size: 2.5vmax
     }
 
     #Skills-Section {
         margin-left: 0;
         margin-right: 0;
-        padding-left: 5%;
-        padding-right: 5%;
         height: inherit;
         min-height: max-content;
         max-height: 60vmax;
     }
 
+    #skills-block{
+        padding-top: 8vmin;
+    }
+
     #skills-header {
         text-align: center;
-        padding-top: 8vmin;
         font-size: 7vmin;
     }
 
@@ -1660,11 +1720,12 @@
     
     #wrapper{
         flex-direction: column;
-        height: 56vmin;
+        min-height: 56vmin;
+        height: max-content;
         margin-left: 0;
         margin-right: 0;
         width: 100%;
-        margin-top: 0vh;
+        margin-top: 6vh;
     }
 
     #header-picture{
@@ -1685,7 +1746,7 @@
     }    
 
     #profile-picture{
-        height: 45vmin;
+        height: 40vmin;
         width: auto;
         margin-left: auto;
         margin-right: auto;
@@ -1695,9 +1756,10 @@
     }
 
     .blob{
-        height: 50vmin;
-        width: 50vmin;
+        height: 42vmin;
+        width: 42vmin;
     }
+
 
     #contact-info{
         display: block;
@@ -1726,8 +1788,12 @@
         padding-top: 6vmin;
     }
 
+    #education-header h1{
+        font-size: 4vmax;
+    }
+
     #education-milestones {
-        margin-top: 5vmin;
+        margin-top: 10vmin;
     }
 
     .grid-item svg {
@@ -1741,6 +1807,7 @@
 
     .grid-item p{
         padding-top: 2vmax;
+        font-size: 2.5vmin;
     }
 
     #name-and-contact
@@ -1751,11 +1818,12 @@
         background-color: transparent;
         padding: 0;
         padding-bottom: 2vh;
+        margin-top: 4vh;
     }
 
     #name-and-contact h1{
         margin-top: 0;
-        font-size: 4vmax;
+        font-size: 6vmax;
         text-align: center;
 
     }
@@ -1766,7 +1834,7 @@
 
     #name-and-contact p{
         margin-top: 2vmin;
-        font-size: 3vmin;
+        font-size: 2.5vmin;
         text-align: center;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         
@@ -1815,7 +1883,8 @@
 
     #AboutMe_3 a{
         margin-top: 4vmin;
-        font-size: 5vmin;
+        font-size: 4vmin;
+        width: 40%;
     }
 
     .coolTriangles{
@@ -1836,15 +1905,15 @@
 
     #skills-header {
         text-align: center;
-        font-size: 3.7vmax;
+        font-size: 4.5vmax;
     }
 
     #Skills-Section ul{
-        margin-top: 8vmin;
+        margin-top: 6vmin;
     }
   
     #Skills-Section li{
-      font-size: 2.5vmax;
+      font-size: 3.2vmax;
       font-weight: normal;
       padding: 1.5vmax;
     }
@@ -1852,7 +1921,7 @@
     #skills-footer{
       padding-top: 8vmin;
       padding-bottom: 4vmin;
-      font-size: 3vmax;
+      font-size: 3.2vmax;
       
     }
 
@@ -2266,6 +2335,23 @@
     
 }
 
+
+/*Galaxy Fold Landscape*/
+@media screen and (max-height: 300px){
+    
+    #header{
+        height: max-content;
+    }
+
+    #name-and-contact p{
+        padding-bottom: 4vh;
+    }
+
+    .grid-item p {
+        font-size: 3.5vmin;
+        padding-top: 4vmin;
+    }
+}
 
 
 /*Galaxy Fold Portrait*/

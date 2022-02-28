@@ -37,6 +37,13 @@ body{
 }
 
 
+.nav-bar{
+    position: absolute !important;
+    top: 2vh;
+    right: 3vw;
+}
+
+
 
 .wrapper{
 	
