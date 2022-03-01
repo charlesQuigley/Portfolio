@@ -53,6 +53,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 4vh;
+        border: 5px solid rgba(0,0,0,1);
     }
 
     .blob{
@@ -1504,7 +1505,7 @@
         margin-left: auto;
         margin-right: auto;
         /*margin-top: 10vh;*/
-        border: 6px solid rgba(0,0,0,1);
+        border: 4px solid rgba(0,0,0,1);
         /*box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);*/
         z-index: 1;
     
@@ -1752,7 +1753,7 @@
         margin-right: auto;
         margin-top: auto;
         margin-bottom: auto;
-        border: 8px solid rgba(0,0,0,1);
+        border: 4px solid rgba(0,0,0,1);
     }
 
     .blob{
@@ -2004,7 +2005,7 @@
         margin-right: auto;
         margin-bottom: 4vmax;
 
-        border: 6px solid rgba(0,0,0,1);
+        border: 4px solid rgba(0,0,0,1);
 
         /*box-shadow: 0 0 15px rgb(255 255 255 / 70%);*/
         
@@ -2416,7 +2417,7 @@
         margin-right: auto;
         margin-bottom: 4vmax;
 
-        border: 6px solid rgba(0,0,0,1);
+        border: 3px solid rgba(0,0,0,1);
 
        /* box-shadow: 0 0 15px rgb(255 255 255 / 70%);*/
         
