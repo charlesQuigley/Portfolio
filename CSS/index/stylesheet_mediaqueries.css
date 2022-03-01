@@ -1229,7 +1229,7 @@
    }
 
    #name-and-contact{
-        margin-top: 3vmin;
+        margin-top: 1vmin;
         margin-left: 0;
         margin-right: 0;
         background-color: transparent;
@@ -1819,7 +1819,7 @@
         background-color: transparent;
         padding: 0;
         padding-bottom: 2vh;
-        margin-top: 4vh;
+        margin-top: 0vh;
     }
 
     #name-and-contact h1{
@@ -2003,7 +2003,7 @@
         height: auto !important;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 4vmax;
+        margin-bottom: 3vmax;
 
         border: 4px solid rgba(0,0,0,1);
 
