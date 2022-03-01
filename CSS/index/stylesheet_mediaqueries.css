@@ -1985,7 +1985,7 @@
 
     #header{
         min-height: 65vmax;
-        height: 65vmax;
+        height: max-content;
         background-color: transparent;
     }
     
@@ -2032,6 +2032,7 @@
         margin: 0;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 5vh;
         width: 80%;
         max-width: 80%;
         text-align: center;
